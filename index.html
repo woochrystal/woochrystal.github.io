@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wsj portfolio</title>
+    
+    
+    <!--파비콘-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <!--    css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/artwork.css">
+    <style>
+        /*        .part,.top{display: none;}*/
+    </style>
+    <!--js-->
+    <script src="js/jquery-3.5.0.min.js"></script>
+
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+    <!--lazyline-->
+    <script src="plugin/lazy-line-painter-1.9.6.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+
+            document.onreadystatechange = () => {
+
+                if (document.readyState === 'complete') {
+
+
+                    let el = document.querySelector('#logo2');
+                    let myAnimation = new LazyLinePainter(el, {
+                        "ease": "easeLinear",
+                        "strokeWidth": 20,
+                        "strokeOpacity": 1,
+                        "strokeColor": "#004FFF",
+                        "strokeCap": "round",
+                        "strokeJoin": "round"
+                    });
+                    myAnimation.paint();
+                }
+            }
+            $('img[usemap]').rwdImageMaps();
+        })();
+    </script>
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/7460d40ad7.js" crossorigin="anonymous"></script>
+    <!--와우-->
+    <script src="plugin/wow.js"></script>
+    <link rel="stylesheet" href="plugin/animate.css">
+    <script>
+        new WOW().init();
+    </script>
+
+    <!--프로그레스바-->
+    <script src="plugin/progressbar.js"></script>
+    <!--필터기능-->
+
+    <script src="plugin/imagesloaded.pkgd.js"></script>
+    <script src="plugin/isotope.pkgd.min.js"></script>
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--비교 슬라이드-->
+    <link href="plugin/move/css/foundation-1.css" rel="stylesheet" type="text/css" />
+    <link href="plugin/move/css/twentytwenty.css" rel="stylesheet" type="text/css" />
+
+
+
+    <script src="plugin/move/js/jquery.event.move.js"></script>
+    <script src="plugin/move/js/jquery.twentytwenty.js"></script>
+
+    
+
+    <!--폰트
+        @font-face{
+	font-family: "YoonMingukB";
+	src:url("../font/YoonMingukB.ttf")
+}
+@font-face{
+	font-family: "YoonMingukR";
+	src:url("../font/YoonMingukB.ttf")
+}
+-->
+
+
+    <script src="js/portfolio-all.js?ver=20200714"></script>
+</head>
+
+<body>
+     
+      <div class="header-wrap">
+       <header class="clearfix">
+
+            <h1>
+                <a href="index.html">
+                    <img src="img/a.header-footer/logo.png" alt="사이트 로고">
+                </a>
+            </h1>
+            <div class="bar-btn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="nav-wrap"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Artwork</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="indicator">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+          </header>
+        </div>
+    <section class="clearfix">
+        
+        <div class="top">
+
+            <div class="top-logo">
+                <img src="img/b.top/crystal.png" alt="로고" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.1s">
+                <svg version="1.1" id="logo2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="222.059px" height="134.58px" viewBox="0 0 222.059 134.58" enable-background="new 0 0 222.059 134.58" xml:space="preserve" data-llp-composed="true" class="lazy-line-painter">
+                    <polyline fill="none" stroke-miterlimit="10" points="&#10;&#9;15.471,14.891 63.479,126.58 111.486,14.891 159.494,126.58 207.501,14.891 " data-llp-id="logo2-0" data-llp-duration="970" data-llp-delay="0" fill-opacity="0" style="" />
+                </svg>
+            </div>
+            <div class="top-txt wow fadeInRight" data-wow-delay="1s">
+                <p>Web Designer</p>
+                <p>Woo Su-Jeong POLTFOLIO</p>
+            </div>
+
+        </div>
+
+        <div class="about part">
+            <div class="title">
+                <div class="title-bg">
+                    <div class="blue">
+                        <p>About</p>
+                    </div>
+                    <p>Woo Su-Jeong</p>
+                </div>
+            </div>
+            <div class="profile clearfix">
+                <div class="charactor">
+                    <img src="img/c.about/charactor.png" alt=" 우수정 캐릭터">
+                </div>
+                <div class="profile-txt">
+                    <div class="txt-top">
+                        <span class="blue tel">TEL</span>
+                        <span class="tel"> 010-4442-0115</span>
+                        <span class="blue age">AGE</span>
+                        <span class="age"> 1997. 02. 05</span>
+                    </div>
+                    <div class="txt-middle">
+                        <div class="resume">
+                            <a href="img/c.about/wsj-resume.pdf" target="_blank">이력서 다운받기</a>
+                        </div>
+                    </div>
+                    <div class="txt-bottom">
+                        <span class="blue">EDUCATION</span>
+                        <span>2020 .03 ~ 2020 .07 그린컴퓨터디자인학원</span>
+                        <span>2015 .03 ~ 2020 .09 경북대학교 미술학과 졸업</span>
+                        <span>2012 .03 ~ 2015 .02 진주 중앙고등학교 졸업</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill top-txt wow bounceInUp" data-wow-duration="2s">
+                <p>SKILL</p>
+                <div class="skill-top">
+
+                    <div class="section-top">
+                        <div class="section">
+                            <div id="pro1" class="progress">
+                                <p>Ps</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div id="pro2" class="progress">
+                            <p>Ai</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div id="pro3" class="progress">
+                            <p>Html</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-bottom">
+                    <div class="section">
+                        <div id="pro4" class="progress">
+                            <p>Css</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div id="pro5" class="progress">
+                            <p>Js</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div id="pro6" class="progress">
+                            <p>센스</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="portfolio part">
+            <div class="title">
+                <div class="title-bg">
+                    <div class="blue">
+                        <p>Portfolio</p>
+                    </div>
+                    <p>Web-design</p>
+                </div>
+            </div>
+            <div class="web-content">
+                <div class="content">
+                    <img src="img/d.portfolio/adidas1.jpg" alt="아디다스 로고" class="first">
+                    <img src="img/d.portfolio/adidas2.jpg" alt="아디다스 이지부스트 사이트" class="second">
+
+                </div>
+                <div class="content">
+                    <img src="img/d.portfolio/gta1.jpg" alt="gta5 로고" class="first">
+                    <img src="img/d.portfolio/gta2.jpg" alt="gta5 사이트" class="second">
+
+                </div>
+                <div class="content">
+                    <img src="img/d.portfolio/osw1.jpg" alt="옹성우 로고" class="first">
+                    <img src="img/d.portfolio/osw2.JPG" alt="옹성우 홍보 사이트" class="second">
+
+                </div>
+                <div class="content">
+                    <img src="img/d.portfolio/pp.jpg" alt="우수정 로고" class="first">
+                    <img src="img/d.portfolio/pp2.jpg" alt="포트폴리오 사이트" class="second">
+                </div>
+                <div class="content">
+                    <img src="img/d.portfolio/national.jpg" alt="국립생태원로고" class="first">
+                    <img src="img/d.portfolio/national2.jpg" alt="국립생태원" class="second">
+                </div>
+                <div class="content">
+                    <img src="img/d.portfolio/dm.jpg" alt="대림미술관 로고" class="first">
+                    <img src="img/d.portfolio/comming-soon.jpg" alt="목업 예시 사진" class="second">
+                </div>
+            </div>
+            <div class="pf-modal">
+                <div class="close">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="modal-content">
+                   <p><a href="portfolio-content/adidas/adidas-main.html" target="_blank">사이트 바로가기</a></p>
+                    <div class="detail">
+                        <img src="img/d.portfolio/adidas-detail.jpg" alt="아디다스 사이트 상세페이지">
+                        <div class="btn">
+                            <a href="portfolio-content/adidas/adidas-main.html" target="_blank"><img src="img/d.portfolio/btn1.png" alt="사이트 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pf-modal">
+                <div class="close">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="modal-content">
+                    <div class="detail">
+                        <img src="img/d.portfolio/gta-detail.jpg" alt="gta 사이트 상세페이지">
+                        <div class="btn">
+                            <a href="portfolio-content/gta5/gta-main.html" target="_blank"><img src="img/d.portfolio/btn2.png" alt="사이트 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pf-modal">
+                <div class="close">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="modal-content">
+                    <div class="detail">
+                        <img src="img/d.portfolio/portfolio-portfolio-osw-detail.jpg" alt="옹성우 홍보 사이트 상세페이지">
+                        <div class="btn">
+                            <a href="portfolio-content/osw/osw.html" target="_blank"><img src="img/d.portfolio/btn3.png" alt="사이트 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pf-modal">
+                <div class="close">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="modal-content">
+                    <div class="detail">
+                        <img src="img/d.portfolio/wsj-detail.jpg" alt="포트폴리오 사이트 상세페이지">
+                        <div class="btn">
+                            <a href="index.html" target="_blank"><img src="img/d.portfolio/btn4.png" alt="사이트 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pf-modal">
+                <div class="close">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="modal-content">
+                    <div class="detail">
+                        <img src="img/d.portfolio/national-detail.jpg" alt="국립생태원 사이트 상세페이지">
+                        <div class="btn">
+                            <a href="portfolio-content/national/national-main.html" target="_blank"><img src="img/d.portfolio/btn5.png" alt="사이트 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pf-modal">
+               <div class="close">
+                <i class="far fa-times-circle"></i>
+               </div>
+                <div class="modal-content">
+                    <img src="img/d.portfolio/comming-soon.jpg" alt="준비중">
+                </div>
+            </div> 
+
+
+
+        </div>
+
+        <div class="artwork part clearfix">
+            <div class="title">
+                <div class="title-bg">
+                    <div class="blue">
+                        <p>Artwork</p>
+                    </div>
+                    <p>Graphic</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        <li data-filter=".all">ALL</li>
+                        <li data-filter=".design">디자인</li>
+                        <li data-filter=".page">상세페이지 / 배너</li>
+                        <li data-filter=".photo">포토샵</li>
+                    </ul>
+                </div>
+                <div class="item-wrap">
+                    <div class="item all design"><img src="img/e.artwork/tape.jpg" alt="햄스터 캐릭터 디자인"></div>
+                    <div class="item all design"><img src="img/e.artwork/slip.jpg" alt="여름 패턴 디자인"></div>
+                    <div class="item all design"><img src="img/e.artwork/coupon.jpg" alt="쿠폰 디자인"></div>
+                    <div class="item all design"><img src="img/e.artwork/9na.jpg" alt="군인어플 구나"></div>
+                    <div class="item all design"><img src="img/e.artwork/namecard.jpg" alt="로고 명함"></div>
+                    <div class="item all page"><img src="img/e.artwork/cs-cover.jpg" alt="콩순이 상세페이지"></div>
+                    <div class="item all page">
+                        <img src="img/e.artwork/starbucks-cover.jpg" alt="스타벅스 배너">
+                    </div>
+                    <div class="item all photo"><img src="img/e.artwork/photo1.jpg" alt="인물보정"></div>
+                    <div class="item all photo"><img src="img/e.artwork/photo2.jpg" alt="인물보정"></div>
+                    <div class="item all photo"><img src="img/e.artwork/photo3.jpg" alt="인물보정"></div>
+                    <div class="item all page"><img src="img/e.artwork/mac.jpg" alt="맥 이벤트페이지"></div>
+                    <div class="item all page"><img src="img/e.artwork/peacock.jpg" alt="피코크 집밥"></div>
+                    
+                </div>
+                <div class="aw-modal">
+                    <div class="close">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="modal-content">
+                    </div>
+                </div>
+
+                <div class="aw-modal">
+                    <div class="close">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="modal-content">
+                    </div>
+                </div>
+                <div class="aw-modal">
+                    <div class="close">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="modal-content">
+                    </div>
+                </div>
+                <div class="aw-modal">
+                    <div class="close">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="modal-content">
+                      <div class="click">
+                      <img src="img/e.artwork/click.png" alt="click">
+                      </div>
+                        <div class="phone">
+                            <div class="phone-top">
+                                <img src="img/e.artwork/iphon1.png" alt="아이폰 카메라부분">
+                            </div>
+                            <div class="phone-body">
+                                 <img src="img/e.artwork/9na/9na1.jpg" alt="군인어플 구나">
+                                 <img src="img/e.artwork/9na/9na2.jpg" alt="군인어플 구나">
+                                 <img src="img/e.artwork/9na/9na5.jpg" alt="군인어플 구나">
+                                 <img src="img/e.artwork/9na/9na4.jpg" alt="군인어플 구나">
+                                 <img src="img/e.artwork/9na/9na3.jpg" alt="군인어플 구나">
+                             </div>
+
+                        </div>
+                        <img src="img/e.artwork/9na-3.jpg" alt="구나 상세설명">
+                    </div>
+                </div>
+                <div class="aw-modal">
+                    <div class="close">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="modal-content">
+                    </div>
+                </div>
+                <div class="aw-modal">
+                    <div class="close">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="modal-content">
+                        <img src="img/e.artwork/cs-detail.jpg" alt="콩순이 상세페이지">
+                    </div>
+                </div>
+                <div class="aw-modal">
+                    <div class="close">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="modal-content">
+                    </div>
+                </div>
+                <div class="aw-modal">
+                    <div class="close">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="modal-content">
+                        <div class="tt-wrap">
+                            <div class="row">
+                                <div class="large columns">
+                                    <div class="twentytwenty-container">
+                                        <img src="img/e.artwork/a-before.jpg" alt="인물보정1 전">
+                                        <img src="img/e.artwork/a-after.jpg" alt="인물보정1 후">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aw-modal">
+                    <div class="close">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="large columns">
+                                <div class="twentytwenty-container">
+                                    <img src="img/e.artwork/b-before.jpg" alt="인물보정2 전">
+                                    <img src="img/e.artwork/b-after.jpg" alt="인물보정2 후">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aw-modal">
+                    <div class="close">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="large columns">
+                                <div class="twentytwenty-container">
+                                    <img src="img/e.artwork/c-before.jpg" alt="인물보정3 전">
+                                    <img src="img/e.artwork/c-after.jpg" alt="인물보정3 후">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="aw-modal">
+               <div class="close">
+                <i class="far fa-times-circle"></i>
+               </div>
+                <div class="modal-content">
+                    <img src="img/e.artwork/mac-event.jpg" alt="맥 이벤트 페이지">
+                </div>
+            </div>
+            <div class="aw-modal">
+               <div class="close">
+                <i class="far fa-times-circle"></i>
+               </div>
+                <div class="modal-content">
+                    <img src="img/e.artwork/peacock-detail.jpg" alt="피코크 집밥">
+                </div>
+            </div>
+            
+
+
+            </div>
+
+        </div>
+
+        <footer class="contect part clearfix">
+            <div class="contect-wrap clearfix">
+                <div class="contect-txt">
+                    <p>Contact</p>
+                </div>
+                <div class="contect-logo">
+                    <div class="cl-wrap">
+
+                        <div class="img-wrap">
+                            <img src="img/a.header-footer/logo.png" alt="우수정 포트폴리오 사이트 로고">
+                        </div>
+
+                        <div class="logo-txt">
+                            <p><b>TEL</b> 010-4442-0115</p>
+                            <p><b>E-MAIL</b></p>
+                            <p>woochrystal25@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>© Copyright Woo Su-Jeong all rights reserved.</p>
+        </footer>
+        <div class="mouse"></div>
+    </section>
+</body></html>
