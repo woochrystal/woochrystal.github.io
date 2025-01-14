@@ -1,0 +1,299 @@
+@charset="utf-8";
+*{margin: 0;padding: 0;}
+.skip a{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-family: AdobeGothicStd-Bold;
+    position: absolute;
+    top: -100px;
+}
+
+section{
+    margin: 0 auto;
+    width: 1400px;
+    position: relative;
+    font-size: 0;
+}
+
+/*top설정*/
+section .bigimg{
+    width: 1400px;
+    height: 650px;
+    overflow: hidden;
+}
+
+section .top img{
+    width: 100%;
+    
+}
+section .top ul{
+    position: absolute;
+    z-index: 3;
+    top: 40px;
+    right: 150px;
+}
+section .top ul li{
+    color: #000;
+    font-family: texgyreadventor-bold;
+}
+
+section .top ul li:nth-child(1){
+    font-size: 50px;
+}
+section .top ul li:nth-child(2){
+    font-size: 30px;
+    float: right;
+    margin-top: 5px;
+}
+
+.top video{
+    width: 550px;
+    position: absolute;
+    top: 245px;
+    right: 120px;
+    padding-top: 20px;
+}
+
+section .top span{
+    color: #000;
+    font-family: texgyreadventor-bold;
+    font-size: 80px;
+    position: absolute;
+    top: 24%;
+    left: 20%;
+}
+/*sng*/
+.sng-wrap{
+    width: 100%;
+    height: 60px;
+    line-height: 30px;
+}
+.sng{
+    width: 1400px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+.sng ul{
+    position: absolute;
+    left: 0;
+    color: #000;
+    margin: 10px;
+    width: 1400px;
+    height: 20px;
+    font-size: 20px;
+    font-family: texgyreadventor-bold;
+}
+.sng ul li{
+    color: #000;
+    display: inline-block;
+    height: 20px;
+}
+.sng ul li:first-child{
+    font-size: 20px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+/*item설정*/
+
+.models{
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 100px;
+    font-size: 0;
+}
+
+.models .box{
+    display: inline-block;
+    font-size: 0;
+    
+}
+
+.models .box .yb{
+    width: 460px;
+    height: 460px;
+    font-size: 15px;
+    color: #000;
+    margin-top: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.models .box .yb > a{
+    background-color: #fff;
+}
+.models .box .yb > a img{
+    z-index: 100;
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+.models .box .yb > a img:hover{
+    opacity: 0;
+}
+
+
+.models .box .yb .front span{
+    font-family: AdobeGothicStd-Bold;
+    position: absolute;
+    color: #393939;
+    font-size: 30px;
+    bottom: 0;
+    left: 33%;
+}
+
+
+
+
+/*item1설정*/
+.models .item1 .yb-350 > a img{
+    position: absolute;
+    bottom: -20px;
+    width: 480px;
+    left: -10px;
+}
+.models .item1 .yb-350 .detail-1 a img{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    width: 420px;
+}
+
+.models .item1 .yb-350 > a img:hover{
+    opacity: 0;
+}
+
+
+
+.models .item1 .yb-500 > a img{
+    position: absolute;
+    left: 5px;
+/*    top: 60px;*/
+    width: 440px;
+}
+.models .item1 .yb-500 .detail-4 a img{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    width: 430px;
+}
+.models .item1 .yb-700v3 > a img{
+    position: absolute;
+    width: 430px;
+    left: 15px;
+    top: 0px;
+}
+.models .item1 .yb-700v3 .detail-7 a img{
+    position: absolute;
+    left: 0;
+    width: 470px;
+    bottom: 10px;
+}
+
+
+
+
+/*item2설정*/
+.models .item2 .ad{
+    position: relative;
+    width: 460px;
+    height: 460px;
+}
+.models .item2 .ad img{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 460px;
+    height: 376px;
+}
+.models .item2 .yb-700 > a img{
+    position: absolute;
+    left: 5px;
+    top: -29px;
+}
+.models .item2 .yb-700 .detail-5 a img{
+    position: absolute;
+    left: 47px;
+    bottom: 30px;
+    width: 350px;
+}
+.models .item2 .yb-mnvn > a img{
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    width: 440px;
+}
+.models .item2 .yb-mnvn .detail-8 a img{
+    position: absolute;
+    left: 47px;
+    bottom: 40px;
+    width: 390px;
+}
+
+
+
+
+
+
+
+/*item3설정*/
+
+.models .item3 .yb-300v2 > a img{
+    width: 450px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+.models .item3 .yb-300v2 .detail-3 a img{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 420px;
+}
+
+.models .item3 .yb-700v2 > a img{
+    width: 440px;
+    position: absolute;
+    left: 10px;
+    
+}
+
+.models .item3 .yb-700v2 .detail-6 a img{
+    position: absolute;
+    left: 35px;
+    bottom: 30px;
+    width: 400px;
+}
+
+
+.models .item3 .yb-slide > a img{
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    width: 450px;
+}
+
+.models .item3 .yb-slide .detail-9 a img{
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    width: 400px;
+}
+
+
+
+

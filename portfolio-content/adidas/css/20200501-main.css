@@ -1,0 +1,204 @@
+@charset="utf-8";
+
+*{margin: 0;padding: 0;color: #fff;
+}
+.skip a{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-family: AdobeGothicStd-Bold;
+    position: absolute;
+    top: -100px;
+} 
+
+
+
+
+
+img{
+	width: 100%;
+}
+a:hover{
+	cursor: pointer;
+}
+
+.main{
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+}
+
+
+
+
+/*main설정*/
+section{
+	margin: 0 auto;
+    font-size: 0;
+    display: block;
+}
+.main-top{
+	width: 1400px;
+/*	position: relative;*/
+	margin: 0 auto;
+    display: block;
+}
+
+.main-top img{
+	width: 1400px;
+	z-index: 1;
+}
+
+.slick-next{
+    right: 60px;
+}
+.slick-prev{
+    left: 50px;
+    z-index: 1;
+ }
+.slick-prev::before,
+.slick-next::before{
+    font-size: 40px; color:rgba(120, 64, 217, 0.91);
+} 
+
+
+
+
+.main-top a{
+	width: 20%;
+	height: 8%;
+	display: block;
+	color: transparent;
+	background-color: transparent;
+	z-index: 2;
+	text-align: center;
+	top: 245px;
+	left: 50%;
+}
+
+.main-bottom{
+	width: 1402px;
+	height: 270px;
+	font-size: 0;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border: 1px solid #c1c1c1;
+    overflow: hidden;
+}
+.main-bottom span{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    z-index: 100;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(120, 64, 217, 0.91);
+    line-height: 30px;
+    font-family: AdobeGothicStd-Bold;
+    transition: 0.1s;
+    
+}
+.main-bottom div{
+	display: inline-block;
+    overflow: hidden;
+}
+.main-bottom .ad-left{
+	width: 290px;
+    height: 272px;
+	vertical-align: top;
+	padding-top: 1.5%;
+	border-right: 1px solid #c1c1c1;
+	box-sizing: border-box;
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-bottom .ad-left img{
+    width: 269px;
+	padding-bottom: 15px;
+    height: 227px;
+    margin-left: -5px;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+
+
+
+.main-bottom .banner{
+	width: 842px;
+    height: 100%;
+	vertical-align: middle;
+	box-sizing: border-box;
+    font-size: 0;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%;
+    height: 268px;
+    transition: 0.2s;
+}
+
+
+
+.main-bottom .ad-right{
+	width: 280px;
+	height: 270px;
+	vertical-align: top;
+	overflow: hidden;
+	box-sizing: border-box;
+    font-size: 0;
+    padding-right: 10px;
+    margin-right: -10px;
+    position: relative;
+    background-color: #363636;
+}
+.main-bottom .ad-right span,.main-bottom .ad-left span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    opacity: 0;
+    
+}
+.main-bottom .ad-right img{
+	width: 100%;
+    height: 270px;
+	transform: scale(1.2);
+    transition: 0.2s;
+}
+
+
+.main-bottom .ad-left:hover img{
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+.main-bottom .ad-left:hover span{
+    opacity: 1;
+}
+.main-bottom .banner:hover img{
+    transform: scale(1.05);
+}
+.main-bottom .ad-right:hover img{
+    opacity: 0.7;
+    transform: scale(1.25);
+}
+.main-bottom .ad-right:hover span{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+

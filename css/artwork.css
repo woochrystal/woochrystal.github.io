@@ -1,0 +1,351 @@
+@charset="utf-8";
+.artwork{ 
+    width: 1150px;
+    float: right;
+    margin: auto;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+.artwork .container{
+    width: 93%;
+    float: left;
+    margin: 10px auto;
+    position: relative;
+/*    z-index: 100000000000;*/
+}  
+.artwork .menu{
+    width: 440px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 2px solid #004FFF;
+    color: #004FFF;
+    border-radius: 4px;
+    font-size: 0;
+    background-color: #004FFF;
+}
+.artwork .menu ul li{
+    display: inline-block;
+    font-family: "YoonMingukR";
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #fff;
+    transition: 0.2s;
+}
+.artwork .item-wrap{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+    
+}
+.artwork .item{
+    width: 33.33333%;
+    border: 1px solid #004FFF;
+    cursor: pointer;
+}
+.artwork .item img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.artwork .menu ul li:hover{
+    background-color: #004FFF;
+    color: #fff;
+}
+.menu ul li.c{
+    background-color: #004FFF;
+    color: #fff;
+}
+/*//////////////////모달///////////////////*/
+.aw-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000000000000;
+    display: none;
+}
+.close{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 38, 77, 0.58);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.close i{
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    cursor: pointer;
+}
+.aw-modal .modal-content{
+    width: 70%;
+    height: 80%;
+    background-color: transparent;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center; 
+}
+.aw-modal .modal-content::-webkit-scrollbar{
+            display: none;
+        }
+.aw-modal:nth-of-type(3) .modal-content{
+    background-image: url(../img/e.artwork/tape.jpg);
+    width: 60%;
+}
+.aw-modal:nth-of-type(4) .modal-content{
+    background-image: url(../img/e.artwork/slip.jpg);
+    width: 60%;
+}
+.aw-modal:nth-of-type(5) .modal-content{
+     background-image:url(../img/e.artwork/coupon.jpg);
+    width: 60%;
+}
+.aw-modal:nth-of-type(6) .modal-content{
+}
+.aw-modal:nth-of-type(7) .modal-content{
+    background-image: url(../img/e.artwork/namecard.jpg);
+    width: 60%;
+}
+.aw-modal:nth-of-type(8) .modal-content{
+    text-align: center;
+    width: 40%;
+}
+.aw-modal:nth-of-type(9) .modal-content{
+    background-image: url(../img/e.artwork/starbucks-detail.jpg);
+    width: 40%;
+}
+.aw-modal:nth-of-type(10) .modal-content{
+    width: 60%;
+    height: 70%;
+}
+.aw-modal:nth-of-type(11) .modal-content{
+    height: 85%;
+}
+.aw-modal:nth-of-type(12) .modal-content{
+    width: 60%;
+    height: 85%;
+}
+.aw-modal:nth-of-type(13) .modal-content{
+}
+
+.aw-modal:nth-of-type(6) .modal-content::-webkit-scrollbar,
+.aw-modal:nth-of-type(8) .modal-content::-webkit-scrollbar,
+.aw-modal:nth-of-type(13) .modal-content::-webkit-scrollbar,{
+            display: inherit;
+        }
+.aw-modal:nth-of-type(6) .modal-content{
+    height: 80%;
+    background-color: #fff;
+    text-align: center;
+}
+.aw-modal:nth-of-type(6) .click{
+    
+}
+@keyframes click {
+	0% {top: 10px;}
+	100% {top: 0;}
+}
+.aw-modal:nth-of-type(6) .click img{
+    position: relative;
+    z-index: 1;
+    left: -150px;
+    transform: rotate(-30deg);
+    width: 100px;
+    animation: click 0.7s linear 0s infinite alternate;
+}
+.aw-modal .modal-content .phone{
+    width: 355px;
+    height: 710px;
+    background-image: url(../img/e.artwork/iphon2.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    margin-top: -70px;
+}
+
+.phone-top{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+    z-index: 10;
+    margin-top: 15px;
+}
+.phone .phone-body::-webkit-scrollbar{
+    display: none;
+}
+.phone .phone-body{
+    width: 308px;
+    height: 670px;
+    position: relative;
+    top: 21px;left: 24px;
+    border-radius: 30px;
+    overflow: scroll;
+}
+
+.phone-body img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.aw-modal:nth-of-type(13) .modal-content{
+    text-align: center;
+    width: 40%;
+}
+    .aw-modal:nth-of-type(14) .modal-content{
+        text-align: center;
+        width: 40%;
+        height: 80%;
+    }
+
+
+
+
+/*/////////////////////////////////////////////////////////////미디어쿼리////////////////////////*/
+@media screen and (max-width:1420px){
+.artwork{ 
+    width: 82%;
+}
+.artwork .container{
+    width: 100%;
+}
+}
+@media screen and (max-width:1280px){
+    .artwork{ 
+    width: 100%;
+            text-align: center;
+}
+.artwork .title .blue{
+    display: inline-block;
+    color:#004FFF;
+    background-color: transparent;
+    text-align: left;
+    width: 110px;
+    margin-left: 0px;
+    border-radius: 0;
+    padding: 10px 0;
+}
+   .artwork .title-bg{
+        text-align: center;
+        margin: auto;
+        width: 250px;
+        padding: 0 10px;
+        border-bottom: 3px solid #004FFF;
+    }
+    .aw-modal .close i{
+    top: 30px;
+}
+    .aw-modal:nth-of-type(10) .twentytwenty-container,
+    .aw-modal:nth-of-type(11) .twentytwenty-container,
+    .aw-modal:nth-of-type(12) .twentytwenty-container{
+        position: relative;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        margin: auto;
+        margin-left: 0;
+        margin: 0 2%;
+    }
+    .aw-modal:nth-of-type(10) .modal-content,
+    .aw-modal:nth-of-type(11) .modal-content,
+    .aw-modal:nth-of-type(12) .modal-content{
+        width: 85%;
+    }  
+    .aw-modal:nth-of-type(13) .modal-content{
+    width: 60%;
+}
+    .aw-modal:nth-of-type(14) .modal-content{
+        width: 60%;
+        height: 80%;
+    }
+    
+    
+    
+}
+@media screen and (max-width:640px){
+    .artwork{ 
+    margin-top: 30px;
+}
+    .artwork .menu{
+    width: 350px;
+    margin-bottom: 10px;
+}
+    .artwork .menu ul li{
+    font-size: 15px;
+    padding: 7px 10px;
+}   
+    .aw-modal .modal-content{
+    width: 100%;
+    margin: 0;
+}
+    .artwork .item-wrap{
+    margin-top: 30px;
+    
+}
+    .aw-modal .close i{
+    top: 50px;
+}
+    .aw-modal .modal-content .phone{
+        left: 10px;
+}
+    .aw-modal:nth-of-type(6) .click img{
+        left: -125px;
+}
+    .aw-modal:nth-of-type(3) .modal-content,
+    .aw-modal:nth-of-type(4) .modal-content,
+    .aw-modal:nth-of-type(5) .modal-content,
+    .aw-modal:nth-of-type(7) .modal-content{
+        width: 90%;
+        height: 60%;
+        background-color: #fff;
+    }
+    .aw-modal:nth-of-type(8) .modal-content{
+        width: 90%;
+        height: 70%;
+    }
+    .aw-modal:nth-of-type(6) .modal-content{
+    height: 70%;
+        width: 100%;
+    text-align: center;
+}
+    .aw-modal:nth-of-type(9) .modal-content{
+       height: 70%;
+        width: 90%;
+    }
+    .aw-modal:nth-of-type(10) .modal-content,
+    .aw-modal:nth-of-type(11) .modal-content,
+    .aw-modal:nth-of-type(12) .modal-content{
+        height: 65%;
+        padding: 20px 0;
+    }
+.aw-modal:nth-of-type(10) .twentytwenty-container,
+.aw-modal:nth-of-type(11) .twentytwenty-container,
+.aw-modal:nth-of-type(12) .twentytwenty-container{
+    margin: 0;
+}
+.aw-modal:nth-of-type(13) .modal-content{
+    width: 90%;
+    height: 70%;
+}
+    
+    
+    
+    .aw-modal:nth-of-type(14) .modal-content{
+        width: 70%;
+        height: 70%;
+    }
+        
+    
+    
+}

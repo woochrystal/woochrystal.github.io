@@ -1,0 +1,525 @@
+@charset="utf-8";
+@font-face{
+	font-family: "pricedown bl";
+	src:url("../font/pricedown bl.ttf")
+}
+@font-face{
+	font-family: "NotoSansCJKkr-Medium";
+	src:url("../font/NotoSansCJKkr-Medium.otf")
+}
+/*전체설정*/
+*{box-sizing: border-box;}
+body{background-color: #000;}
+.section1{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+span{font-family: "pricedown bl";}
+/*타이틀설정*/
+.title-bg1{
+    position: relative;
+    width: 1400px;
+    height: 80px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.title-bg1 .title1{
+    width: 98%;
+    height: 60px;
+    background-color: #fff;
+    border: 7px solid #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.title-bg1 .title1 p{
+    
+    color: #000;
+    height: 60px;
+    line-height: 45px;
+    font-size: 30px;
+    font-family: NotoSansCJKkr-Medium;
+}
+
+/*락스타 설정*/
+.rockstar{
+    margin: 0 auto;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.84);
+    padding: 1px;
+    height: 500px;
+}
+.rs-txt1{
+    padding: 30px 40px;
+    background-color: #fff;
+    margin: -50px 0 40px 40px;
+    width: 800px;
+    border: 5px solid #000;
+    
+}
+.rs-txt1 p{
+    font-family: NotoSansCJKkr-Medium;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #000;
+}
+.rs-bg{
+    width: 40%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+
+}
+.rs-bg img{
+    width: 100%;
+}
+.rs-txt2{
+    line-height: 1.5;
+    padding: 30px 40px;
+    background-color: #fff;
+    float: right;
+    margin:40px 40px 50px 0 ;
+    border: 5px solid #000;
+    width: 800px;
+}
+.rs-txt2 p{
+    font-family: NotoSansCJKkr-Medium;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #000;
+    text-align: center;
+}
+
+/*comics*/
+.comics{
+    margin: 0 auto;
+    width: 1400px;
+    height: 800px;
+    padding: 100px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/*box1*/
+.box1 div{
+    background-color: #fff;
+    width: 60%;
+}
+.box1 .item1-1{
+    height: 20px;
+    margin-bottom: 10px;
+}
+.box1 .item1-2{
+    height: 30px;
+    margin-bottom: 15px;
+}
+.box1 .item1-3{
+    height: 40px;
+    margin-bottom: 20px;
+}
+.box1 .item1-4{
+    height: 50px;
+    margin-bottom: 20px;
+}
+.box1 .img-1{
+    
+    background-image: url(../img/section1/1.jpg);
+    height: 550px;
+    background-color: #000;
+    background-size: 1000px;
+    background-position: -150px top;
+    background-repeat: no-repeat;
+}
+/*img-2*/
+.img-2{
+    float: right;
+    width: 900px;
+    height: 770px;
+    position: absolute;
+    top: 100px; right: -200px;
+    background-color: #000;
+    transform: skew(-20deg);
+    overflow: hidden;
+    border-left: 20px solid #000;
+    background-image: url(../img/section1/2.jpg);
+    background-size: cover;
+    background-position: right top;
+}
+
+/*box2*/
+.box2{
+    position: absolute;
+    bottom:30px;
+    right: -450px;
+    transform: rotate(-10deg) skew(-500deg);
+    background-color: #000;
+    padding: 20px 0;
+}
+.box2 div{
+    background-color: #fff;
+    width: 1300px;
+}
+.box2 .item2-3{
+    height: 20px;
+    margin-bottom: 5px;
+}
+.box2 .item2-2{
+    height: 30px;
+    margin-bottom: 10px;
+}
+.box2 .item2-1{
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+
+
+/*gta설정*/
+.gta{
+    width: 1400px;
+    margin: 0 auto;
+}
+/*media*/
+.gta .media{
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+}
+.gta .media video{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border: 10px solid #fff;
+}
+.gta .media img{
+    position: relative;
+    width: 20%;
+    bottom: 150px;left: 40%;
+    margin-bottom: -200px;
+}
+.gta .gta-txt1{
+    background-color: #fff;
+    padding: 50px;
+    width: 70%;
+    height: 200px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.gta .gta-txt1 p{
+    color: #000;
+    padding: 5px;
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 1.563rem;
+    text-align: center;
+}
+.gta .gta-txt1 span{
+    color: #000;
+}
+
+
+/*more*/
+.gta .more{
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.gta .more p{
+    color: #000;
+    width: 100%;
+    padding: 5px;
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 25px;
+    text-align: left;
+}
+.gta .more div{
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+}
+.gta .gta-txt2{
+    width: 60%;
+}
+.gta .gta-txt3{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    border: 10px solid #000;
+}
+.gta .more img{
+    width: 90%;
+    margin: 10px;
+}
+
+
+/*미디어쿼리*/
+@media screen and (max-width:1420px){
+    .section1,.title-bg1,.comics,.gta,.gta .media,.gta .more{
+        width: 100%;
+    }
+}
+
+
+/*642-1024*/
+@media screen and (max-width:1024px){
+    
+    /*락스타 설정*/
+    .rockstar{
+        height: 400px;
+    }
+    .rs-txt1{
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: -50px;
+        width: 80%;
+    }
+    .rs-bg{
+    margin: auto;
+    padding: 0;
+    border-radius: 3px;
+
+}
+    .rs-txt1 p,.rs-txt2 p{
+        font-size: 15px;
+    }
+    .rs-txt2{
+        width: 80%;
+        float: none;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .box1 .img-1{
+        background-color: #fff;
+        width: 70%;
+    }
+    /*comics*/
+.comics{
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    padding: 100px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/*box1*/
+.box1 div{
+    background-color: #fff;
+    width: 100%; overflow: hidden;
+}
+.box1 .img-1{
+    display: none;
+}
+/*img-2*/
+.img-2{
+    float: none;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: inherit;
+    top: 0px; right: 0;
+    transform: skew(0deg);
+    border-left: 0px solid #000;
+    margin: 0 auto;
+}
+
+/*box2*/
+.box2{
+    position: absolute;
+    bottom: 50px;
+    right: -650px;
+    transform: rotate(-15deg) skew(-500deg);
+    background-color: #000;
+    padding: 20px 0;
+}
+.box2 div{
+    background-color: #fff;
+    width: 1300px;
+}
+.box2 .item2-3{
+    height: 10px;
+    margin-bottom: 5px;
+}
+.box2 .item2-2{
+    height: 20px;
+    margin-bottom: 10px;
+}
+.box2 .item2-1{
+    height: 30px;
+    margin-bottom: 15px;
+}
+  
+    
+    
+        .gta .media{
+    padding-top: 50px;
+}
+    .gta .gta-txt1{
+    width: 70%;
+        padding: 20px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+    .gta .gta-txt1 p{
+        text-align: center;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    width: 80%;
+    margin-left: 15%;
+    margin: auto;
+}
+    
+   .gta .more p{
+    font-size: 15px;
+    text-align: center;
+} 
+
+.gta .gta-txt2{
+    width: 62%;
+}
+.gta .gta-txt3{
+    width: 62%;
+    bottom: -70px;
+    border: 5px solid #000;
+}
+
+    
+   
+    
+    
+}
+
+
+
+/*0-640*/
+@media screen and (max-width:640px){
+    .comics,.gta,.gta .media,.gta .more{
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
+    
+    
+    
+    .title-bg1{
+    height: 60px;
+}
+.title-bg1 .title1{
+    height: 50px;
+    border: 5px solid #000;
+}
+.title-bg1 .title1 p{
+    line-height: 40px;
+    font-size: 20px;
+}
+    
+    
+    
+    .rockstar{
+        width: 100%;
+        margin-bottom: 120px;
+        height: 330px;
+    }
+    .rs-txt1{
+        padding: 20px;
+        margin-top: -40px;
+        width: 90%;
+        border: 3px solid #000;
+    }
+
+
+    .rs-txt2{
+        width: 85%;
+        margin-top: 20px;
+        padding: 20px;
+        border: 3px solid #000;
+    }
+    
+    .box1 .img-1{
+        background-color: #fff;
+        width: 70%;
+    }
+    
+    
+    
+ 
+    
+    .comics{
+    width: 100%;
+    height: 500px;
+        padding: 0;
+}
+.box1 .item1-1{
+    height: 10px;
+    margin-bottom: 5px;
+}
+.box1 .item1-2{
+    height: 20px;
+    margin-bottom: 10px;
+}
+.box1 .item1-3{
+    height: 30px;
+    margin-bottom: 15px;
+}
+.box1 .item1-4{
+    height: 40px;
+    margin-bottom: 20px;
+}
+    
+    .gta{
+    padding:0;
+}
+    .gta .gta-txt1{
+    width: 80%;
+    padding: 10px;
+    height: 120px;
+    border-radius: 30px;
+    margin-bottom: 0px;
+    
+}
+        .gta .gta-txt1 p{
+        text-align: center;
+    width: 100%;
+    margin: auto;
+}
+    
+   .gta .gta-txt2{
+    width: 90%;
+}
+.gta .gta-txt3{
+    width: 82%;
+    bottom: -100px;
+} 
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+

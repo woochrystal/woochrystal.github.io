@@ -1,0 +1,225 @@
+@charset="utf-8";
+@font-face{
+	font-family: "texgyreadventor-bold";
+	src:url("../font/texgyreadventor-bold.otf")
+}
+@font-face{
+	font-family: "AdobeGothicStd-Bold";
+	src:url("../font/AdobeGothicStd-Bold.otf")
+}
+
+*{color: #fff;}
+.skip a{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-family: AdobeGothicStd-Bold;
+    position: absolute;
+    top: -100px;
+} 
+.header-wrap{
+	width: 100%;
+	font-size: 0;
+    position: relative;
+    z-index: 1000000000000;
+    background-color: #000;
+}
+header{
+	width: 1400px;
+	background-color: #000;
+	position: relative;
+	margin: 0 auto;
+    display: block;
+}
+ 
+
+
+
+/*gnb설정*/
+.gnb-wrap{
+    width: 1400px;
+}
+.gnb{
+    height: 54px;
+    overflow: hidden;
+}
+.gnb>ul{
+	float: right;
+    height:60px;
+}
+.gnb >ul> li{
+	display: inline-block;
+	padding: 15px;
+	font-size: 20px;
+	margin: 10px 10px 0 0;
+    height: 54px;
+    font-size: 0;
+	
+}
+.gnb >ul >li a{
+    display: block;
+}
+.gnb >ul >li i{
+    font-size: 20px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+.gnb>ul>li>input{
+    margin-right: 10px;
+    vertical-align: top;
+    padding: 3px;
+    border-radius: 20px;
+    background-color: #bebebe;
+    outline: none;
+    color: #000;
+    display: none;
+}
+.gnb>ul>li>input::placeholder{
+  color: #3e3e3e;
+  font-style: italic;
+}
+
+label{
+    cursor: pointer;
+    z-index: 10;
+}
+#check{
+    display: none;
+}
+
+from{
+    color: #000;
+}
+#check:checked~.gnb>ul{
+    margin-right: 0;
+}
+
+
+
+/*h1설정*/
+h1{
+	width: 150px;
+	margin: 40px 40px 0 40px;
+	float: left;
+}
+h1 img{
+	width: 100%;
+}
+
+
+/*nav설정*/
+.nav{
+	text-align: center;
+}
+
+
+.nav> ul{
+	margin-right: 150px;
+	margin-top: 87px;
+}
+
+.nav> ul >li{
+	display: inline-block;
+	font-size: 30px;
+	padding: 25px;
+	font-family: texgyreadventor-bold;
+    vertical-align: top;
+    position: relative;
+}
+.nav >ul >li> >a{
+	display: block;
+}
+.nav >ul >li:hover >a{
+	color: #7840d9;
+}
+
+.nav ol{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.78);
+    padding: 20px 30px 10px 30px;
+    top: 80px;
+    left: -8px;
+    display: none;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+.nav .none{
+    background-color: transparent;
+}
+.nav ol li{
+    color: #fff;
+    font-size: 23px;
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+}
+.nav ol li a{
+    
+}
+.nav ol li:hover a{
+    font-style: oblique;
+    border-bottom: 3px solid #fff;
+}
+
+
+
+
+/*footer설정*/
+.footer-wrap{
+    background-color: #000;
+}
+
+
+
+footer{
+	background-color: #000;
+	width: 1400px;
+/*	padding-bottom: 20px;*/
+	margin: 0 auto;
+	
+}
+footer .footer-logo{
+	margin: 0 auto;
+	padding: 40px 0;
+	width: 100px;
+
+}
+footer .footer-logo img{
+    width: 100%;
+}
+footer .footer-txt{
+	padding: 20px 10px;
+	display: block;
+	display: inline-block;
+	float: left;
+	
+}
+footer .footer-txt ul{
+    width: 20%;
+}
+footer .footer-txt li{
+	padding: 4px;
+	text-align: left;
+	font-family: AdobeGothicStd-Bold;
+	color: #999;
+}
+footer .sns{
+	float: right;
+	height: 180px;
+	margin-top: 40px;
+	margin-right: 40px;
+}
+footer .sns li{
+	display: inline-block;
+	font-size: 60px;
+	padding-left: 20px;
+}
+footer .sns li i{
+	color: #e2e2e2;
+    cursor: pointer;
+}

@@ -1,0 +1,329 @@
+@charset="utf-8";
+@font-face{
+	font-family: "pricedown bl";
+	src:url("../font/pricedown bl.ttf");
+}
+@font-face{
+	font-family: "NotoSansCJKkr-Medium";
+	src:url("../font/NotoSansCJKkr-Medium.otf");
+}
+*{box-sizing: border-box;color: #fff;}
+body>div{
+    margin-bottom: 100px;
+}
+/*body{background-color: #000;}*/
+header{
+    margin: 0 auto;width: 1400px;font-size: 0;
+    background-color: #000;
+    position: absolute;
+    left: 50%;transform: translateX(-50%);
+}
+.header-bg.fixed{
+    position: fixed;
+    top: 0;
+    z-index: 1000000;
+    box-shadow: 3px 0px 10px #000;
+}
+.header-bg{
+    width: 100%;background-color: #000;
+    height: 100px;
+    position: absolute;
+}
+.top{
+    background-color: #000;
+}
+
+
+/*헤더 이미지 설정*/
+
+.img-wrap{
+    width: 1400px;
+    height: 500px;
+    position: relative;
+    z-index: 100;
+    margin: 0 auto;
+    background-image: url(../img/header-footer/headerimg.jpg);
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+
+/*헤더(네비)설정*/
+h1{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 20px;
+    background-color: #000;
+}
+h1 a img{height: 100%;}
+
+nav{
+    float: right;
+    padding-top: 30px;
+    margin-top: 10px;
+}
+
+header li{
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 20px;
+    margin-right: 10px;
+    font-family: NotoSansCJKkr-Medium;
+}
+header li span{
+    font-family: pricedown bl;
+}
+nav li a{
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition:0.2s;
+}
+nav li:hover a{
+    border-bottom: 1px solid #fff;
+}
+
+.bar-btn>i{
+    display: none;
+}
+
+header li.one a{
+    border-bottom: 1px solid #fff;
+}
+
+
+
+
+/*      스크롤바설정*/
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 0px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #000;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(159, 159, 159, 0.8) ;
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(200,200,200,1);
+        }
+
+        ::-webkit-scrollbar-button:start:decrement,
+        ::-webkit-scrollbar-button:end:increment {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(159, 159, 159, 0.8);
+        }
+
+
+
+
+
+/*footer*/
+footer{
+    width: 100%;
+    box-shadow: 0 -6px 5px rgba(139, 139, 139, 0.88);
+}
+.footer-wrap{
+    width: 1400px;
+    margin: auto;
+    height: 200px;
+    background-color: #000;
+}
+footer .sns-icon{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+footer .games-Logo{
+    width: 70px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+footer .games-Logo img{
+    width: 100%;
+}
+footer .games-Logo, footer .sns{
+    display: inline-block;
+}
+footer .sns i{
+    font-size: 30px;
+    padding: 10px 0 10px 10px;
+}
+footer .footer-txt{
+    padding-bottom: 50px;
+    text-align: center;
+    
+}
+footer .footer-txt p{
+    font-size: 15px;
+    color: #919191;
+}
+
+
+
+
+/*미디어쿼리*/
+/*1024~1420*/
+@media screen and (max-width:1420px){
+    header{width: 100%;}
+    .img-wrap{
+    width: 100%;
+    height: 560px;
+    z-index: 100;
+    margin: 0 auto;
+    overflow: hidden;
+        
+}
+    .footer-wrap{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    background-color: #000;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+/*642-1024*/
+@media screen and (max-width:1024px){
+    header{
+        margin: 0 auto;
+    }
+    .delete.img-wrap{
+        height: 0;
+    }
+    h1{
+    float: none;
+    margin: 0 auto;
+    background-color: #000;
+    
+    }
+    nav{
+    float: none;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    }
+    header li{
+    font-size: 25px;
+}
+    footer .games-Logo, footer .sns{
+    display: block;
+}
+    footer .games-Logo{
+        padding: 10px 0;
+    }
+}
+/*0-640*/
+@media screen and (max-width:640px){
+    
+   .top{
+    margin:0 auto;
+}
+    header{
+        position: relative;
+        z-index: 1000000000;
+        background-color: #000;
+    }
+    h1{
+        position: relative;
+        z-index: 10000;
+        height: 100px;
+        width: 100%;
+        float: none;
+        text-align: center;
+        background-color: #000;
+        margin-left: 0px;
+        
+}
+    nav{
+        float: none;
+        position: absolute;
+        width: 100%;
+        top: -150%;
+        margin: 0;
+        padding: 0;
+        transition: 0.5s;
+        z-index: 1000;
+    }
+    header li{
+        display: block;
+        z-index: 100;
+        text-align: center;
+        padding: 13px 0;
+        margin: 0;
+        background-color: rgba(139, 139, 139, 0.88);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.51);
+        transition: 0.1s;
+    }
+    nav li:hover{
+        background-color: #000;
+    }
+    nav li:hover a{
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+    .bar-btn{
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10000000;
+        cursor: pointer;
+    }
+    .bar-btn>div{
+        background-color: #fff;
+        width: 30px;
+        height: 3px;
+        margin: 3px;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    .bar-btn.on>div{
+        display: none;
+    }
+    .bar-btn.on i{
+        display: inherit;
+        color: #fff;
+        font-size: 30px;
+        padding-right: 10px;
+        transition: 0.5s;
+    }
+    .slide{top: 100%;}
+    
+    footer .footer-txt p{
+    font-size: 10px;
+}
+    header li.one a{
+    border-bottom: 1px solid transparent;
+}
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,687 @@
+@charset="utf-8";
+.slick-next{
+    right: 5%;
+    cursor: pointer;
+}
+.slick-prev{
+    left: 5%;
+    z-index: 1;
+    cursor: pointer;
+ }
+.slick-prev::before,
+.slick-next::before{
+    font-size: 40px; color:rgba(83, 129, 86, 0.91);
+} 
+ 
+h1{display: none;}
+
+/*.main-top*/
+.main-top,
+.top-slide{
+	width: 1400px;
+	margin: 0 auto;
+    display: block;
+}
+.top-slide{
+    margin-bottom: 50px;
+}
+
+.main-top img,
+.top-slide img{
+	width: 100%;
+    margin: auto;
+}
+.top-search-menu{
+    width: 49%;
+    text-align: center;
+    display: inline-block;
+    height: 190px;
+    padding-top: 20px;
+    margin: 20px 0;
+    border: 1px solid #d3d3d3;
+    border-radius: 20px;
+}
+/*서치박스*/
+.search-box .container-1{
+    display: inline-block;
+    width: 500px;height: 40px;
+  vertical-align: middle;
+  position: relative;
+  background-color: #dbdbdb;
+  border-radius: 20px;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+.search-box .container-1 input{
+    outline: none;
+  width: 450px;
+  height: 40px;
+  background-color: #dbdbdb;
+  border: none;
+  font-size: 10px;
+  float: left;
+    font-size: 16px;
+  color: #424d33;
+  padding-left: 50px;
+  border-radius: 20px;
+}
+.search-box .container-1 span{
+  position: absolute;
+  height: 60px;
+  top: 10px;
+    left: 20px;
+  z-index: 1;
+}
+/*top-menu*/
+.top-menu li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    width: calc(100% / 6 );
+    color: #646464;
+    margin-top: 10px;
+    font-family: "NotoSansCJKkr-Regular";
+}
+.top-menu li i{
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+    color: #646464;
+}
+/*top-notice*/
+.top-notice{
+    float: right;
+    border-radius: 20px;
+    padding: 20px;
+    width: 49%;
+    height: 190px;
+    font-size: 15px;
+    margin: 20px 0;
+    border: 1px solid #d3d3d3;
+}
+.top-notice li{
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #646464;
+    font-family: "NotoSansCJKkr-Regular";
+    white-space: nowrap;
+    padding: 5px 0;
+    text-overflow: ellipsis;
+}
+.title p{
+    font-weight: bold;
+}
+.title p,
+.title i{
+    display: inline-block;
+    color: #1C1C1C;
+}
+.title i{
+    float: right;
+}
+.title{
+    padding: 10px;
+    font-size: 20px;
+}
+/*전시*/
+.middle{
+    width: 1400px;
+    margin: 20px auto;
+    background-color: #DDE8D6;
+}
+.middle .title p,
+.middle .title i{
+    
+    color: #fff;
+}
+.middle .title{
+    padding: 20px 60px;
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+    background-color: #2d4522;
+}
+/*exhibition*/
+.exhibition{
+    width: 90%;
+    margin: auto;
+    margin-top: -20px;
+    padding: 0 50px;
+}
+.exhibition li{
+    display: inline-block;
+    width: calc(100% / 3 - 10px);
+    padding: 3%;
+    position: relative;
+}
+.exhibition a img{
+    width: 100%;
+    position: relative;
+    z-index: 10000;
+    transition: 0.2s;
+}
+.exhibition li div{
+    width: 80%;
+    height: 85%;
+    background-color: #DDE8D6;
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50% ,-50%)
+}
+.exhibition li div p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    font-family: "NotoSansCJKkr-Regular";
+    z-index: 0;
+}
+.exhibition li:hover a img{
+    opacity: 0.3;
+}
+/*bottom*/
+.bottom{
+    width: 1400px;
+    margin: 20px auto;
+}
+.bottom a{
+    outline: none;
+}
+/*book*/
+.book{
+    width: 50%;
+    float: left;
+    font-size: 0;
+}
+.book .title{
+    width: 90%;
+    margin: auto;
+    font-family: "NotoSansCJKkr-Regular";
+}
+.book-1,
+.book-2,
+.book-3{
+    width: 90%;
+    margin: auto;
+    display: none;
+}
+.book-1 img,
+.book-2 img,
+.book-3 img{
+    width: 100%;
+}
+.book .slide-item{
+    padding: 20px;
+}
+.tab{
+    float: right;
+}
+.tab div{
+    display: inline-block;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tab div p{
+    color: #646464;
+}
+.tab div.on{
+    background-color: #B0D39C;
+    
+}
+
+/*갤러리*/
+.gallary{
+    width: 50%;
+    float: right;
+    font-size: 0;
+}
+
+.gallary .title{
+    width: 90%;
+    margin: auto;
+    font-family: "NotoSansCJKkr-Regular";
+}
+.gallary .slick{
+    display: none;
+}
+.gallary .slick-list{
+    width: 90%;
+    margin: auto;
+}
+.gallary .slick-list img{
+    width: 100%;
+}
+.gallary .slide-item{
+    padding: 20px;
+}
+
+
+
+/*bottom-bottom*/
+.bottom-bottom{
+    width: 1400px;
+    margin: auto;
+    padding-top: 20px;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+.bottom-bottom .price{
+    width: 47%;
+    float: left;
+    padding: 20px;
+}
+.bottom-bottom .price>p{
+    font-family: "NotoSansCJKkr-Regular";
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 13px;
+}
+.bottom-bottom .title{
+    margin: auto;
+    width: 100%;
+    padding-left: 0;
+    font-size: 20px;
+    font-family: "NotoSansCJKkr-Regular";
+}
+.bottom-bottom .people{
+    float: left;
+    font-family: "NotoSansCJKkr-Regular";
+    font-size: 16px;
+    width: 49%;
+}
+.bottom-bottom .money{
+    float: left;
+    text-align: right;
+    font-family: "NotoSansCJKkr-Regular";
+    font-size: 16px;
+    width: 49%;
+}
+.bottom-bottom .people p,
+.bottom-bottom .money p{
+    line-height: 1.5;
+}
+.bottom-bottom .time{
+    width: 50%;
+    float: right;
+    padding: 20px;
+    text-align: right;
+    border-left: 3px solid #dbdbdb;
+}
+.bottom-bottom .time .start{
+    font-size: 16px;
+    font-family: "NotoSansCJKkr-Regular";
+}
+.bottom-bottom .time .start p{
+    line-height: 1.5;
+}
+.bottom-bottom .time .go{
+    width: 100%;
+    font-size: 18px;
+    font-family: "NotoSansCJKkr-Regular";
+    text-align: center;
+    border: 1px solid #000;
+    background-color: #2d4522;
+    border-radius: 20px;
+    height: 30px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+.bottom-bottom .time .go p{
+    color: #fff;
+    
+}
+
+.bottom-bottom .info{
+    width: 50%;
+    float: right;
+    background-color:#efefef;
+    padding-bottom: 20px;
+}
+
+
+
+
+.bottom-bottom .banner{
+   width: 47%;
+    text-align: center;
+    float: left;
+    background-color: #DDE8D6;
+    padding-bottom: 15px;
+}
+.bottom-bottom .banner .title{
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #2d4522;
+}
+.bottom-bottom .banner .title p,
+.bottom-bottom .banner .title i{
+    color: #fff;
+    font-size: 18px;
+}
+.bottom-bottom .banner .title p{
+    font-weight: normal;
+}
+.bottom-bottom .banner img{
+    width: 45%;
+    margin: 0 10px;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////미디어쿼리////////////////*/
+@media screen and (max-width:1420px){
+    .main-top,
+    .top-slide,
+    .middle,
+    .bottom,
+    .bottom-bottom{
+        width: 100%;
+    }
+    .bottom-bottom .info{
+    padding-bottom: 5px;
+}
+}
+@media screen and (max-width:1280px){
+    
+    .top-search-menu{
+    width: 90%;
+    display: block;
+    height: 160px;
+    padding-top: 10px;
+    margin: 0px auto;
+        border: 0;
+    border: 3px solid #d3d3d3;
+}
+    .search-box .container-1{
+    width: 70%;
+    margin: 5px;
+}
+    .search-box .container-1 input#search{
+  width: 95%;
+}
+    .top-menu{
+        width: 600px;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .top-menu li{
+    width: calc(600px / 6 );
+        margin-bottom: 10px;
+}
+    .top-notice{
+    display: block;
+    float: inherit;
+    border-radius: 20px;
+    padding: 20px 50px;
+    width: 90%;
+    margin: 10px auto;
+}
+    .top-notice li{
+    width: 80%;
+}
+   .title{
+       padding-top: 0;
+       padding-bottom: 10px;
+       font-size: 25px;
+}
+    .middle .title{
+    padding: 20px;
+    font-size: 25px;
+}
+    .exhibition li{
+        margin-top: 15px;
+    }
+    .book .title,
+    .gallary .title{
+    font-size: 25px;
+     padding-top: 15px;
+        padding-bottom: 0;
+}
+    .book .title >p,
+    .gallary .title >p{
+        height: 32px;
+        line-height: 32px;
+    }
+    .book{
+    width: 80%;
+    float: inherit;
+        margin: auto;
+}
+    
+    .gallary{
+    width: 80%;
+    float: inherit;
+        margin: auto;
+}
+    .bottom-bottom .info{
+    padding-bottom: 0px;
+        padding-top: 6px;
+}
+    .bottom-bottom .banner .title{
+        padding-bottom: 15px;
+        margin: 0;
+}
+    
+    .bottom-bottom .price>p{
+    font-size: 13px;
+        padding-top: 10px;
+}
+    .bottom-bottom .time .start p{
+    font-size: 14px;
+        padding: 5px 0;
+}
+    .
+    .bottom-bottom .people{
+    width: 50%;
+}
+    .bottom-bottom .banner{
+    height: 417px;
+        width: 54%;
+    text-align: center;
+    background-color: #DDE8D6;
+    padding-bottom: 15px;
+}
+    .bottom-bottom .info{
+    width: 52%;
+}
+    .bottom-bottom .people p,
+.bottom-bottom .money p{
+    font-size: 15px;
+}
+    .bottom-bottom .title{
+        font-size: 16px;
+    }
+    
+  
+    .bottom-bottom .banner img{
+        width: auto;
+        display: block;
+        height: 45%;
+        margin: 0 auto;
+        padding: 5px 10px;
+}
+    .bottom-bottom .price,
+    .bottom-bottom .time{
+        width: 100%;
+    }
+    .bottom-bottom .time{
+        border-left: 0;
+    border-top: 3px solid #dbdbdb;
+        
+    }
+    .bottom-bottom .info{
+        width: 45%;
+    }
+    
+    
+    
+    
+}
+
+
+
+@media screen and (max-width:640px){
+    .main-top img{
+	width: 100%;
+}
+    .title{
+       padding-top: 0;
+       padding-bottom: 10px;
+       font-size: 20px;
+}
+    .middle .title{
+    padding: 20px 0;
+        margin-bottom: 20px;
+    font-size: 20px;
+}
+    .book .title,
+    .gallary .title{
+    font-size: 20px;
+     padding-top: 10px;
+        padding-bottom: 0;
+}
+    .exhibition li{
+    display: block;
+    width: 80%;
+    padding: 3%;
+        margin: auto;
+}
+        .top-search-menu{
+        width: 100%;
+            height: 90px;
+        border: 0;
+            padding: 0;
+            margin-top: -15px;
+}
+    .search-box .container-1{
+        display: none;
+}
+   
+    .top-menu{
+        width: 100%;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .top-menu li{
+    width: calc(100% / 6 );
+        padding: 0;
+}
+    .top-notice{
+    padding: 20px;
+    width: 100%;
+        height: 170px;
+}
+    .top-notice li{
+    width: 90%;
+        font-size: 16px;
+}
+    
+    .exhibition{
+        padding-bottom: 20px;
+    }
+     .book{
+    width: 100%;
+}
+    
+    .gallary{
+    width: 100%;
+}   
+    
+    .bottom-bottom .banner{
+        height: auto;
+        width: 100%;
+}
+    .bottom-bottom .banner img{
+        width: 50%;
+        height: auto;
+        padding: 10px;
+}
+    .bottom-bottom .price,
+    .bottom-bottom .time{
+        width: 50%;
+    }
+    .bottom-bottom .time{
+        border-left: 3px solid #dbdbdb;
+    border-top: 0;
+        
+    }
+    .bottom-bottom .banner .title{
+        margin-bottom: 10px;
+}
+    .bottom-bottom .info{
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .middle .title{
+    padding: 15px 30px;
+    font-size: 20px;
+    width: 100%;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+

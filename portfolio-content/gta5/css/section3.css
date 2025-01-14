@@ -1,0 +1,348 @@
+@charset="utf-8";
+    @font-face{
+	font-family: "pricedown bl";
+	src:url("../font/pricedown bl.ttf")
+}
+    @font-face{
+	font-family: "NotoSansCJKkr-Medium";
+	src:url("../font/NotoSansCJKkr-Medium.otf")
+}
+
+.section3{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    overflow: hidden;
+}
+/*타이틀설정*/
+.section3 .title-bg3{
+    margin: 0px auto;
+    margin-bottom:  100px;
+    position: relative;
+    width: 1400px;
+    height: 200px;
+    text-align: center;
+}
+.section3 .title-bg3 span{
+    color: #000;
+    font-size: 30px;
+}
+.section3 .title-bg3 .title3{
+    
+    height: 100px;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border: 10px solid #000;
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+.section3 .title-bg3 .title3 p{
+    color: #000;
+    font-size: 30px;
+    line-height: 70px;
+    font-family: "NotoSansCJKkr-Medium";
+    display: inline-block;
+}
+.section3 .title-bg3 .title3-wrap{
+    background-image: url(../img/section3/gta-online.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    opacity: 0.7;
+}
+
+/*online text1*/
+.online{
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.online .online-txt1{
+    position: relative;
+}
+.online .online-txt1 img{
+    width: 1400px;
+    display: block;
+    margin-bottom: 200px;
+}
+.online .online-box1{
+    background-color: #fff;
+    width: 60%;
+    height: 30%;
+    text-align: center;
+    border: 10px solid #000;
+    border-radius: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50px;
+}
+.online .online-box1 p{
+    font-family: "NotoSansCJKkr-Medium";
+    width: 100%;
+    color: #000;
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: 1.5;
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+}
+.online .online-txt1 p span{
+    color: #000;
+}
+/*말풍선 이어주기*/
+.online .online-txt1>div:nth-child(3){
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    transform: skew(70deg);
+    position: absolute;
+    left: 40%; bottom: 6%;
+     z-index: 100;
+}
+
+/*두번째*/
+.online .online-box2{
+    background-color: #fff;
+    width: 70%;
+    height: 250px;
+    border-radius: 100%;
+    border: 10px solid #000;
+    position: absolute;
+    top: 91%;
+    left: 50%;transform: translateX(-50%);
+}
+.online .online-box2 p{
+    
+    font-family: "NotoSansCJKkr-Medium";
+    color: #000;
+    padding: 40px 0;
+    font-size: 20px;
+    line-height: 1.5;
+}
+/*media2*/
+.media2-wrap{
+    width: 100%;
+}
+.media2{
+    margin: 0 auto;
+    width: 90%;
+    height: 50%;
+    overflow: hidden;
+    text-align: center;
+    border: 10px solid #fff;
+}
+.media2 vedio{
+    width: 60%;
+    
+}
+/*online-txt2*/
+.online-txt2{
+    margin: 0 auto;
+    text-align: center;
+    width: 1280px;height: 500px;
+    background-image: url(../img/section3/sunset.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    border: 10px solid #fff;
+    
+}
+.online-txt2 p,
+.online-txt2 span{
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+}
+.online-txt2 p{
+    padding: 20px;
+    line-height: 1.5;
+    font-family: "NotoSansCJKkr-Medium";
+}
+.online-txt2 .online-txt2-wrap{
+    box-shadow: 0px 5px 10px #000;
+    transform: skewY(-3deg) translateX(-50%);
+    position: absolute;
+    width: 1280px;
+    border-top: 10px solid #000;
+    border-bottom: 10px solid #000;
+    left: 50%; top: -100px;
+}
+
+
+
+/*미디어쿼리*/
+/*1024~1420*/
+@media screen and (max-width:1420px){
+    .section3 .title-bg3,.online,.online .online-txt1 img{
+        width: 100%;
+    }
+    .media2,.online-txt2{
+        width: 90%;
+    }
+    .media2 video{
+        height: 100%;
+    }
+    
+    
+    
+}
+/*642-1024*/
+@media screen and (max-width:1024px){
+
+.section3 .title-bg3 .title3{
+    height: 70px;
+    border: 7px solid #000;
+}
+.section3 .title-bg3 .title3 p,.section3 .title-bg3 span{
+    font-size: 25px;
+    line-height: 55px;
+}
+    
+.online .online-box1{
+    width: 60%;
+    height: 150px;
+    border: 5px solid #000;
+}
+.online .online-box1 p{
+    padding: 10px 0;
+    font-size: 15px;
+}
+/*말풍선 이어주기*/
+.online .online-txt1>div:nth-child(3){
+    display: none;
+}
+
+/*두번째*/
+.online .online-box2{
+    border: 5px solid #000;
+    width: 65%;
+    height: 200px;
+    margin-top: 30px;
+    left: 60%;
+}
+.online .online-box2 p{
+    padding: 40px 0;
+    font-size: 15px;
+}
+    /*media2*/
+.media2{
+    width: 100%;
+    height: 500px;
+}
+.media2 vedio{
+    width: 100%;
+}
+/*online-txt2*/
+.online-txt2{
+    width: 100%;
+    height: 500px;
+}
+.online-txt2 p,
+.online-txt2 span{
+    font-size: 15px;
+}
+
+.online-txt2 .online-txt2-wrap{
+    width: 110%;
+    left: 50%; top: -100px;
+}
+
+
+}
+
+
+
+
+
+
+/*0-640*/
+@media screen and (max-width:640px){
+.section3 .title-bg3{
+    height: 150px;
+}
+.section3 .title-bg3 span{
+    font-size: 20px;
+}
+.section3 .title-bg3 .title3{
+    height: 60px;
+    border: 5px solid #000;
+}
+.section3 .title-bg3 .title3 p{
+    font-size: 20px;
+    line-height: 50px;
+}
+.section3 .title-bg3 .title3-wrap{
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    opacity: 0.7;
+}
+    
+    
+    
+    
+    
+    
+.online .online-box1{
+    width: 80%;
+    border: 3px solid #000;
+}
+.online .online-box1 p{
+    padding: 10px 0;
+    font-size: 15px;
+}
+/*두번째*/
+.online .online-box2{
+    width: 80%;
+    border: 3px solid #000;
+}
+    /*media2*/
+.media2{
+    width: 90%;
+    height: 400px;
+    border: 5px solid #fff;
+    
+}
+.media2 vedio{
+    width: 100%;
+}
+/*online-txt2*/
+.online-txt2{
+    width: 90%;
+    height: 350px;
+    border: 5px solid #fff;
+}
+.online-txt2 p,
+.online-txt2 span{
+    font-size: 15px;
+}
+
+.online-txt2 .online-txt2-wrap{
+    width: 120%;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    left: 50%; top: -100px;
+}
+
+    
+    
+    
+}
+
+
+
+
+

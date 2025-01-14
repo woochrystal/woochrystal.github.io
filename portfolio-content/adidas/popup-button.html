@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>popup button</title>
+    <style>
+        h3{
+            border: 5px solid #000;
+            display: inline-block;
+            border-radius: 5px;
+            padding: 3px;
+            box-shadow: 3px 3px 5px #6c6c6c;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3 onclick="popup();">팝업창</h3>
+  <script>
+      window.open("adidas-popup.html","a","width=500, height=630,left=100,top-150");
+    function popup(){
+        window.open("adidas-popup.html","a","width=500, height=620,left=100,top-150");
+    //function 없으며 초반부터 떠있음
+    }
+    </script>
+</body>
+</html>

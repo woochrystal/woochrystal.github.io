@@ -1,0 +1,261 @@
+@charset="utf-8";
+    @font-face{
+	font-family: "pricedown bl";
+	src:url("../font/pricedown bl.ttf")
+}
+@font-face{
+	font-family: "NotoSansCJKkr-Medium";
+	src:url("../font/NotoSansCJKkr-Medium.otf")
+}
+/*전체설정*/
+.section2{
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+} 
+.section2 p{
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 16px;
+}
+
+ 
+/*타이틀설정*/
+.section2 .title-bg2{
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+.section2 .title-bg2 .title2{
+    border-right: 10px solid #000;
+    border-left: 10px solid #000;
+    height: 80px;
+    width: 95%;
+    margin: 0 auto;
+    transform: skew(30deg);
+}
+.section2 .title-bg2 .title2 p{
+    color: #000;
+    transform: skew(-30deg);
+    font-size: 30px;
+    line-height: 75px;
+}
+.section2 .title-bg2 .title2-wrap{
+    margin: 0 auto;
+    border-right: 10px solid #000;
+    border-left: 10px solid #000;
+    height: 80px;
+    width: 65%;
+} 
+
+
+/*프로필전체설정*/
+
+.profile p{
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: rgba(80, 80, 80, 0.29);
+    padding: 10px;
+	font-family: "NotoSansCJKkr-Medium";
+}
+
+
+
+
+
+/*table설정*/
+.profile table{
+    width: 50%;
+    border: 0;
+    background-color: rgba(124, 124, 124, 0.37);
+    margin: auto;
+    margin-bottom: 50px;
+	font-family: "NotoSansCJKkr-Medium";
+}
+.profile table td{
+    padding: 10px;
+    border-top: 1px solid #fff;
+    font-size: 16px;
+}
+
+
+/*profile*/
+.profile{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 1400px;
+    font-size: 0;
+    border-right: 5px solid #000;
+    border-left: 5px solid #000;
+}
+.profile-wrap{
+    margin: auto;
+    width: 100%;
+} 
+.profile .wrap{
+    float: left;
+    width: 33.3%;
+    height: 650px;
+    cursor: pointer;
+    border: 5px solid #000;
+    border-bottom: 10px solid #000;
+    transition: 0.2s;
+}
+.profile .wrap:nth-child(1){
+    background-image: url(../img/section2/a.png);
+    background-color: #5f432b;
+    background-repeat: no-repeat;
+}
+.profile .wrap:nth-child(2){
+    background-image: url(../img/section2/b.png);
+    background-position: -110px 0;
+    background-color: #2d3857;
+    background-repeat: no-repeat;
+}
+.profile .wrap:nth-child(3){
+    background-image: url(../img/section2/c.png);
+    background-position: -100px 0;
+    background-color: #344e2a;
+    background-repeat: no-repeat;
+}
+.profile .wrap.f{
+    border-bottom: 10px solid transparent;
+    box-shadow: inset 0px 0px 20px #000;
+    
+}
+.profile .wrap:hover {
+    box-shadow: inset 0px 0px 20px #000;
+}
+
+/*인물설명*/
+.modal{
+    display: block;
+    display: none;
+    padding: 30px 0;
+    border-right: 5px solid #000;
+    border-left: 5px solid #000;
+}
+.modal-content{
+}
+.modal:nth-child(2){
+    background-color: #5f432b;
+}
+
+.modal:nth-child(3){
+    background-color: #2d3857;
+    
+}
+.modal:nth-child(4){
+    background-color: #344e2a;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*미디어쿼리*/
+/*1024~1420*/
+@media screen and (max-width:1420px){
+    .section2,.section2 .title-bg2,.profile{
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    
+    
+    
+    
+}
+/*642-1024*/
+@media screen and (max-width:1024px){
+.profile{
+    margin-top: 30px;
+}
+.profile-wrap{
+    margin: auto;
+    width: 100%;
+} 
+.profile .wrap{
+    height: 550px;
+}
+   .profile .wrap:nth-child(1){
+       background-size: cover;
+    background-position: 10px 0;
+}
+.profile .wrap:nth-child(2){
+    background-position: 20% 0;
+       background-size: cover;
+}
+.profile .wrap:nth-child(3){
+    background-position: 35% 0;
+       background-size: cover;
+} 
+    
+
+}
+/*0-640*/
+@media screen and (max-width:640px){
+ 
+.section2 .title-bg2{
+    height: 60px;
+        
+}
+.section2 .title-bg2 .title2{
+    border-right: 5px solid #000;
+    border-left: 5px solid #000;
+    height: 60px;
+}
+.section2 .title-bg2 .title2 p{
+    color: #000;
+    font-size: 20px;
+    line-height: 55px;
+}
+.section2 .title-bg2 .title2-wrap{
+    border-right: 5px solid #000;
+    border-left: 5px solid #000;
+    height: 60px;
+}
+
+       .profile .wrap:nth-child(1){
+    background-position: 15% 0;
+}
+    .profile .wrap:nth-child(2){
+    background-position: 30% 0;
+}
+    .profile .wrap:nth-child(3){
+    background-position: 40% 0;
+}
+.profile table{
+    width: 75%;
+}    
+    
+    
+    
+    
+    
+}
+
+
+
+
+ 
+
+
+
+
+

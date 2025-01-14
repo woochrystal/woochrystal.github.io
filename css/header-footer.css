@@ -1,0 +1,509 @@
+@charset="utf-8";
+
+@font-face {
+    font-family: "YoonMingukB";
+    src: url("../font/YoonMingukB.ttf")
+}
+
+@font-face {
+    font-family: "YoonMingukR";
+    src: url("../font/YoonMingukB.ttf")
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "YoonMingukR";
+}
+
+section {
+    width: 1400px;
+    margin: auto;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////헤더/////////////////////////////////////////*/
+header {
+    width: 200px;
+    background-color: #fff;
+    height: 100%;
+    position: fixed;
+    z-index: 10000000000;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.11);
+    text-align: center;
+}
+.header-wrap{
+    width: 1400px;
+    margin: auto;
+}
+
+/*bar-btn*/
+.bar-btn {
+    display: none;
+}
+
+/*h1*/
+h1 {
+    width: 110px;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin: 10px auto;
+}
+
+h1 a {
+    width: 100%;
+    height: 100%;
+}
+
+h1 a img {
+    width: 100%;
+}
+
+/*nav*/
+nav ul li {
+    padding: 15px 0;
+    font-size: 23px;
+}
+
+nav ul li a {
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+}
+
+/*hover*/
+nav ul li a.one {
+    border-bottom: 3px solid #004FFF;
+}
+
+nav ul li:hover a {
+    border-bottom: 3px solid #004FFF;
+}
+
+.nav-wrap {
+    display: none;
+}
+
+.indicator ul {
+    display: none;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////푸터/////////////////////////////////////////4A8BFF*/
+footer {
+    width: 1250px;
+    float: left;
+    margin: auto;
+    padding-top: 50px;
+    position: relative;
+    bottom: 0;
+}
+
+.contect-wrap {
+    width: 90%;
+    margin-right: -40px;
+    float: right;
+    overflow: hidden;
+}
+
+.contect-txt {
+    font-family: "YoonMingukB";
+    background-color: #004FFF;
+    color: #fff;
+    width: 100%;
+    float: left;
+    height: 500px;
+    font-size: 100px;
+}
+
+.contect-txt p {
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
+.contect-logo {
+    margin-top: -500px;
+    margin-right: -100px;
+    font-family: "YoonMingukB";
+    background-color: #4A8BFF;
+    color: #fff;
+    width: 60%;
+    transform: skewX(-20deg);
+    float: right;
+    font-size: 30px;
+    height: 500px;
+}
+
+.contect-logo .img-wrap {
+    background-color: #fff;
+    width: 50%;
+    transform: skewX(20deg);
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.contect-logo img {
+    width: 100%;
+    padding: 10px;
+
+}
+
+.logo-txt {
+    padding-top: 10%;
+    position: absolute;
+    transform: skewX(20deg);
+    display: inline-block;
+}
+
+.cl-wrap {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+}
+
+footer > p {
+    font-family: "YoonMingukR";
+    position: absolute;
+    bottom: 0;
+    left: 18%;
+    padding: 10px;
+    color: #fff;
+}
+
+/*스크롤설정*/
+::-webkit-scrollbar {
+    width: 12px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 79, 255, 0.65);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #004FFF;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+
+/*//////////////////////미디어쿼리//////////////////////////*/
+@media screen and (max-width:1420px) {
+
+    /*    ////헤더////*/
+    section {
+        width: 100%;
+    }
+    .header-wrap{
+        width: 100%;
+    }
+
+    /*    /////푸터////*/
+    footer {
+        width: 100%;
+    }
+
+    .contect-wrap {
+        width: 90%;
+        margin-right: 0px;
+    }
+}
+
+/*1420*/
+@media screen and (max-width:1280px) {
+
+    /*    ////헤더////*/
+    header {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        height: 80px;
+        box-shadow: 0px 0px 20px #dedede;
+    }
+
+    h1 {
+        width: 80px;
+        height: auto;
+        float: left;
+        left: 5%;
+        margin: 0;
+        padding-top: 13px;
+        position: relative;
+        z-index: 10000000000;
+    }
+    
+
+    nav {
+        display: inline-block;
+        width: 90%;
+        left: 50%;
+        top: 15px;
+        transform: translateX(-50%);
+        position: relative;
+        margin-left: -15%;
+    }
+
+    nav ul li {
+        padding: 15px 0;
+        font-size: 23px;
+        display: inline-block;
+        margin: 10px 10px;
+    }
+
+    nav ul li a {
+        border-bottom: 3px solid transparent;
+        transition: 0.2s;
+    }
+
+    .indicator ul {
+        display: inherit;
+        font-size: 0;
+        position: fixed;
+        right: 1.5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .indicator ul li {
+        margin: 20px 0;
+        color: #fff;
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        border-radius: 5px;
+        border: 2px solid #8E8E8E;
+    }
+
+    .indicator ul li.one {
+        border: 2px solid #004FFF;
+        background-color: #004FFF;
+    }
+
+    /*    ////푸터////*/
+    .contect-wrap {
+        width: 100%;
+    }
+
+    footer > p {
+        left: 2%;
+        width: 40%;
+    }
+
+    .contect-txt {
+        font-size: 70px;
+        height: 300px;
+        width: 60%;
+    }
+
+    .contect-txt p {
+        padding-left: 50px;
+    }
+
+    .contect-logo {
+        font-size: 20px;
+        height: 300px;
+        margin-top: -300px;
+        width: 65%;
+    }
+
+    .contect-logo .img-wrap {
+        width: 30%;
+    }
+
+    .logo-txt {
+        padding-top: 4%;
+    }
+
+    .cl-wrap {
+        right: 170px;
+        width: 50%;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/*1280*/
+
+@media screen and (max-width:640px) {
+
+    /*    ////헤더////*/
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        left: 0;
+        box-shadow: 0px 10px 20px transparent;
+    }
+
+    h1 {
+        display: inline-block;
+        position: relative;
+        z-index: 10000000000;
+    }
+
+    h1 a img {
+        width: 80%;
+    }
+
+    nav {
+        position: relative;
+        top: -300%;
+        width: 100%;
+        display: none;
+        position: relative;
+        margin-left: 0px;
+        z-index: 0;
+        transition: 0.5s;
+    }
+
+    nav ul {
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.11);
+    }
+
+    nav ul li {
+        padding: 15px 0;
+        font-size: 23px;
+        display: block;
+        margin: 10px 10px;
+        width: 85px;
+        margin: auto;
+        
+    }
+    nav ul li:last-child {
+        display: none;
+    }
+
+    nav ul li a {
+        border-bottom: 3px solid transparent;
+        transition: 0.2s;
+    }
+
+    .bar-btn {
+        display: inherit;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 1000;
+
+    }
+
+    .bar-btn > div {
+        width: 35px;
+        height: 4px;
+        background-color: #000;
+        margin: 4px 0;
+        border-radius: 10px;
+        transition: 0.2s;
+    }
+
+    .bar-btn > div.on:nth-child(1) {
+        transform: rotate(45deg) translateY(11px);
+    }
+
+    .bar-btn > div.on:nth-child(2) {
+        opacity: 0;
+    }
+
+    .bar-btn > div.on:nth-child(3) {
+        transform: rotate(-45deg) translateY(-12px);
+    }
+
+    nav.slide {
+        top: 0px;
+    }
+
+    .nav-wrap {
+        display: inherit;
+        width: 100%;
+        height: 70px;
+        background-color: #fff;
+        position: relative;
+        z-index: 100;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.11);
+    }
+
+    .indicator ul {
+        display: none;
+    }
+
+    /*    ////푸터////*/
+    footer {
+        width: 100%;
+    }
+
+    footer > p {
+        left: 2%;
+        width: 40%;
+        font-size: 10px;
+    }
+
+    .contect-txt {
+        font-size: 30px;
+        height: 200px;
+    }
+
+    .contect-txt p {
+        padding-left: 30px;
+    }
+
+    .contect-logo {
+        font-size: 15px;
+        height: 200px;
+        margin-top: -200px;
+        margin-right: -70px;
+        width: 70%;
+    }
+
+    .contect-logo .img-wrap {
+        width: 30%;
+        display: block;
+        float: right;
+        margin-right: 20px;
+        position: absolute;
+        bottom: 55px;
+        right: 0;
+    }
+
+    .contect-logo img {
+        width: 100%;
+        padding: 0px 5px;
+        padding-top: 5px;
+
+    }
+
+    .logo-txt {
+        padding-top: 0%;
+        display: block;
+        margin-top: 0px;
+        width: 100%;
+
+    }
+
+    .cl-wrap {
+        right: 80px;
+        width: 60%;
+        bottom: 60px;
+    }
+
+    ::-webkit-scrollbar {
+        display: inherit;
+        width: 5px;
+    }
+
+
+}
+
+/*740*/

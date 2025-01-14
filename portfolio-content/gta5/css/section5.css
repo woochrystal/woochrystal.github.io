@@ -1,0 +1,127 @@
+@charset="utf-8";
+*{box-sizing: border-box;}
+.section5{
+    color: #fff;
+    padding-top: 130px;
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.platform-wrap{
+    background-color: #fff;
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px auto;
+    border: 3px solid #fff;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+.platform-wrap p{
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 0 20px;
+	font-family: "NotoSansCJKkr-Medium";
+    background-color: #525252;
+    border-radius: 5px;
+}
+.platform{
+    width: 100%;
+    font-size: 0;
+    
+}
+.platform img{
+    width: 100px;
+    padding: 8px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+caption{height: 0;overflow: hidden;}
+.section5 table{
+	font-family: "NotoSansCJKkr-Medium";
+    border-top: 2px solid #fff;
+    text-align: center;
+    margin-left: 30px;
+    height: 300px;display: inline-block;
+    font-size: 20px;
+}
+.section5 table thead tr{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid #fff;
+    background-color: rgba(123, 123, 123, 0.35);
+}
+.section5 table tbody td{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.section5 table .right-bd{
+    border-right: 1px solid #d4d4d4;
+}
+.section5 table .bottom-bd{
+    border-bottom: 0;
+}
+
+
+
+
+
+/*미디어쿼리*/
+/*1024~1420*/
+@media screen and (max-width:1420px){
+    .section5{
+        width: 100%;
+    }
+}
+
+
+/*642-1024*/
+@media screen and (max-width:1024px){
+    .section5{
+    padding-top: 100px;
+}
+    .platform-wrap p{
+    font-size: 15px;
+    letter-spacing: 2px;
+	font-family: "NotoSansCJKkr-Medium";
+}
+ .section5 table{
+    margin-left: 0px;
+    font-size: 15px;
+}
+    
+}
+
+
+
+
+
+
+/*0-640*/
+@media screen and (max-width:640px){
+     .section5 table{
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+}

@@ -1,0 +1,136 @@
+@charset="utf-8";
+body{
+    width: 100%;
+}
+section{
+    width: 1400px;
+    margin: auto;
+}
+/*탭 버튼*/
+.tap-btn{
+    width: 100%;
+    text-align: center;
+}
+.tap-wrap{
+    background-color: #b8cead;
+    width: 300px;
+    margin: auto;
+    font-size: 0;
+    border-radius: 30px;
+}
+.tap-btn p{
+    display: inline-block;
+    padding: 10px;
+    width: 150px;
+    font-size: 18px;
+	font-family: "NotoSansCJKkr-Regular";
+    color: #2d4522;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tap-btn p:last-child{
+    border-left: 3px solid #fff;
+}
+
+/*전시*/
+.exhibition{
+    font-size: 0;
+    padding: 100px;
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+}
+.ex{
+    padding: 20px;
+}
+.cover{
+    width: 30%;
+}
+.cover img{
+    width: 100%;
+}
+.explain{
+    width: 70%;
+    font-size: 18px;
+}
+.explain p{
+    color: #2d4522;
+    padding: 10px;
+    padding-left: 100px;
+	font-family: "NotoSansCJKkr-Regular";
+    line-height: 1.5;
+}
+.explain .title{
+    font-weight: bold;
+    font-size: 25px;
+}
+.exhibition>div>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*행사*/
+caption{
+    display: none;
+}
+table{
+	font-family: "NotoSansCJKkr-Regular";
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+table td,
+table th{
+    padding: 15px 20px;
+}
+table td{
+    border-bottom: 2px solid #cccccc;
+}
+table td:nth-child(2){
+    text-align: left;
+}
+table th{
+    background-color: #b8cead;
+    color: #2d4522;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+.table-list{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.table-list li{
+    color: #2d4522;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

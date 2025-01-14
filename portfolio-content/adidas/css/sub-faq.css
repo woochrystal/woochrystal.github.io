@@ -1,0 +1,244 @@
+@charset="utf-8"; 
+/*sng*/
+.sng-wrap{
+    width: 100%;
+    height: 60px;
+    line-height: 30px;
+}
+.sng{
+    width: 1400px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+.sng ul{
+    position: absolute;
+    left: 0;
+    color: #000;
+    margin: 10px;
+    width: 1400px;
+    height: 20px;
+    font-size: 20px;
+    font-family: texgyreadventor-bold;
+}
+.sng ul li{
+    color: #000;
+    display: inline-block;
+    height: 20px;
+}
+.sng ul li:first-child{
+    font-size: 20px;
+    display: inline-block;
+}
+section{
+    width: 1400px;
+    margin: auto;
+    margin-bottom: 100px;
+} 
+
+/*faq-top*/
+.faq-top{
+    margin: auto;
+    position: relative;
+}
+.faq-top .faq-top-txt{
+    position: absolute;
+    top: 30%;
+    width: 500px;
+    text-align: center;
+    margin-left: 50px;
+}
+.faq-top .faq-top-txt span,
+.faq-top .faq-top-txt p{
+    color: #fff;
+}
+.faq-top .faq-top-txt span{
+    font-size: 50px;
+	font-family: "texgyreadventor-bold";
+    line-height: 2;
+}
+.faq-top .faq-top-txt p{
+	font-family: "AdobeGothicStd-Bold";
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+/*.search-box*/
+.search-box{
+    margin-top: 20px;
+    
+}
+.container-1{
+    width: 500px;height: 50px;
+    margin: auto;
+  vertical-align: middle;
+  position: relative;
+}
+.container-1 input#search{
+  width: 500px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 50px;
+  border-radius: 5px;
+  border-radius: 5px;
+}
+.container-1 span{
+  position: absolute;
+  height: 50px;
+  top: -40px;
+    left: 20px;
+  z-index: 1;
+}
+.container-1 span .fa.fa-search{
+    font-size: 20px;
+  color: #4f5b66;
+}
+/*.faq-middle*/
+.faq-middle{
+    width: 650px;
+    margin: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+.faq-title{
+    width: 100%;
+}
+.faq-title p{
+    color: #000;
+    font-family: "AdobeGothicStd-Bold";
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+    padding-top: 50px;
+}
+/*question*/
+.question{
+    margin-bottom: 10px;
+}
+.question .q-txt p{
+    font-size: 20px;
+}
+/*.answer*/
+.answer{
+    margin-bottom: 40px;
+}
+.answer .a-txt p{
+    font-size: 16px;
+}
+
+
+
+/*question + answer*/
+.question,
+.answer{
+    border: 4px solid #dacce2;
+    border-radius: 100px;
+    font-size: 0;
+    position: relative;
+}
+.question .q-icon img,
+.answer .a-icon img{
+    width: 100%;
+}
+.question .q-icon,
+.answer .a-icon{
+    width: 70px;
+    display: inline-block;
+    font-size: 0;
+}
+.question .q-txt,
+.answer .a-txt{
+    display: inline-block;
+    position: absolute;
+    top: 50%;transform: translateY(-50%);
+    left: 20%;
+}
+.question .q-txt p,
+.answer .a-txt p{
+    color: #000;
+    font-family: "AdobeGothicStd-Bold";
+    line-height: 2;
+    margin-left: -40px;
+}
+.a-txt p a i{
+    color: #000;
+    font-weight: 800;
+}
+
+
+/*아코디언*/
+.faq-bottom{
+    float: right;
+}
+.thema-wrap{
+    width: 730px;
+    margin: auto;
+}
+.thema-wrap .q,
+.thema-wrap .a p{
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "AdobeGothicStd-Bold";
+}
+.thema li i{
+    font-size: 20px;
+    color: #000;
+}
+
+.thema .q{
+    background-color: #dacce2;
+    border-radius: 10px;
+    border: 1px solid #b5b5b5;
+    box-sizing: border-box;
+}
+.fa-chevron-down.t{
+    display: none;
+}
+.fa-chevron-up.t{
+    display: none;
+}
+.thema .a{
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #dacce2;
+    display: none;
+}
+.thema .fa-chevron-up,
+.thema .fa-chevron-down{
+    float: right;
+}
+
+.thema-list.a{
+    display: block;
+}
+.plus{
+    float: right;
+    margin-top: 7px;
+}
+.item{
+    width: 20px;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 100px;
+    
+}
+.item:nth-child(2){
+    transform: rotate(90deg) translateX(-4px);
+    transition: 0.2s;
+}
+.thema li.q.p .plus .item:nth-child(2){
+    transform: rotate(0) translate(0,-4px);
+}
+
+
+
+
+
+
+
+

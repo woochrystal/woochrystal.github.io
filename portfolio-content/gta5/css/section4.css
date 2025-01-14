@@ -1,0 +1,140 @@
+@charset="utf-8";
+.section4{
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+/*타이틀설정*/
+.title-bg4{
+    position: relative;
+    width: 30%;
+    height: 90px;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.title-bg4 .title4{
+    width: 95%;
+    height: 70%;
+    background-color: #fff;
+    border: 7px solid #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.title-bg4 .title4 p{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    color: #000;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    font-family: NotoSansCJKkr-Medium;
+}
+
+/*슬라이드*/
+.sp-thumbnails{
+    border-radius: 10px;
+}
+#gallery .sp-selected-thumbnail {
+         border: 4px solid #000;
+        } 
+        
+
+
+
+
+/*미디어쿼리*/
+/*1024~1420*/
+@media screen and (max-width:1420px){
+    .title-bg4{
+    width: 50%;
+    padding-top: 100px;
+}
+}
+
+
+/*642-1024*/
+@media screen and (max-width:1024px){
+    /*타이틀설정*/
+    .title-bg4{
+    height: 80px;
+    padding-top: 10px;
+}
+.title-bg4 .title4{
+    height: 80%;
+    border: 5px solid #000;
+}
+.title-bg4 .title4 p{
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+}
+
+    /*갤러리 설정*/
+.gallery{
+    overflow: hidden;
+    width: 90%;
+    height: 800px;
+    font-size: 0;
+    margin: 50px auto;
+    position: relative;
+}
+
+/*갤러리 메인*/
+.gallery-top{
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    
+}
+   
+/*갤러리썸네일리스트*/
+.slick{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #000;
+}
+.img-box{
+    width: 20%;
+}
+.img-box.k{
+    border: 5px solid #ffffff;
+    opacity: 0.5;
+}
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+    
+}
+
+
+
+
+
+
+/*0-640*/
+@media screen and (max-width:640px){
+    .title-bg4{
+    height: 60px;
+    padding-top: 10px;
+}
+.title-bg4 .title4{
+    height: 80%;
+    border: 5px solid #000;
+}
+.title-bg4 .title4 p{
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+}
+}

@@ -1,0 +1,244 @@
+@charset="utf-8";
+.section{
+  width: 100%;  
+
+}
+/*타이틀*/ 
+.title-wrap{
+    width: 100%    ;margin: auto;
+    text-align: center;
+    height: 70px;
+    background: #000;
+    background-color: #2d4522;
+}   
+    
+.title-wrap p{
+    color: #fff;
+    font-family: "NotoSansCJKkr-Regular";
+    font-size: 20px;
+    line-height: 70px;
+} 
+/*빠른이동*/
+.gnb2{
+    font-family: "NotoSansCJKkr-Regular";
+    width: 1400px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 20px;
+    color: #646464;
+}
+.gnb2 a i{
+    color: #646464;
+}
+/*테이블타이틀*/
+.table-title,
+.map-title{
+    font-size: 20px;
+    font-family: "NotoSansCJKkr-Regular";
+    padding: 20px;
+    margin-left: 100px;
+}
+.table-title p,
+.table-title i,
+.map-title p,
+.map-title i{
+    display: inline-block;
+    color: #646464;
+    font-weight: bold;
+}
+.table-title i,
+.map-title i{
+    padding-right: 10px;
+}
+/*테이블*/
+.table{
+    width: 1400px;
+    margin: auto;
+}
+caption{
+    display: none;
+}
+.table-1 table,
+.table-2 table{
+    margin: auto;
+    text-align: center;
+    font-family: "NotoSansCJKkr-Regular";
+}
+.table-1 thead,
+.table-2 thead{
+    border: 2px solid #646464;
+    border-right: 0;
+    border-left: 0;
+}
+.table-1 thead th,
+.table-2 thead th{
+    border-right: 2px solid #646464;
+    padding: 10px 20px;
+    vertical-align: middle;
+    background-color: #b8cead;
+    color: #2d4522;
+    font-weight: bold;
+}
+.table-1 thead th:last-child,
+.table-2 thead th:last-child{
+    border-right: 0;
+}
+.table-1 tbody,
+.table-2 tbody{
+    border: 2px solid #a7a7a7;
+    border-right: 0;
+    border-left: 0;
+}
+.table-1 tbody td:last-child,
+.table-2 tbody td:last-child{
+    border-right: 0;
+}
+.table-1 tbody td,
+.table-2 tbody td{
+    border-right: 2px solid #a7a7a7;
+    padding: 10px 20px;
+    vertical-align: middle;
+    line-height: 1.5;
+    color: #646464;
+}
+.table-1 tbody td i{
+    color: #646464;
+}
+.table-2 tbody tr{
+    border-bottom: 2px solid #a7a7a7;
+    
+}
+.bd-t{
+    border-top: 2px solid #a7a7a7;
+}
+.bd-b{
+    border-bottom: 2px solid #a7a7a7;
+}
+.table-1,
+.table-2{
+    margin: 50px;
+}
+.table-1{
+    margin-top: 20px;
+}
+/*테이블 ul*/
+.table ul{
+    margin-left: 50px;
+    font-family: "NotoSansCJKkr-Regular";
+}
+.table ul>li{
+    list-style: square;
+    margin-left: 100px;
+    padding-left: 20px;
+    padding: 5px;
+    color: #646464;
+}
+.table ol>li{
+    list-style: circle;
+    padding: 5px 15px;
+    margin-left: 10px;
+    color: #8b8b8b;
+}
+/*가이드맵*/
+.map{
+    width: 1400px;
+    margin: 50px auto;
+}
+.map-title{
+    margin-left: 150px;
+}
+.guide-map{
+    width: 80%;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: #b8cead;
+    margin: auto;
+    position: relative;
+}
+.guide-map img{
+    width: 100%;
+}
+.guide-map a{
+    position: absolute;
+    right: 7%;
+    top: 9%;
+    font-size: 30px;
+    background-color: #fff;
+    padding: 0.5%;
+    border-radius: 20px;
+    border: 5px solid #2d4522;
+}
+.guide-map i{
+    color: #2d4522;
+}
+
+
+
+
+
+@media screen and (max-width:1420px){
+    .gnb2,.table,.map{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1280px){
+    .table-title,
+    .map-title{
+        text-align: center;
+        margin: 0;
+    }
+    .table ul{
+    margin-left: 0;
+}
+.table ul>li{
+    margin-left: 50px;
+}
+    .guide-map{
+    width: 90%;
+    padding: 30px;
+}
+    .guide-map a{
+    right: 4%;
+    top: 6%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+    
+    
+}
+@media screen and (max-width:640px){
+    .guide-map{
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+}
+    .guide-map a{
+    right: 4%;
+    top: 6%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+    .table-1,
+.table-2{
+    margin: 50px 0;
+}
+.table-1 table,
+.table-2 table{
+        width: 100%;
+    }
+    .table-1 tbody td,
+.table-2 tbody td{
+    padding: 5px;
+    line-height: 1.2;
+}
+    .table ul>li{
+    margin-left: 30px;
+}
+    
+    
+}
+
+
+
+
+    
