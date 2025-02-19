@@ -42,14 +42,14 @@ $("window").ready(function(){
        var offset =[];
     for (var i = 0; i < $(".part").length; i++){
         offset.push($(".part").eq(i).offset().top)
-        console.log(offset)
+        // console.log(offset)
     }
     
        $(window).resize(function(){
         offset = [];
         for (i = 0; i < $(".part").length; i++){
         offset.push($(".part").eq(i).offset().top)
-        console.log(offset)
+        // console.log(offset)
     }
     })
     
@@ -64,7 +64,7 @@ $("window").ready(function(){
         if(pos > offset[0] && pos < offset[1]){
             $("nav ul li a").removeClass("one").eq(0).addClass("one")
             $(".indicator ul li").removeClass("one").eq(1).addClass("one");
-            console.log(offset[1], pos)
+            // console.log(offset[1], pos)
         }
             else if(pos >= offset[1] && pos < offset[2]){
                 $("nav ul li a").removeClass("one").eq(1).addClass("one")
@@ -120,91 +120,25 @@ $("window").ready(function(){
     
     //////////프로그레스바//////////////
     //////////////////////////////////
-    var bar1 = new ProgressBar.Circle("#pro1",{
-        // progressbar 를 적용할 div id 값을 입력 + 종류를 선택
-        // line - circle - semicircle
-        strokeWidth: 10, // 채워지는 선의 굵기
-        easing: "easeInOut", // 값이 채워지는 애니메이션 속도
-        duration: 1400, // 총 진행시간(예제는 1.4초)
-        color: "#004FFF", // 채워지는 선의 색상
-        trailWidth: 10, // 배경 선의 굵기
-        trailColor: "#e5e5e5", // 배경 선의 색상
-        step: function(state, circle){
-            circle.setText(Math.round(circle.value() * 100)+"%")}
-    })
-    bar1.animate(0.85)
+    // var bar1 = new ProgressBar.Circle("#pro1",{
+    //     // progressbar 를 적용할 div id 값을 입력 + 종류를 선택
+    //     // line - circle - semicircle
+    //     strokeWidth: 10, // 채워지는 선의 굵기
+    //     easing: "easeInOut", // 값이 채워지는 애니메이션 속도
+    //     duration: 1400, // 총 진행시간(예제는 1.4초)
+    //     color: "#004FFF", // 채워지는 선의 색상
+    //     trailWidth: 10, // 배경 선의 굵기
+    //     trailColor: "#e5e5e5", // 배경 선의 색상
+    //     step: function(state, circle){
+    //         circle.setText(Math.round(circle.value() * 100)+"%")}
+    // })
+    // bar1.animate(0.85)
     
-        var bar2 = new ProgressBar.Circle("#pro2",{
-        strokeWidth: 10,
-        easing: "easeInOut",
-        duration: 1400, 
-        color: "#004FFF", 
-        trailWidth: 10, 
-        trailColor: "#e5e5e5", 
-        step: function(state, circle){
-            circle.setText(Math.round(circle.value() * 100)+"%")}
-    })
-    bar2.animate(0.9)
-    
-        var bar3 = new ProgressBar.Circle("#pro3",{
-        strokeWidth: 10,
-        easing: "easeInOut",
-        duration: 1400, 
-        color: "#004FFF", 
-        trailWidth: 10, 
-        trailColor: "#e5e5e5", 
-        step: function(state, circle){
-            circle.setText(Math.round(circle.value() * 100)+"%")}
-    })
-    bar3.animate(0.8)
-    
-        var bar4 = new ProgressBar.Circle("#pro4",{
-        strokeWidth: 10,
-        easing: "easeInOut",
-        duration: 1400, 
-        color: "#004FFF", 
-        trailWidth: 10, 
-        trailColor: "#e5e5e5", 
-        step: function(state, circle){
-            circle.setText(Math.round(circle.value() * 100)+"%")}
-    })
-    bar4.animate(0.85)
-    
-        var bar5 = new ProgressBar.Circle("#pro5",{
-        strokeWidth: 10,
-        easing: "easeInOut",
-        duration: 1400, 
-        color: "#004FFF", 
-        trailWidth: 10, 
-        trailColor: "#e5e5e5", 
-        step: function(state, circle){
-            circle.setText(Math.round(circle.value() * 100)+"%")}
-    })
-    bar5.animate(0.7)
-    
-        var bar6 = new ProgressBar.Circle("#pro6",{
-        strokeWidth: 10,
-        easing: "easeInOut",
-        duration: 1400, 
-        color: "#004FFF", 
-        trailWidth: 10, 
-        trailColor: "#e5e5e5", 
-        step: function(state, circle){
-            circle.setText(Math.round(circle.value() * 100)+"%")}
-    })
-    bar6.animate(0.98)
-    
-        $(window).scroll(function(){
-        var pos = $(window).scrollTop()
-        if(pos >= 5500){
-            $(".progress").fadeIn(500)
-        }
-    })
     
 
     
     $(".close").click(function(){
-        $(".aw-modal").fadeOut(300)
+        // $(".aw-modal").fadeOut(300)
         $(".pf-modal").fadeOut(300)
         $('body').css("overflow", "scroll");
     })
@@ -213,14 +147,14 @@ $("window").ready(function(){
         $(".pf-modal").eq(t).fadeIn(300)
         $('body').css("overflow", "hidden");
     })
-    $(".item").click(function(){
-        var t = $(this).index()
-        $(".aw-modal").eq(t).fadeIn(300)
-        $('body').css("overflow", "hidden");
-        $(".twentytwenty-container").twentytwenty({
-				default_offset_pct: 0.5
-			});
-    })
+    // $(".item").click(function(){
+    //     var t = $(this).index()
+    //     $(".aw-modal").eq(t).fadeIn(300)
+    //     $('body').css("overflow", "hidden");
+    //     $(".twentytwenty-container").twentytwenty({
+	// 			default_offset_pct: 0.5
+	// 		});
+    // })
     
      
 

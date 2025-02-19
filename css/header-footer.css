@@ -1,4 +1,4 @@
-@charset="utf-8";
+@charset "utf-8";
 
 @font-face {
     font-family: "YoonMingukB";
@@ -103,7 +103,7 @@ footer {
 }
 
 .contect-txt {
-    font-family: "YoonMingukB";
+    /* font-family: "YoonMingukB"; */
     background-color: #004FFF;
     color: #fff;
     width: 100%;
@@ -120,7 +120,7 @@ footer {
 .contect-logo {
     margin-top: -500px;
     margin-right: -100px;
-    font-family: "YoonMingukB";
+    /* font-family: "YoonMingukB"; */
     background-color: #4A8BFF;
     color: #fff;
     width: 60%;
@@ -159,7 +159,7 @@ footer {
 }
 
 footer > p {
-    font-family: "YoonMingukR";
+    /* font-family: "YoonMingukR"; */
     position: absolute;
     bottom: 0;
     left: 18%;

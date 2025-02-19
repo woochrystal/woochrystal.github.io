@@ -19,14 +19,14 @@ $("document").ready(function(){
         
     for (var i = 0; i < $(".section").length; i++){
         offset.push($(".section").eq(i).offset().top)
-        console.log(offset)
+        // //console.log(offset)
     }
     },100)
     $(window).resize(function(){
         offset = [];
         for (var i = 0; i < $(".section").length; i++){
         offset.push($(".section").eq(i).offset().top)
-        console.log(offset)
+        // //console.log(offset)
     }
     }) 
     $(".top .img-wrap").addClass("delete");
@@ -38,7 +38,7 @@ $("document").ready(function(){
     
     $(window).scroll(function(){
         var pos = $(window).scrollTop();
-        console.log(pos);
+        //console.log(pos);
         if(pos>=600){
             $(".header-bg").addClass("fixed");
         }else{

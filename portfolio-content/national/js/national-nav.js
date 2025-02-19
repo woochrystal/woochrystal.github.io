@@ -48,7 +48,7 @@ $("document").ready(function(){
     $(".book-list>div").eq(0).show();
     $(".book .tab div").click(function(){
         var i = $(this).index()
-        console.log(i)
+        //console.log(i)
         $(".book .tab div").removeClass("on").eq(i).addClass("on")
         $(".book-list>div").hide().eq(i).show();
         
@@ -57,7 +57,7 @@ $("document").ready(function(){
     $(".gallary-list>.slick").eq(0).show();
     $(".gallary .tab div").click(function(){
         var k = $(this).index()
-        console.log(k)
+        //console.log(k)
         $(".gallary .tab div").removeClass("on").eq(k).addClass("on")
         $(".gallary-list>.slick").hide().eq(k).show();
         
