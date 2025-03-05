@@ -13,13 +13,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <!--    css-->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/content.css">
     <!--js-->
     <script src="js/jquery-3.5.0.min.js"></script>
-    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
     <!--폰트어썸-->
     <link rel="stylesheet" href="plugin/fontawsome/all.min.css">
     <script src="plugin/fontawsome/all.min.js"></script>
@@ -32,43 +27,25 @@
 
     <!--프로그레스바-->
     <script src="plugin/progressbar.js"></script>
+    
     <!--필터기능-->
-
     <script src="plugin/imagesloaded.pkgd.js"></script>
     <script src="plugin/isotope.pkgd.min.js"></script>
 
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-    <!--비교 슬라이드-->
-    <link href="plugin/move/css/foundation-1.css" rel="stylesheet" type="text/css" />
-    <link href="plugin/move/css/twentytwenty.css" rel="stylesheet" type="text/css" />
-
-
-
-    <script src="plugin/move/js/jquery.event.move.js"></script>
-    <script src="plugin/move/js/jquery.twentytwenty.js"></script>
-
-    
-
-    <!--폰트
-        @font-face{
-	font-family: "YoonMingukB";
-	src:url("../font/YoonMingukB.ttf")
-}
-@font-face{
-	font-family: "YoonMingukR";
-	src:url("../font/YoonMingukB.ttf")
-}
--->
-
+    <!--    css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/content.css">
 
     <script src="js/portfolio-all.js?ver=20200714"></script>
 </head>
 
 <body>
      
-      <div class="header-wrap">
+    <div class="header-wrap">
        <header class="clearfix">
 
             <h1>
@@ -85,8 +62,9 @@
             <nav>
                 <ul>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Artwork</a></li>
+                    <li><a href="#">Skill</a></li>
+                    <li><a href="#">Study</a></li>
+                    <li><a href="#">Work</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -99,17 +77,13 @@
                 </ul>
             </div>
 
-          </header>
-        </div>
+        </header>
+    </div>
+    
     <section class="clearfix">
-        
         <div class="top">
 
             <div class="top-logo">
-                <!-- <img src="img/b.top/crystal.png" alt="로고" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.1s">
-                <svg version="1.1" id="logo2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="222.059px" height="134.58px" viewBox="0 0 222.059 134.58" enable-background="new 0 0 222.059 134.58" xml:space="preserve" data-llp-composed="true" class="lazy-line-painter">
-                    <polyline fill="none" stroke-miterlimit="10" points="&#10;&#9;15.471,14.891 63.479,126.58 111.486,14.891 159.494,126.58 207.501,14.891 " data-llp-id="logo2-0" data-llp-duration="970" data-llp-delay="0" fill-opacity="0" style="" />
-                </svg> -->
                 <img src="img/a.header-footer/logo.png" alt="사이트 로고">
             </div>
             <div class="top-txt wow fadeInRight" data-wow-delay="1s">
@@ -132,7 +106,6 @@
             <div class="profile">
                 <div class="charactor">
                     <img src="img/c.about/wsj_pic.jpg" alt=" 우수정 캐릭터">
-                    <!-- <img src="img/c.about/charactor.png" alt=" 우수정 캐릭터"> -->
                 </div>
                 <div class="profile-txt">
                     <div class="txt-top-wrap">
@@ -213,7 +186,7 @@
                     </p>
                 </div>
                 <div class="resume_box">
-                    <p class="resume_tit">책임감으로 팀과 <i class="blue">함께 성장하는</i> 사람</p>
+                    <p class="resume_tit">책임감으로 팀과 <i class="blue">함께 성장</i>하는 사람</p>
                     <p>
                         어려운 문제에 부딪혔을 때 포기하지 않고 해결책을 찾기 위해 꾸준히 노력하는 성격입니다. 
                         맡은 일에 대해 끝까지 해결하려는 태도를 가지고 있으며, 이러한 자세는 업무뿐만 아니라 협업에서도 중요한 강점이 되었습니다. 
@@ -223,13 +196,53 @@
             </div>
         </div>
 
+        
+        <div class="artwork part clearfix">
+            <div class="title">
+                <div class="title-bg">
+                    <div class="blue">
+                        <p>Skill</p>
+                    </div>
+                    <p>Stack</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        <li data-filter=".all" class="filter c">ALL</li>
+                        <li data-filter=".Front">FrontEnd</li>
+                        <li data-filter=".Back">BackEnd</li>  
+                        <li data-filter=".db">Database</li> 
+                        <li data-filter=".SCM">SCM</li> 
+                        <li data-filter=".ETC">ETC</li> 
+                    </ul>
+                </div>
+                <div class="item-wrap">
+                    <div class="item all Front"><img src="img/e.skill/react.jpg" alt=""></div>
+                    <div class="item all Front"><img src="img/e.skill/js.jpg" alt="JavaScript"></div>
+                    <div class="item all Back"><img src="img/e.skill/node.jpg" alt=""></div>
+                    <div class="item all Front"><img src="img/e.skill/html.jpg" alt=""></div>
+                    <div class="item all Front"><img src="img/e.skill/css.jpg" alt=""></div>
+                    <div class="item all Front"><img src="img/e.skill/scss.jpg" alt=""></div>
+                    <div class="item all Back"><img src="img/e.skill/jsp.jpg" alt=""></div>
+                    <div class="item all Back"><img src="img/e.skill/express.jpg" alt=""></div>
+                    <div class="item all ETC"><img src="img/e.skill/naver.jpg" alt=""></div>
+                    <div class="item all db"><img src="img/e.skill/sql.jpg" alt=""></div>
+                    <div class="item all db"><img src="img/e.skill/mysql.jpg" alt=""></div>
+                    <div class="item all db"><img src="img/e.skill/maria.jpg" alt=""></div>
+                    
+                </div>
+            </div>
+
+        </div>
+
         <div class="portfolio part">
             <div class="title">
                 <div class="title-bg">
                     <div class="blue">
-                        <p>Portfolio</p>
+                        <p>Study</p>
                     </div>
-                    <p>Project</p>
+                    <p>Projects</p>
                 </div>
             </div>
             <div class="web-content">
@@ -252,15 +265,16 @@
                     <img src="img/d.portfolio/pp.jpg" alt="우수정 로고" class="first">
                     <img src="img/d.portfolio/pp2.jpg" alt="포트폴리오 사이트" class="second">
                 </div>
-                <div class="content">
+                <!-- <div class="content">
                     <img src="img/d.portfolio/national.jpg" alt="국립생태원로고" class="first">
                     <img src="img/d.portfolio/national2.jpg" alt="국립생태원" class="second">
                 </div>
                 <div class="content">
                     <img src="img/d.portfolio/dm.jpg" alt="대림미술관 로고" class="first">
                     <img src="img/d.portfolio/comming-soon.jpg" alt="목업 예시 사진" class="second">
-                </div>
+                </div> -->
             </div>
+
             <div class="pf-modal">
                 <div class="close">
                     <i class="far fa-times-circle"></i>
@@ -314,7 +328,8 @@
                     </div>
                 </div>
             </div>
-            <div class="pf-modal">
+
+            <!-- <div class="pf-modal">
                 <div class="close">
                     <i class="far fa-times-circle"></i>
                 </div>
@@ -329,60 +344,67 @@
             </div>
             
             <div class="pf-modal">
-               <div class="close">
-                <i class="far fa-times-circle"></i>
-               </div>
+                <div class="close">
+                    <i class="far fa-times-circle"></i>
+                </div>
                 <div class="modal-content">
                     <img src="img/d.portfolio/comming-soon.jpg" alt="준비중">
                 </div>
-            </div> 
-
-
+            </div>  -->
 
         </div>
 
-        <div class="artwork part clearfix">
+
+        <div class="portfolio part">
             <div class="title">
                 <div class="title-bg">
                     <div class="blue">
-                        <p>Artwork</p>
+                        <p>Work</p>
                     </div>
-                    <p>Graphic</p>
+                    <p>Projects</p>
                 </div>
             </div>
-            <div class="container">
-                <div class="menu">
-                    <ul>
-                        <li data-filter=".all">ALL</li>
-                        <li data-filter=".design">디자인</li>
-                        <li data-filter=".page">상세페이지 / 배너</li>
-                        <li data-filter=".photo">포토샵</li>
-                    </ul>
-                </div>
-                <div class="item-wrap">
-                    <div class="item all design"><img src="img/e.artwork/tape.jpg" alt="햄스터 캐릭터 디자인"></div>
-                    <div class="item all design"><img src="img/e.artwork/slip.jpg" alt="여름 패턴 디자인"></div>
-                    <div class="item all design"><img src="img/e.artwork/coupon.jpg" alt="쿠폰 디자인"></div>
-                    <div class="item all design"><img src="img/e.artwork/9na.jpg" alt="군인어플 구나"></div>
-                    <div class="item all design"><img src="img/e.artwork/namecard.jpg" alt="로고 명함"></div>
-                    <div class="item all page"><img src="img/e.artwork/cs-cover.jpg" alt="콩순이 상세페이지"></div>
-                    <div class="item all page">
-                        <img src="img/e.artwork/starbucks-cover.jpg" alt="스타벅스 배너">
-                    </div>
-                    <div class="item all photo"><img src="img/e.artwork/photo1.jpg" alt="인물보정"></div>
-                    <div class="item all photo"><img src="img/e.artwork/photo2.jpg" alt="인물보정"></div>
-                    <div class="item all photo"><img src="img/e.artwork/photo3.jpg" alt="인물보정"></div>
-                    <div class="item all page"><img src="img/e.artwork/mac.jpg" alt="맥 이벤트페이지"></div>
-                    <div class="item all page"><img src="img/e.artwork/peacock.jpg" alt="피코크 집밥"></div>
-                    
-                </div>
-                
-            
+            <div class="web-content">
+                <div class="content">
+                    <img src="img/d.portfolio/adidas1.jpg" alt="아디다스 로고" class="first">
+                    <img src="img/d.portfolio/adidas2.jpg" alt="아디다스 이지부스트 사이트" class="second">
 
+                </div>
+                <div class="content">
+                    <img src="img/d.portfolio/gta1.jpg" alt="gta5 로고" class="first">
+                    <img src="img/d.portfolio/gta2.jpg" alt="gta5 사이트" class="second">
 
+                </div>
             </div>
-
+            <div class="pf-modal">
+                <div class="close">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="modal-content">
+                    <p><a href="portfolio-content/adidas/adidas-main.html" target="_blank">사이트 바로가기</a></p>
+                    <div class="detail">
+                        <img src="img/d.portfolio/adidas-detail.jpg" alt="아디다스 사이트 상세페이지">
+                        <div class="btn">
+                            <a href="portfolio-content/adidas/adidas-main.html" target="_blank"><img src="img/d.portfolio/btn1.png" alt="사이트 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pf-modal">
+                <div class="close">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="modal-content">
+                    <div class="detail">
+                        <img src="img/d.portfolio/gta-detail.jpg" alt="gta 사이트 상세페이지">
+                        <div class="btn">
+                            <a href="portfolio-content/gta5/gta-main.html" target="_blank"><img src="img/d.portfolio/btn2.png" alt="사이트 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
         <footer class="contect part clearfix">
             <div class="contect-wrap clearfix">

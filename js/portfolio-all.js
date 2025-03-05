@@ -118,23 +118,6 @@ $("window").ready(function(){
     })
      
     
-    //////////프로그레스바//////////////
-    //////////////////////////////////
-    // var bar1 = new ProgressBar.Circle("#pro1",{
-    //     // progressbar 를 적용할 div id 값을 입력 + 종류를 선택
-    //     // line - circle - semicircle
-    //     strokeWidth: 10, // 채워지는 선의 굵기
-    //     easing: "easeInOut", // 값이 채워지는 애니메이션 속도
-    //     duration: 1400, // 총 진행시간(예제는 1.4초)
-    //     color: "#004FFF", // 채워지는 선의 색상
-    //     trailWidth: 10, // 배경 선의 굵기
-    //     trailColor: "#e5e5e5", // 배경 선의 색상
-    //     step: function(state, circle){
-    //         circle.setText(Math.round(circle.value() * 100)+"%")}
-    // })
-    // bar1.animate(0.85)
-    
-    
 
     
     $(".close").click(function(){
@@ -147,15 +130,6 @@ $("window").ready(function(){
         $(".pf-modal").eq(t).fadeIn(300)
         $('body').css("overflow", "hidden");
     })
-    // $(".item").click(function(){
-    //     var t = $(this).index()
-    //     $(".aw-modal").eq(t).fadeIn(300)
-    //     $('body').css("overflow", "hidden");
-    //     $(".twentytwenty-container").twentytwenty({
-	// 			default_offset_pct: 0.5
-	// 		});
-    // })
-    
      
 
     var content_txt = [
