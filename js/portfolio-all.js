@@ -1,4 +1,4 @@
-$("window").ready(function(){
+$("window").ready(function(){//2018 퍼블리셔 버전
     //부드럽게 화면 보여주기
     $("body").css("display", "none");
  
@@ -118,8 +118,6 @@ $("window").ready(function(){
     })
      
     
-
-    
     $(".close").click(function(){
         // $(".aw-modal").fadeOut(300)
         $(".pf-modal").fadeOut(300)
@@ -130,8 +128,9 @@ $("window").ready(function(){
         $(".pf-modal").eq(t).fadeIn(300)
         $('body').css("overflow", "hidden");
     })
-     
-
+    
+/*
+//프론트 포폴 준비하면서 자바스크립트로 변경
     var content_txt = [
         "아디다스 이지부스트 리뉴얼 사이트",
         "GTA5 원프레임 반응형 사이트",
@@ -146,29 +145,27 @@ $("window").ready(function(){
         }else{
             $('.mouse').show();
         }
-    var C_list = $(".web-content .content").index(this);
+        var C_list = $(".web-content .content").index(this);
         
-        
-        
-    $(document).mousemove(function(e){
-         mouseX = e.pageX;
-        mouseY = e.pageY;
-      $('.mouse').css("left", mouseX+15).css("top", mouseY+15).html(content_txt[C_list]);
-    })
+        $(document).mousemove(function(e){
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+        $('.mouse').css("left", mouseX+15).css("top", mouseY+15).html(content_txt[C_list]);
+        })
     })
     $(".web-content .content").mouseout(function(){
         $('.mouse').hide();
     })
-    
-    //비교슬라이드
+//프론트 포폴 준비하면서 자바스크립트로 변경
+    $(".web-content .content").mouseover(function(){
+        if($( window ).width() < 1280) {
+            $('.mouse').hide();
+        }else{
+            $('.mouse').show();
+        }  
+    })
+    */
 
-      
-    
-    
-    
-    
-    
-  
     
     
     $(".phone-body").mouseover(function(){
@@ -181,10 +178,6 @@ $("window").ready(function(){
             scrollTop: 0
         })
     })
-    
-    
-    
-    
     
     
     
