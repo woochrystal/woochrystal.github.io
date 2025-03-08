@@ -73,6 +73,7 @@ section > div { width: 1150px; }
     width: 38%; margin: 0.3%; border: 2px solid #004FFF; background-color: #004FFF; 
     position: relative; display: inline-block; overflow: hidden; font-size: 0; cursor: pointer;
 }
+.portfolio .content.gray{border: 2px solid #ccc; background-color: #ccc; }
 
 /*/////////썸네일//////////*/
 .web-content .content img{width: 100%; padding: 2px; transition: 0.4s;}
