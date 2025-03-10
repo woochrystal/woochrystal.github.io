@@ -123,7 +123,7 @@ $("window").ready(function(){//2018 퍼블리셔 버전
         $(".pf-modal").fadeOut(300)
         $('body').css("overflow", "scroll");
     })
-    $(".content").click(function(){
+    $(".Study .content").click(function(){
         var t = $(this).index()
         $(".pf-modal").eq(t).fadeIn(300)
         $('body').css("overflow", "hidden");

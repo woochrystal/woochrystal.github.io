@@ -81,6 +81,10 @@ section > div { width: 1150px; }
 .web-content .content img.first{position: absolute; z-index: 10000;}
 .web-content .content img:hover{opacity: 0;}
 
+/* 실무 */
+.work .content{height: 280px; width: 76%;}
+.work .content img:hover{opacity: 1;}
+
 /*/////////////////////모달창///////////////////////////*/
 .pf-modal{
     display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; 
@@ -99,10 +103,8 @@ section > div { width: 1150px; }
 .pf-modal .modal-content::-webkit-scrollbar{display: inherit;}
 .detail{position: relative;}
 .btn{position: absolute; top: 14.5%; width: 55%; left: 50%; transform: translateX(-50%);}
-.pf-modal:nth-child(3) .btn{top: 9.6%;}
 .pf-modal:nth-child(6) .btn{top: 11.2%;}
-.pf-modal:nth-child(8) .modal-content{width: 40%; height: 80%;}
-.pf-modal:nth-child(8) .modal-content::-webkit-scrollbar{display: none;}
+.pf-modal:nth-child(8) .btn{top: 9.6%;}/*아디다스 */
 
 .artwork{float: right; margin: auto; padding: 50px 0; margin-top: 100px;}
 .artwork .container{width: 93%; float: left; margin: 10px auto; position: relative;}
@@ -214,7 +216,6 @@ section > div { width: 1150px; }
     .web-content{margin-left: 0px; margin: 0 5%;}
     .portfolio .content{width: 50%; margin: 0;}
     .modal-content{width: 80%;}
-    .pf-modal:nth-child(8) .modal-content{width: 50%; height: 60%;}
     .artwork{width: 100%; text-align: center;}
     .artwork .title .blue{
         display: inline-block; color:#004FFF; background-color: transparent; 
@@ -253,7 +254,6 @@ section > div { width: 1150px; }
     .portfolio{margin-top: 0px;}
     .portfolio .content{width: 100%;}
     .modal-content{width: 90%;}
-    .pf-modal:nth-child(8) .modal-content{width: 70%; height: 40%;}
 
     .artwork{margin-top: 30px;}
     .artwork .menu{width: 350px; margin-bottom: 10px;}
