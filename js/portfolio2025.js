@@ -29,7 +29,7 @@ window.onload = function() {//다 로드 된 후 실행
     var mouse_box = document.querySelector('.mouse');
 
     pro_cons.forEach(function(pro, index){
-        console.log(pro)
+        // console.log(pro)
         pro.addEventListener('mouseover',function(e){//마우스 올렸을때 이벤트
             var mouseX = e.pageX;//마우스 수평 좌표
             var mouseY = e.pageY;//마우스 수직 좌표
@@ -54,5 +54,18 @@ window.onload = function() {//다 로드 된 후 실행
         });//mouseover end
     })
 
-
+    // 스크롤
+    // 스크롤 y좌표
+    let scrollY = window.scrollY;
+    const title01 = document.getElementById('title01');
+    
+    // console.log(title01)
+    const title02 = document.getElementById('title02');
+    const title03 = document.getElementById('title03');
+    const title04 = document.getElementById('title04');
+    window.addEventListener('scroll',function(){
+        scrollY = window.scrollY;
+        console.log(title01.offsetTop,':',scrollY)
+        
+    })
 };

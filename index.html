@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Woo Sujeong</title>
     
+    <!--js-->
+    <script src="js/jquery-3.5.0.min.js"></script>
     
     <!--파비콘-->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -13,8 +15,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <!--js-->
-    <script src="js/jquery-3.5.0.min.js"></script>
     <!--폰트어썸-->
     <link rel="stylesheet" href="plugin/fontawsome/all.min.css">
     <script src="plugin/fontawsome/all.min.js"></script>
@@ -46,11 +46,10 @@
     <script src="js/portfolio2025.js?ver=20250306"></script>
 </head>
 
-<body>
+<body class="main_body">
      
     <div class="header-wrap">
        <header class="clearfix">
-
             <h1>
                 <a href="index.html">
                     <img src="img/a.header-footer/logo.png" alt="사이트 로고">
@@ -64,11 +63,11 @@
             <div class="nav-wrap"></div>
             <nav>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skill</a></li>
-                    <li><a href="#">Study</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="javascript:void(0)" onclick="navScroll('title01')">About</a></li>
+                    <li><a href="javascript:void(0)" onclick="navScroll('title02')">Skill</a></li>
+                    <li><a href="javascript:void(0)" onclick="navScroll('title03')">Study</a></li>
+                    <li><a href="javascript:void(0)" onclick="navScroll('title04')">Work</a></li>
+                    <li><a href="javascript:void(0)" onclick="navScroll('title05')">Contact</a></li>
                 </ul>
             </nav>
             <div class="indicator">
@@ -85,7 +84,6 @@
     
     <section class="clearfix">
         <div class="top">
-
             <div class="top-logo">
                 <img src="img/a.header-footer/logo.png" alt="사이트 로고">
             </div>
@@ -98,7 +96,7 @@
         </div>
 
         <div class="about part">
-            <div class="title">
+            <div class="title" id="title01">
                 <div class="title-bg">
                     <div class="blue">
                         <p>About</p>
@@ -201,7 +199,7 @@
 
         
         <div class="artwork part clearfix">
-            <div class="title">
+            <div class="title" id="title02">
                 <div class="title-bg">
                     <div class="blue">
                         <p>Skill</p>
@@ -241,7 +239,7 @@
 
         <!-- 공부용 포폴 -->
         <div class="portfolio Study part">
-            <div class="title">
+            <div class="title" id="title03">
                 <div class="title-bg">
                     <div class="blue">
                         <p>Study</p>
@@ -250,31 +248,31 @@
                 </div>
             </div>
             <div class="web-content">
-                <div class="content">
+                <a class="content">
                     <img src="img/d.portfolio/iloke1.jpg" alt="이로케 로고" class="first">
                     <img src="img/d.portfolio/iloke2.jpg" alt="이로케 가구 사이트" class="second">
 
-                </div>
-                <div class="content">
+                </a>
+                <a class="content">
                     <img src="img/d.portfolio/shilla1.jpg" alt="신라호텔 서울 로고" class="first">
                     <img src="img/d.portfolio/shilla2.jpg" alt="신라호텔 서울 사이트" class="second">
 
-                </div>
-                <div class="content">
+                </a>
+                <a class="content">
                     <img src="img/d.portfolio/jomalone1.jpg" alt="조말론 로고" class="first">
                     <img src="img/d.portfolio/jomalone2.jpg" alt="조말론 앱" class="second">
 
-                </div>
-                <div class="content gray">
+                </a>
+                <div class="content hasmodal gray">
                     <img src="img/d.portfolio/pp.jpg" alt="우수정 로고" class="first">
                     <img src="img/d.portfolio/pp2.jpg" alt="포트폴리오 사이트" class="second">
                 </div>
-                <div class="content gray">
+                <div class="content hasmodal gray">
                     <img src="img/d.portfolio/gta1.jpg" alt="gta5 로고" class="first">
                     <img src="img/d.portfolio/gta2.jpg" alt="gta5 사이트" class="second">
 
                 </div>
-                <div class="content gray">
+                <div class="content hasmodal gray">
                     <img src="img/d.portfolio/adidas1.jpg" alt="아디다스 로고" class="first">
                     <img src="img/d.portfolio/adidas2.jpg" alt="아디다스 이지부스트 사이트" class="second">
 
@@ -285,28 +283,10 @@
             
             <!-- 공부용 모달시작 -->
             <div class="pf-modal">
-                <div class="close">
-                    <i class="far fa-times-circle"></i>
-                </div>
-                <div class="modal-content">
-                    <img src="img/d.portfolio/comming-soon.jpg" alt="준비중">
-                </div>
             </div>
             <div class="pf-modal">
-                <div class="close">
-                    <i class="far fa-times-circle"></i>
-                </div>
-                <div class="modal-content">
-                    <img src="img/d.portfolio/comming-soon.jpg" alt="준비중">
-                </div>
             </div> 
             <div class="pf-modal">
-                <div class="close">
-                    <i class="far fa-times-circle"></i>
-                </div>
-                <div class="modal-content">
-                    <img src="img/d.portfolio/comming-soon.jpg" alt="준비중">
-                </div>
             </div> 
             <div class="pf-modal">
                 <div class="close">
@@ -354,7 +334,7 @@
 
         <!-- 실무 -->
         <div class="portfolio work part">
-            <div class="title">
+            <div class="title" id="title04">
                 <div class="title-bg">
                     <div class="blue">
                         <p>Work</p>
@@ -409,7 +389,7 @@
         </div>
 
 
-        <footer class="contect part clearfix">
+        <footer class="contect part clearfix" id="title05">
             <div class="contect-wrap clearfix">
                 <div class="contect-txt">
                     <p>Contact</p>
@@ -422,9 +402,9 @@
                         </div>
 
                         <div class="logo-txt">
-                            <p><b>TEL</b> 010-4442-0115</p>
+                            <!-- <p><b>TEL</b> 010-4442-0115</p> -->
                             <p><b>E-MAIL</b></p>
-                            <p>woochrystal25@gmail.com</p>
+                            <p>woochryfront@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -434,4 +414,15 @@
         <!-- 포폴컨텐츠 위에 마우스 올리면 보이는 제목 -->
         <div class="mouse"></div>
     </section>
-</body></html>
+    <!-- 네비 -->
+    <script> 
+        function navScroll(title){
+            const section_tit = document.getElementById(title);
+            window.scrollTo({
+                top: section_tit.offsetTop,// 타겟 섹션의 상단 위치로 스크롤
+                behavior: 'smooth'//부드럽게 스크롤
+            });
+        }
+    </script>
+</body>
+</html>

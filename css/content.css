@@ -111,7 +111,7 @@ section > div { width: 1150px; }
 .artwork .menu{display: flex;}
 .artwork .menu ul{
     margin: auto; text-align: center; margin-bottom: 30px; border: 2px solid #004FFF; 
-    color: #004FFF; border-radius: 4px; font-size: 0; background-color: #004FFF;
+    color: #004FFF; font-size: 0; background-color: #004FFF;
 }
 .artwork .menu ul li{
     display: inline-block; padding: 10px 20px; cursor: pointer; font-size: 18px; 
