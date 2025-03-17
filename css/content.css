@@ -55,7 +55,7 @@ section > div {
 .profile-txt > .hasI .con span{width: calc(100% - 150px); padding: 0; line-height: 1.5;}
 
 /*resume*/
-.resume{width: 100%;  margin: auto; margin-top: 50px;}
+.resume{width: 100%;  margin: auto; margin-top: 100px;}
 .resume p {line-height: normal; word-break: keep-all;}
 .resume .resume_box{padding-bottom: 50px;}
 .resume .resume_tit{width: 850px; font-size: 30px; color: #333; font-weight: 500; padding-bottom: 15px;}
@@ -97,15 +97,10 @@ section > div {
     background-color: rgba(159, 161, 178, 0.87); z-index: 10000000000000; text-align: center;
 }
 .pf-modal i{font-size: 50px; color: #ffffff; cursor: pointer; position: relative; top: 30px;}
-.modal-content{margin-top: 20px; width: 60%; height: 85%; background-color: transparent; 
-    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%); overflow: scroll;
+.modal-content{margin-top: 20px; width: 60%; max-height: 85%; background-color: transparent; 
+    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%); overflow: auto;
 }
-.modal-content p{
-    font-size: 20px; color: #fff; background-color: #000; padding: 20px; 
-    position: fixed; width: 100%; height: 60px; top: 0;
-}
-.pf-modal .modal-content img{width: 100%;height: 100%;
-    object-fit: contain;}
+.pf-modal .modal-content img{width: 100%;height: 100%;display: block; object-fit: contain;}
 .pf-modal .modal-content::-webkit-scrollbar{display: inherit;}
 .detail{position: relative;}
 .btn{position: absolute; top: 14.5%; width: 55%; left: 50%; transform: translateX(-50%);}
@@ -130,7 +125,7 @@ section > div {
 
 .aw-modal{width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 100000000000000; display: none;}
 .close{width: 100%; height: 100%; background-color: rgba(38, 38, 77, 0.58); position: absolute; top: 0; left: 0;}
-.close i{font-size: 40px; color: #fff; position: absolute; left: 50%; transform: translateX(-50%); top: 20px; cursor: pointer;}
+.close svg{font-size: 40px; color: #fff; position: absolute; left: 50%; transform: translateX(-50%); top: 20px; cursor: pointer;}
 .aw-modal .modal-content{
     width: 70%; height: 80%; background-color: transparent; margin-top: 20px; background-repeat: no-repeat; 
     background-size: contain; background-position: center center;
@@ -149,6 +144,42 @@ section > div {
 .aw-modal:nth-of-type(8) .modal-content::-webkit-scrollbar, 
 .aw-modal:nth-of-type(13) .modal-content::-webkit-scrollbar{display: inherit;}
 .aw-modal:nth-of-type(6) .modal-content{height: 80%; background-color: #fff; text-align: center;}
+
+/* 새로운 모달스타일 */
+.project_modal{background-color: #fff; text-align: left; word-break: keep-all;}
+.project_modal .detail{padding: 100px 50px;}
+.modal_main_tit{text-align: center;}
+.modal_main_tit ul{display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
+.modal_main_tit ul li{margin: 0 5px;padding: 5px 10px; border: 2px solid #ccc;}
+.modal_main_tit h2{font-size: 45px; font-weight: 500; padding-top: 30px;}
+.project_modal .info{line-height: 1.5;font-size: 20px;}
+.project_modal .main_img{width: 600px; margin: 30px auto; }
+.project_modal .explan_box{background-color: #eee; padding: 15px;}
+
+.project_modal .info_con{padding-top: 85px;}
+.project_modal .pro_modal_tit{margin-bottom: 20px;padding: 5px 15px 5px 0; background-color: #004FFF; font-weight: bold; color: #fff;
+    display: inline-block; position: relative;text-transform: capitalize;}
+.project_modal .pro_modal_tit::after{
+    content: '';position: absolute;width: 50px; height: 100%; right: 100%; background-color: #004FFF; top: 0; display: block;
+}
+
+.project_modal .skill_box ul{display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start;}
+.project_modal .skill_box ul li{margin-right: 5px;padding: 5px 10px; border: 2px solid #004FFF; }
+
+.project_modal .link_box{}
+.project_modal .link_box ul{display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start;}
+.project_modal .link_box a{
+    background-color: #eee; padding: 5px 10px;min-width: 200px; display: flex; align-items: center; justify-content: space-between;
+    margin-right: 5px; transition: 0.3s;
+}
+.project_modal .link_box a:hover{background-color: #ccc;}
+
+.project_modal .modal_list{padding-bottom: 50px;}
+.project_modal .modal_list_tit{font-weight: bold;}
+.project_modal .modal_list_tit span{font-size: 17px;}
+.project_modal .modal_list li{color: #333; padding-top: 15px; margin-left: 30px;position: relative;list-style: disc;}
+
+.project_modal code{font-size: 15px; padding: 1px 5px; border: 1px solid #ccc; background: #eee;}
  
 @keyframes click {
     0% {top: 10px;}
@@ -227,7 +258,7 @@ section > div {
         text-align: left; width: 110px; margin-left: 0px; border-radius: 0; padding: 10px 0;
     }
     .artwork .title-bg{text-align: center; margin: auto; width: 250px; padding: 0 10px; border-bottom: 3px solid #004FFF;}
-    .aw-modal .close i{top: 30px;}
+    .aw-modal .close svg{top: 30px;}
     .aw-modal:nth-of-type(10) .twentytwenty-container,
     .aw-modal:nth-of-type(11) .twentytwenty-container,
     .aw-modal:nth-of-type(12) .twentytwenty-container{
@@ -265,7 +296,7 @@ section > div {
     .artwork .menu ul li{font-size: 15px; padding: 7px 10px;}
     .aw-modal .modal-content{width: 100%; margin: 0;}
     .artwork .item-wrap{margin-top: 30px;}
-    .aw-modal .close i{top: 50px;}
+    .aw-modal .close svg{top: 50px;}
     .aw-modal .modal-content .phone{left: 10px;}
     .aw-modal:nth-of-type(6) .click img{left: -125px;}
     .aw-modal:nth-of-type(3) .modal-content,
