@@ -36,7 +36,7 @@ section > div {
 /*charactor*/
 .charactor{width: 350px; display: inline-block; border: 5px solid #8ca4d8;transition: border 0.2s;}
 .charactor:hover{border-color: #004FFF;}
-.charactor img{width: 100%;}
+.charactor img{width: 100%;display: block;}
 
 /*profile-txt*/
 .profile-txt{ width: calc(100% - 350px); padding-left: 50px; display: flex; flex-direction: column; align-items: flex-start; }
@@ -119,7 +119,12 @@ section > div {
     background-color: #fff; transition: 0.2s;
 }
 .artwork .item-wrap{width: 100%; margin: auto;  overflow: hidden;}
-.artwork .item{width: calc(100% / 3); border: 1px solid #ccc; cursor: pointer;}
+.artwork .item{width: calc(100% / 5); border: 1px solid #ccc; cursor: pointer;}
+.artwork .item span{
+    position: absolute; left: 0; top: 0; display: flex; width: 100%; height: 100%; align-items: center; font-weight: bold;
+    justify-content: center; background-color: #ccc; opacity: 0; transition: 0.5s; color: #000; font-size: 23px;
+}
+.artwork .item:hover span{opacity: .99;}
 .artwork .item img{width: 100%; height: 100%; padding: 10px;}
 .artwork .menu ul li:hover{background-color: #004FFF; color: #fff;}
 .menu ul li.c{background-color: #004FFF; color: #fff;}
@@ -299,6 +304,7 @@ section > div {
     .artwork .menu ul li{font-size: 15px; padding: 7px 10px;}
     .aw-modal .modal-content{width: 100%; margin: 0;}
     .artwork .item-wrap{margin-top: 30px;}
+
     .aw-modal .close svg{top: 50px;}
     .aw-modal .modal-content .phone{left: 10px;}
     .aw-modal:nth-of-type(6) .click img{left: -125px;}
