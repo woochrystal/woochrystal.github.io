@@ -50,35 +50,37 @@
      
     <div class="header-wrap">
        <header class="clearfix">
-            <h1>
-                <a href="index.html">
-                    <img src="img/a.header-footer/logo.png" alt="사이트 로고">
-                </a>
-            </h1>
-            <div class="bar-btn">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+            <div class="web_nav">
+                <h1>
+                    <a href="index.html">
+                        <img src="img/a.header-footer/logo.png" alt="사이트 로고">
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="javascript:void(0)" onclick="navScroll('title01')">About</a></li>
+                        <li><a href="javascript:void(0)" onclick="navScroll('title02')">Skill</a></li>
+                        <li><a href="javascript:void(0)" onclick="navScroll('title03')">Study</a></li>
+                        <li><a href="javascript:void(0)" onclick="navScroll('title04')">Work</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="nav-wrap"></div>
-            <nav>
-                <ul>
-                    <li><a href="javascript:void(0)" onclick="navScroll('title01')">About</a></li>
-                    <li><a href="javascript:void(0)" onclick="navScroll('title02')">Skill</a></li>
-                    <li><a href="javascript:void(0)" onclick="navScroll('title03')">Study</a></li>
-                    <li><a href="javascript:void(0)" onclick="navScroll('title04')">Work</a></li>
-                    <li><a href="javascript:void(0)" onclick="navScroll('title05')">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="indicator">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+            <div class="mob_nav">
+                <div class="bar-btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="nav-wrap"></div>
+                <div class="indicator">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
-
         </header>
     </div>
     
@@ -94,7 +96,9 @@
             </div>
 
         </div>
-
+    </section>
+    
+    <section>
         <div class="about part">
             <div class="title" id="title01">
                 <div class="title-bg">
@@ -131,7 +135,7 @@
                         </div>
                     </div>
                     <div class="txt-bottom hasI">
-                        <span class="blue">Career</span>
+                        <span class="blue">CAREER</span>
                         <span class="con">
                             <i>2020. 12 ~ 2023. 04</i> 
                             <span>㈜플래시21, 퍼블리셔</span>
@@ -196,8 +200,11 @@
                 </div>
             </div>
         </div>
-
-        
+    </section>
+    
+    
+    
+    <section>
         <div class="artwork part clearfix">
             <div class="title" id="title02">
                 <div class="title-bg">
@@ -310,7 +317,10 @@
             </div>
 
         </div>
-
+    </section>
+    
+    
+    <section>
         <!-- 공부용 포폴 -->
         <div class="portfolio Study part">
             <div class="title" id="title03">
@@ -854,6 +864,9 @@
 
         </div>
 
+    </section>
+    
+    <section>
         <!-- 실무 -->
         <div class="portfolio work part">
             <div class="title" id="title04">
@@ -911,31 +924,31 @@
         </div>
 
 
-        <footer class="contect part clearfix" id="title05">
-            <div class="contect-wrap clearfix">
-                <div class="contect-txt">
-                    <p>Contact</p>
-                </div>
-                <div class="contect-logo">
-                    <div class="cl-wrap">
-
-                        <div class="img-wrap">
-                            <img src="img/a.header-footer/logo.png" alt="우수정 포트폴리오 사이트 로고">
-                        </div>
-
-                        <div class="logo-txt">
-                            <!-- <p><b>TEL</b> 010-4442-0115</p> -->
-                            <p><b>E-MAIL</b></p>
-                            <p>woochryfront@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p>© Copyright Woo Sujeong all rights reserved.</p>
-        </footer>
         <!-- 포폴컨텐츠 위에 마우스 올리면 보이는 제목 -->
         <div class="mouse"></div>
     </section>
+    <footer class="contect part clearfix" id="title05">
+        <div class="contect-wrap clearfix">
+            <div class="contect-txt">
+                <p>Contact</p>
+            </div>
+            <div class="contect-logo">
+                <div class="cl-wrap">
+
+                    <div class="img-wrap">
+                        <img src="img/a.header-footer/logo.png" alt="우수정 포트폴리오 사이트 로고">
+                    </div>
+
+                    <div class="logo-txt">
+                        <!-- <p><b>TEL</b> 010-4442-0115</p> -->
+                        <p><b>E-MAIL</b></p>
+                        <p>woochryfront@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>© Copyright Woo Sujeong all rights reserved.</p>
+    </footer>
     <!-- 네비 -->
     <script> 
         function navScroll(title){

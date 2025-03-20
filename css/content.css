@@ -1,33 +1,34 @@
 @charset "utf-8";
 section > div { 
-    width: 1200px; padding-right: 150px; padding-left: 50px; padding-top: 200px; margin: 0 auto; float: right;
+    padding: 100px 50px; margin: 0 auto;
 }
-.blue{color: #004FFF;}
-.top { display: flex; align-items: flex-end; justify-content: center; }
+.blue{color: #fff;}
+.top { display: flex; align-items: center; justify-content: center; height: 100vh; padding: 0; }
 
 /*로고*/
-.top-logo { display: inline-block; text-align: center; margin: auto; margin-top: 0; }
+.top-logo { display: block; text-align: center; margin-top: 0; }
 .top-logo img { opacity: 1; }
 #logo2 { width: 310px; height: 270px; position: relative; left: -252px; top: 160px; z-index: 0; }
 
 /*텍스트*/
 .top .top-txt { padding-left: 50px; }
-.top .top-txt p { color: #000; }
-.top .top-txt .info_txt { font-size: 25px; padding: 3px; }
-.top .top-txt .name_txt { font-size: 45px; line-height: 1.5; }
-.top .top-txt .name_txt b { font-weight: 600; }
+.top .top-txt p { color: #a9c5ff;}
+.top .top-txt .info_txt { font-size: 2vw; padding: 3px; }
+.top .top-txt .name_txt { font-size: 2.8vw; line-height: 1.5; font-weight: 700;}
+.top .top-txt .name_txt b { font-weight: 700; color: #fff; }
 
 /* about */
 .about p,.about span{font-size: 20px;} 
-.blue{color: #004FFF; font-weight: bold;} 
+.blue{color: #fff; font-weight: bold;} 
 
 /*title*/
 .title{margin-bottom: 50px;} 
 .title p{font-size: 25px; display: inline-block; font-weight: bold;} 
 .title .blue{
-    display: inline-block; color: #fff; background-color: #004FFF; 
+    display: inline-block; background-color: #fff; 
     text-align: right; width: 150px; margin-left: -50px; border-radius: 0; padding: 10px;
 }
+.title .blue p{ color: #212d42;}
 
 /*profile*/
 .profile{margin: auto; display: flex; align-items: flex-start; justify-content: center; width: 100%;}
@@ -35,14 +36,14 @@ section > div {
 
 /*charactor*/
 .charactor{width: 350px; display: inline-block; border: 5px solid #8ca4d8;transition: border 0.2s;}
-.charactor:hover{border-color: #004FFF;}
+.charactor:hover{border-color: #fff;}
 .charactor img{width: 100%;display: block;}
 
 /*profile-txt*/
 .profile-txt{ width: calc(100% - 350px); padding-left: 50px; display: flex; flex-direction: column; align-items: flex-start; }
 .profile-txt i {font-size: 15px; font-weight: 600;padding-right: 5px;}
 .profile-txt .hasI .con{  font-size: 18px;}
-.txt-bottom:first-of-type{margin-bottom: 20px;}
+.txt-bottom{margin-bottom: 20px;}
 .txt-top span, 
 .txt-bottom span{ display: flex;align-items: center;  padding: 5px;}
 .txt-top-wrap{display: flex ; flex-wrap: wrap;}
@@ -59,10 +60,10 @@ section > div {
 .resume{width: 100%;  margin: auto; margin-top: 100px;}
 .resume p {line-height: normal; word-break: keep-all;}
 .resume .resume_box{padding-bottom: 50px;}
-.resume .resume_tit{width: 850px; font-size: 30px; color: #333; font-weight: 500; padding-bottom: 15px;}
+.resume .resume_tit{width: 850px; font-size: 30px;font-weight: 500; padding-bottom: 15px;}
 
 .section p{
-    position: absolute; color: #004FFF; width: 125px; height: 125px; line-height: 110px; 
+    position: absolute; color: #fff; width: 125px; height: 125px; line-height: 110px; 
     font-size: 30px; font-weight: bold; border: 2px solid #5B5B5B; border-radius: 100%; 
     text-align: center; top:17px; left: 17px;
 }
@@ -71,16 +72,16 @@ section > div {
 
 /* Portfolio */
 .mouse{
-    border-radius: 4px; position: absolute; left: 0; top: 0; border: 2px solid #004FFF; 
-    z-index: 1000000000000000000; background-color: #FFF; padding: 10px; text-align: center; 
-    line-height: 30px; font-family: "YoonMinguk"; font-weight: bold; color: #004FFF; display: none; width: auto;
+   position: absolute; left: 0; top: 0; border: 2px solid #212d42; 
+    z-index: 1000000000000000000; background-color: #050d1c; padding: 10px; text-align: center; 
+    line-height: 30px; font-family: "YoonMinguk"; font-weight: bold; color: #fff; display: none; width: auto;
 }
 .web-content{font-size: 0;}
 .portfolio .content{
-    width: calc(50% - 6px); margin: 3px; border: 2px solid #004FFF; background-color: #004FFF; 
+    width: calc(100% / 3 - 6px); margin: 3px; border: 2px solid #fff; background-color: #fff; 
     position: relative; display: inline-block; overflow: hidden; font-size: 0; cursor: pointer;
 }
-.portfolio .content.gray{border: 2px solid #ccc; background-color: #ccc; }
+.portfolio .content.gray{border: 2px solid #c9d5ea; background-color: #c9d5ea; }
 
 /*/////////썸네일//////////*/
 .web-content .content img{ width: 100%; height: 100%; object-fit: cover; object-position: top;padding: 2px; transition: 0.4s;}
@@ -111,23 +112,22 @@ section > div {
 .artwork .container{width: 100%; float: left; margin: 10px auto; position: relative;}
 .artwork .menu{display: flex;}
 .artwork .menu ul{
-    margin: auto; text-align: center; margin-bottom: 30px; border: 2px solid #004FFF; 
-    color: #004FFF; font-size: 0; background-color: #004FFF;
+    margin: auto; text-align: center; margin-bottom: 30px; border: 2px solid #212d42; 
+    color: #fff; font-size: 0; 
 }
 .artwork .menu ul li{
-    display: inline-block; padding: 10px 20px; cursor: pointer; font-size: 18px; 
-    background-color: #fff; transition: 0.2s;
+    display: inline-block; padding: 10px 20px; cursor: pointer; font-size: 18px; transition: 0.2s;
 }
 .artwork .item-wrap{width: 100%; margin: auto;  overflow: hidden;}
-.artwork .item{width: calc(100% / 5); border: 1px solid #ccc; cursor: pointer;}
+.artwork .item{width: calc(100% / 5); border: 1px solid #212d42; background-color: #212d42; cursor: pointer;}
 .artwork .item span{
     position: absolute; left: 0; top: 0; display: flex; width: 100%; height: 100%; align-items: center; font-weight: bold;
-    justify-content: center; background-color: #ccc; opacity: 0; transition: 0.5s; color: #000; font-size: 23px;
+    justify-content: center; background-color: #212d42; opacity: 0; transition: 0.5s; color: #fff; font-size: 23px;
 }
 .artwork .item:hover span{opacity: .99;}
 .artwork .item img{width: 100%; height: 100%; padding: 10px;}
-.artwork .menu ul li:hover{background-color: #004FFF; color: #fff;}
-.menu ul li.c{background-color: #004FFF; color: #fff;}
+.artwork .menu ul li:hover{  color: #fff;}
+.menu ul li.c{ color: #fff;background-color: #212d42;}
 
 .aw-modal{width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 100000000000000; display: none;}
 .close{width: 100%; height: 100%; background-color: rgba(38, 38, 77, 0.58); position: absolute; top: 0; left: 0;}
@@ -152,33 +152,33 @@ section > div {
 .aw-modal:nth-of-type(6) .modal-content{height: 80%; background-color: #fff; text-align: center;}
 
 /* 새로운 모달스타일 */
-.project_modal{background-color: #fff; text-align: left; word-break: keep-all;}
+.project_modal{background-color: #050d1c; text-align: left; word-break: keep-all;}
 .project_modal .detail{padding: 100px 50px;}
 .modal_main_tit{text-align: center;}
 .modal_main_tit ul{display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
-.modal_main_tit ul li{margin: 0 5px;padding: 5px 10px; border: 2px solid #ccc;}
+.modal_main_tit ul li{margin: 0 5px;padding: 5px 10px; border: 2px solid #c9d5ea;}
 .modal_main_tit h2{font-size: 45px; font-weight: 500; padding-top: 30px;}
 .modal_main_tit span{padding-top: 30px; display: inline-block; font-size: 15px; font-weight: bold;}
 .project_modal .info{line-height: 1.5;font-size: 20px; padding-top: 30px;}
 .project_modal .main_img{max-width: 600px; height: 350px; margin: 0 auto 30px; box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.11);}
-.project_modal .explan_box{background-color: #eee; padding: 15px; }
+.project_modal .explan_box{background-color: #212d42; padding: 15px; }
 
 .project_modal .info_con{padding-top: 85px;}
-.project_modal .pro_modal_tit{margin-bottom: 20px;padding: 5px 15px 5px 0; background-color: #004FFF; font-weight: bold; color: #fff;
+.project_modal .pro_modal_tit{margin-bottom: 20px;padding: 5px 15px 5px 0; background-color: #fff; font-weight: bold; color: #fff;
     display: inline-block; position: relative;text-transform: capitalize;}
 .project_modal .pro_modal_tit::after{
-    content: '';position: absolute;width: 50px; height: 100%; right: 100%; background-color: #004FFF; top: 0; display: block;
+    content: '';position: absolute;width: 50px; height: 100%; right: 100%; background-color: #fff; top: 0; display: block;
 }
 
 .project_modal .skill_box ul{display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start;}
-.project_modal .skill_box ul li{margin-right: 5px;padding: 5px 10px; border: 2px solid #004FFF; }
+.project_modal .skill_box ul li{margin-right: 5px;padding: 5px 10px; border: 2px solid #fff; }
 
 .project_modal .link_box ul{display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start;}
 .project_modal .link_box a{
     background-color: #eee; padding: 5px 10px;min-width: 200px; display: flex; align-items: center; justify-content: space-between;
     margin-right: 5px; transition: 0.3s;
 }
-.project_modal .link_box a:hover{background-color: #ccc;}
+.project_modal .link_box a:hover{background-color: #c9d5ea;}
 .project_modal .link_box span{padding-right: 10px;}
 
 .project_modal .modal_list{padding-bottom: 50px;}
@@ -186,7 +186,7 @@ section > div {
 .project_modal .modal_list_tit span{font-size: 17px;}
 .project_modal .modal_list li{color: #333; padding-top: 15px; margin-left: 30px;position: relative;list-style: square;}
 
-.project_modal code{font-size: 15px; padding: 1px 5px; border: 1px solid #ccc; background: #eee; color: #000;}
+.project_modal code{font-size: 15px; padding: 1px 5px; border: 1px solid #c9d5ea; background: #eee; color: #000;}
 .project_modal b{font-weight: bold;}
  
 @keyframes click {
@@ -230,10 +230,10 @@ section > div {
 
     .about{width: 100%;}
     .title{margin-bottom: 30px; text-align: center;}
-    .title-bg{text-align: center; margin: auto; width: 310px; padding: 0 10px; border-bottom: 3px solid #004FFF;}
+    .title-bg{text-align: center; margin: auto; width: 310px; padding: 0 10px; border-bottom: 3px solid #fff;}
     .title p{font-size: 25px; display: inline-block; font-weight: bold;}
     .about .title .blue{
-        display: inline-block; color: #004FFF; background-color: transparent; text-align: left; 
+        display: inline-block; color: #fff; background-color: transparent; text-align: left; 
         width: 80px; margin-left: 0px; border-radius: 0; padding: 10px 0;
     }
     .charactor{width: 35%; display: block; margin: 0 auto; float: inherit;}
@@ -254,7 +254,7 @@ section > div {
 
     .portfolio{width: 100%; text-align: center;}
     .portfolio .title .blue{
-        display: inline-block; color:#004FFF; background-color: transparent; 
+        display: inline-block; color:#fff; background-color: transparent; 
         text-align: left; width: 110px; margin-left: 0px; border-radius: 0; padding: 10px 0;
     }
     .web-content{margin-left: 0px; margin: 0 5%;}
@@ -262,10 +262,10 @@ section > div {
     .modal-content{width: 80%;}
     .artwork{width: 100%; text-align: center;}
     .artwork .title .blue{
-        display: inline-block; color:#004FFF; background-color: transparent; 
+        display: inline-block; color:#fff; background-color: transparent; 
         text-align: left; width: 110px; margin-left: 0px; border-radius: 0; padding: 10px 0;
     }
-    .artwork .title-bg{text-align: center; margin: auto; width: 250px; padding: 0 10px; border-bottom: 3px solid #004FFF;}
+    .artwork .title-bg{text-align: center; margin: auto; width: 250px; padding: 0 10px; border-bottom: 3px solid #fff;}
     .aw-modal .close svg{top: 30px;}
     .aw-modal:nth-of-type(10) .twentytwenty-container,
     .aw-modal:nth-of-type(11) .twentytwenty-container,

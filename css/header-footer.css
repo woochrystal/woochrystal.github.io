@@ -1,116 +1,55 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: "YoonMingukB";
-    src: url("../font/YoonMingukB.ttf")
-}
+@font-face {font-family: "YoonMingukB";src: url("../font/YoonMingukB.ttf")}
 
-@font-face {
-    font-family: "YoonMingukR";
-    src: url("../font/YoonMingukB.ttf")
-}
+@font-face {font-family: "YoonMingukR";src: url("../font/YoonMingukB.ttf")}
 
-* {
-    box-sizing: border-box;
-    font-family: "YoonMingukR";
-}
+* {box-sizing: border-box; font-family: "YoonMingukR";}
 
-section {
-    width: 1400px;
-    margin: auto;
-}
+section {width: 1400px;margin: auto;}
 
 /*/////////////////////////////////////////////////////////////////////////////////////////헤더/////////////////////////////////////////*/
-header {
-    width: 200px;
-    background-color: #fff;
-    height: 100%;
-    position: fixed;
-    z-index: 10000000000;
-    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.11);
-    text-align: center;
-}
-.header-wrap{
-    width: 1400px;
-    margin: auto;
-}
+header {z-index: 10000000000;box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.11);text-align: center;position: fixed; width: 100%;}
+.header-wrap{margin: auto;}
 
 /*bar-btn*/
-.bar-btn {
-    display: none;
-}
+.bar-btn {display: none;}
 
 /*h1*/
-h1 {
-    width: 110px;
-    padding: 10px;
-    padding-bottom: 30px;
-    margin: 10px auto;
-}
+h1 {width: 100px;padding: 15px;}
 
-h1 a {
-    width: 100%;
-    height: 100%;
-}
+h1 a {width: 100%;height: 100%;display: block;}
 
-h1 a img {
-    width: 100%;
-}
+h1 a img {width: 100%;}
 
 /*nav*/
-nav ul li {
-    padding: 15px 0;
-    font-size: 23px;
-}
+nav ul{display: flex;}
+nav ul li {padding: 15px;font-size: 1vw;}
 
-nav ul li a {
-    border-bottom: 3px solid transparent;
-    transition: 0.2s;
-}
+nav ul li a {border-bottom: 3px solid transparent;transition: 0.2s;}
 
 /*hover*/
-nav ul li a.one {
-    border-bottom: 3px solid #004FFF;
-}
+nav ul li a.one {border-bottom: 3px solid #fff;}
 
-nav ul li:hover a {
-    border-bottom: 3px solid #004FFF;
-}
+nav ul li:hover a {border-bottom: 3px solid #fff;}
 
-.nav-wrap {
-    display: none;
-}
+.nav-wrap {display: none;}
 
-.indicator ul {
-    display: none;
-}
+.indicator ul {display: none;}
+
+/* 웹 / 모바일 네비 뗌 */
+.web_nav{display: flex;align-items: center; justify-content: space-between; padding: 0 20px;}
 
 /*/////////////////////////////////////////////////////////////////////////////////푸터/////////////////////////////////////////4A8BFF*/
 footer {
-    width: 1250px;
-    float: left;
     margin: auto;
     padding-top: 200px;
     position: relative;
     bottom: 0;
 }
 
-.contect-wrap {
-    width: 90%;
-    margin-right: -40px;
-    float: right;
-    overflow: hidden;
-}
 
-.contect-txt {
-    /* font-family: "YoonMingukB"; */
-    background-color: #004FFF;
-    color: #fff;
-    width: 100%;
-    float: left;
-    height: 500px;
-    font-size: 100px;
-}
+.contect-txt { color: #fff; width: 100%; float: left; height: 500px; font-size: 100px;}
 
 .contect-txt p {
     padding-top: 30px;
@@ -120,8 +59,6 @@ footer {
 .contect-logo {
     margin-top: -500px;
     margin-right: -100px;
-    /* font-family: "YoonMingukB"; */
-    background-color: #4A8BFF;
     color: #fff;
     width: 60%;
     transform: skewX(-20deg);
@@ -183,7 +120,7 @@ footer > p {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #004FFF;
+    background: #fff;
 }
 
 ::-webkit-scrollbar-button:start:decrement,
@@ -281,8 +218,8 @@ footer > p {
     }
 
     .indicator ul li.one {
-        border: 2px solid #004FFF;
-        background-color: #004FFF;
+        border: 2px solid #fff;
+        background-color: #fff;
     }
 
     /*    ////푸터////*/

@@ -68,4 +68,11 @@ window.onload = function() {//다 로드 된 후 실행
         console.log(title01.offsetTop,':',scrollY)
         
     })
+
+
+
+
+
+
+    
 };
