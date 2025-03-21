@@ -119,12 +119,12 @@ section > div {
     display: inline-block; padding: 10px 20px; cursor: pointer; font-size: 18px; transition: 0.2s;
 }
 .artwork .item-wrap{width: 100%; margin: auto;  overflow: hidden;}
-.artwork .item{width: calc(100% / 5); border: 1px solid #212d42; background-color: #212d42; cursor: pointer;}
-.artwork .item span{
+.artwork .item{width: 100px; border: 1px solid #212d42; background-color: #212d42; cursor: pointer;}
+.artwork .item > span{
     position: absolute; left: 0; top: 0; display: flex; width: 100%; height: 100%; align-items: center; font-weight: bold;
     justify-content: center; background-color: #212d42; opacity: 0; transition: 0.5s; color: #fff; font-size: 23px;
 }
-.artwork .item:hover span{opacity: .99;}
+/* .artwork .item:hover span{opacity: .99;} */
 .artwork .item img{width: 100%; height: 100%; padding: 10px;}
 .artwork .menu ul li:hover{  color: #fff;}
 .menu ul li.c{ color: #fff;background-color: #212d42;}

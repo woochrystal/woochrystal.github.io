@@ -18,7 +18,9 @@ $("window").ready(function(){//2018 퍼블리셔 버전
         //////////////////////////필터/////////////////////////
     $(".item-wrap").imagesLoaded(function(){
         $(".item-wrap").isotope({
-            itemSelector : ".item"
+            itemSelector : ".item",
+            filter :'.Front',
+            layoutMode: 'vertical'
         }) 
     }) 
 
