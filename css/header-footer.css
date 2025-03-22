@@ -115,19 +115,19 @@ footer > p {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 79, 255, 0.65);
+    background-color: #212d42;
     border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #fff;
+    background: #050d1c;
 }
 
 ::-webkit-scrollbar-button:start:decrement,
 ::-webkit-scrollbar-button:end:increment {
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: #212d42;
 }
 
 /*//////////////////////미디어쿼리//////////////////////////*/

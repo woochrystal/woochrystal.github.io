@@ -35,8 +35,8 @@ section > div {
 
 
 /*charactor*/
-.charactor{width: 350px; display: inline-block; border: 5px solid #8ca4d8;transition: border 0.2s;}
-.charactor:hover{border-color: #fff;}
+.charactor{width: 350px; display: inline-block; border: 5px solid #212d42;transition: border 0.2s;}
+.charactor:hover{border-color: #c9d5ea;}
 .charactor img{width: 100%;display: block;}
 
 /*profile-txt*/
@@ -78,7 +78,7 @@ section > div {
 }
 .web-content{font-size: 0;}
 .portfolio .content{
-    width: calc(100% / 3 - 6px); margin: 3px; border: 2px solid #fff; background-color: #fff; 
+    width: calc(100% / 3 - 6px); margin: 3px; border: 2px solid #212d42; background-color: #212d42; 
     position: relative; display: inline-block; overflow: hidden; font-size: 0; cursor: pointer;
 }
 .portfolio .content.gray{border: 2px solid #c9d5ea; background-color: #c9d5ea; }
@@ -109,23 +109,19 @@ section > div {
 .pf-modal:nth-child(6) .btn{top: 11.2%;}
 .pf-modal:nth-child(8) .btn{top: 9.6%;}/*아디다스 */
 
-.artwork .container{width: 100%; float: left; margin: 10px auto; position: relative;}
-.artwork .menu{display: flex;}
-.artwork .menu ul{
-    margin: auto; text-align: center; margin-bottom: 30px; border: 2px solid #212d42; 
-    color: #fff; font-size: 0; 
-}
+.artwork .container{display: flex; justify-content: flex-start; align-items: flex-start;}
+.artwork .menu{}
+.artwork .menu ul{color: #fff; font-size: 0; }
 .artwork .menu ul li{
-    display: inline-block; padding: 10px 20px; cursor: pointer; font-size: 18px; transition: 0.2s;
+    padding: 15px 20px; cursor: pointer; font-size: 18px; transition: 0.2s;
 }
-.artwork .item-wrap{width: 100%; margin: auto;  overflow: hidden;}
-.artwork .item{width: 100px; border: 1px solid #212d42; background-color: #212d42; cursor: pointer;}
-.artwork .item > span{
-    position: absolute; left: 0; top: 0; display: flex; width: 100%; height: 100%; align-items: center; font-weight: bold;
-    justify-content: center; background-color: #212d42; opacity: 0; transition: 0.5s; color: #fff; font-size: 23px;
-}
+.artwork .item-wrap{width: 100%; margin-left: 25px;  overflow: hidden;}
+.artwork .item{width: 100%; display: flex; justify-content: flex-start; align-items: flex-start; margin-bottom: 40px;}
+.artwork .item span{display: inline-block; font-size: 20px; color: #fff; font-weight: bold;}
+.artwork .item > div{padding: 0 25px;}
+.artwork .item li{padding-top: 20px;list-style: square; margin-left: 25px;}
 /* .artwork .item:hover span{opacity: .99;} */
-.artwork .item img{width: 100%; height: 100%; padding: 10px;}
+.artwork .item img{width: 100px; height: 100px; padding: 10px; background-color: #fff;}
 .artwork .menu ul li:hover{  color: #fff;}
 .menu ul li.c{ color: #fff;background-color: #212d42;}
 
@@ -164,7 +160,7 @@ section > div {
 .project_modal .explan_box{background-color: #212d42; padding: 15px; }
 
 .project_modal .info_con{padding-top: 85px;}
-.project_modal .pro_modal_tit{margin-bottom: 20px;padding: 5px 15px 5px 0; background-color: #fff; font-weight: bold; color: #fff;
+.project_modal .pro_modal_tit{margin-bottom: 20px;padding: 5px 15px 5px 0; background-color: #fff; font-weight: bold; color: #050d1c;
     display: inline-block; position: relative;text-transform: capitalize;}
 .project_modal .pro_modal_tit::after{
     content: '';position: absolute;width: 50px; height: 100%; right: 100%; background-color: #fff; top: 0; display: block;
@@ -176,17 +172,17 @@ section > div {
 .project_modal .link_box ul{display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start;}
 .project_modal .link_box a{
     background-color: #eee; padding: 5px 10px;min-width: 200px; display: flex; align-items: center; justify-content: space-between;
-    margin-right: 5px; transition: 0.3s;
+    margin-right: 5px; transition: 0.3s; color: #050d1c;
 }
 .project_modal .link_box a:hover{background-color: #c9d5ea;}
-.project_modal .link_box span{padding-right: 10px;}
+.project_modal .link_box span{padding-right: 10px; color: #050d1c;}
 
 .project_modal .modal_list{padding-bottom: 50px;}
-.project_modal .modal_list_tit{font-weight: bold;}
-.project_modal .modal_list_tit span{font-size: 17px;}
-.project_modal .modal_list li{color: #333; padding-top: 15px; margin-left: 30px;position: relative;list-style: square;}
+.project_modal .modal_list_tit{font-weight: bold; color: #fff;}
+.project_modal .modal_list_tit span{font-size: 17px;color: #fff;}
+.project_modal .modal_list li{ padding-top: 15px; margin-left: 30px;position: relative;list-style: square;}
 
-.project_modal code{font-size: 15px; padding: 1px 5px; border: 1px solid #c9d5ea; background: #eee; color: #000;}
+.project_modal code{font-size: 15px; padding: 1px 5px; border: 1px solid #c9d5ea; background: #eee; color: #050d1c;}
 .project_modal b{font-weight: bold;}
  
 @keyframes click {
