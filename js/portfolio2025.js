@@ -1,5 +1,5 @@
 // 202503 프론트 포폴 작업파일
-window.onload = function() {//다 로드 된 후 실행
+document.addEventListener('DOMContentLoaded', function() {//다 로드 된 후 실행
 
 
     //프로젝트 제목 마우스 띄우기
@@ -54,25 +54,64 @@ window.onload = function() {//다 로드 된 후 실행
         });//mouseover end
     })
 
-    // 스크롤
-    // 스크롤 y좌표
-    let scrollY = window.scrollY;
-    const title01 = document.getElementById('title01');
     
-    // console.log(title01)
-    const title02 = document.getElementById('title02');
-    const title03 = document.getElementById('title03');
-    const title04 = document.getElementById('title04');
-    window.addEventListener('scroll',function(){
-        scrollY = window.scrollY;
-        console.log(title01.offsetTop,':',scrollY)
+
+    // 웹네비 높이값
+    var web_nav = document.querySelector('.web_nav');
+    var w_nav_height = web_nav.offsetHeight;
+
+    function navScroll(title){
+        const section_tit = document.getElementById(title);//title의 위치에 원하는 id값
+        var title_top = section_tit.offsetTop;
+        var fin_top = title_top - w_nav_height
+
+        // console.log('top', section_tit.offsetTop)
+        window.scrollTo({
+            top: fin_top,// 타겟 섹션 + 네비높이값
+            behavior: 'smooth'//부드럽게 스크롤
+        });
+    }
+
+    var nav_link = document.querySelectorAll('nav a');
+    nav_link.forEach(link => {
+        link.addEventListener('click',function(e){
+            e.preventDefault();//링크이동 제거
+            var getId = this.getAttribute('data-title');
+            navScroll(getId);//클릭한 data-title값으로 이동
+        })
         
-    })
+    });
 
+    // 스크롤
+    const sections = document.querySelectorAll('#title01, #title02, #title03, #title04');
+    
+    // 스크롤 y좌표
+    function uav_under(){
+        let scrollY = window.scrollY;
+        let windowHeight = window.innerHeight;
+
+        sections.forEach((section, index)=>{
+            const sectionTop = section.offsetTop;//각 영역 상단위치
+            const sectionBottom = sectionTop + section.offsetHeight; //상단+하단값(스크롤위치)
+
+            //현재 스크롤 위치가 섹션의 상단과 하단 사이에 있을 때(영역안)
+            if (scrollY <= sectionTop && scrollY + windowHeight > sectionTop && scrollY < sectionBottom) {
+                nav_link.forEach(link => link.classList.remove('one'));
+                nav_link[index].classList.add('one');
+            }
+            if (scrollY == 0) {
+                nav_link.forEach(link => link.classList.remove('one')); //클래스 제거
+            }
+        })
+    }
+
+    window.addEventListener('scroll', uav_under);
+    window.addEventListener('load', uav_under);
+    uav_under();
 
 
 
 
 
     
-};
+});

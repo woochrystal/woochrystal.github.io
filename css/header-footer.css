@@ -9,7 +9,7 @@
 section {width: 1400px;margin: auto;}
 
 /*/////////////////////////////////////////////////////////////////////////////////////////헤더/////////////////////////////////////////*/
-header {z-index: 10000000000;box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.11);text-align: center;position: fixed; width: 100%;}
+header {z-index: 10000000000; text-align: center;position: fixed; width: 100%;}
 .header-wrap{margin: auto;}
 
 /*bar-btn*/

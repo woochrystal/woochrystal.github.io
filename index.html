@@ -58,10 +58,10 @@
                 </h1>
                 <nav>
                     <ul>
-                        <li><a href="javascript:void(0)" onclick="navScroll('title01')">About</a></li>
-                        <li><a href="javascript:void(0)" onclick="navScroll('title02')">Skill</a></li>
-                        <li><a href="javascript:void(0)" onclick="navScroll('title03')">Study</a></li>
-                        <li><a href="javascript:void(0)" onclick="navScroll('title04')">Work</a></li>
+                        <li><a href="javascript:void(0)" data-title='title01'>About</a></li>
+                        <li><a href="javascript:void(0)" data-title='title02'>Skill</a></li>
+                        <li><a href="javascript:void(0)" data-title='title03'>Study</a></li>
+                        <li><a href="javascript:void(0)" data-title='title04'>Work</a></li>
                     </ul>
                 </nav>
             </div>
@@ -1064,13 +1064,7 @@
     </footer>
     <!-- 네비 -->
     <script> 
-        function navScroll(title){
-            const section_tit = document.getElementById(title);//title의 위치에 원하는 id값
-            window.scrollTo({
-                top: section_tit.offsetTop,// 타겟 섹션의 상단 위치로 스크롤
-                behavior: 'smooth'//부드럽게 스크롤
-            });
-        }
+        
     </script>
 </body>
 </html>
