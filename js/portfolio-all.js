@@ -25,16 +25,16 @@ $("window").ready(function(){//2018 퍼블리셔 버전
     //////////네비/////////////////////
     ///////////////////////////////
             
-    $("section").click(function(){
-        $(".bar-btn>div").removeClass("on");
-        $("nav").removeClass("slide")
+    // $("section").click(function(){
+    //     $(".bar-btn>div").removeClass("on");
+    //     $("nav").removeClass("slide")
         
-    })
+    // })
     
  
     $(".bar-btn").click(function(){
         $(".bar-btn>div").toggleClass("on");
-        $("nav").show().toggleClass("slide")
+        $("nav").toggleClass("slide")
          
     })
      

@@ -35,74 +35,22 @@ nav ul li:hover a {border-bottom: 3px solid #fff;}
 
 .nav-wrap {display: none;}
 
-.indicator ul {display: none;}
 
 /* 웹 / 모바일 네비 뗌 */
 .web_nav{display: flex;align-items: center; justify-content: space-between; padding: 0 20px;}
 
 /*/////////////////////////////////////////////////////////////////////////////////푸터/////////////////////////////////////////4A8BFF*/
-footer {
-    margin: auto;
-    padding-top: 200px;
-    position: relative;
-    bottom: 0;
-}
+footer{display: flex; align-items: center; height: 100vh; justify-content: center; position: relative; padding: 0 20px; word-break: keep-all;}
+footer .contact{margin-bottom: 50px;}
+footer h3{background-color: #fff; color: #212d42; font-size: 2.8vw;font-weight: 700; display: inline-block; padding-left: 100px; margin-left: -100px;}
+footer b{display: block; font-size: 2.8vw; line-height: 1.5; font-weight: 700; color: #fff; padding: 15px 0;}
+footer .contact p{font-size: 30px; line-height: 1.2;}
+footer .contact a{padding: 15px 20px;color: #c9d5ea; background-color: #212d42; display: inline-block; margin-top: 30px; transition: 0.3s;}
+footer .contact a:hover{color:#fff;}
+
+footer > p{width: 100%; padding: 20px; background-color: #212d42; text-align: center; position: absolute; bottom: 0; left: 0;}
 
 
-.contect-txt { color: #fff; width: 100%; float: left; height: 500px; font-size: 100px;}
-
-.contect-txt p {
-    padding-top: 30px;
-    padding-left: 100px;
-}
-
-.contect-logo {
-    margin-top: -500px;
-    margin-right: -100px;
-    color: #fff;
-    width: 60%;
-    transform: skewX(-20deg);
-    float: right;
-    font-size: 30px;
-    height: 500px;
-}
-
-.contect-logo .img-wrap {
-    background-color: #fff;
-    width: 50%;
-    transform: skewX(20deg);
-    border-radius: 5px;
-    display: inline-block;
-    margin: 10px;
-}
-
-.contect-logo img {
-    width: 100%;
-    padding: 10px;
-
-}
-
-.logo-txt {
-    padding-top: 10%;
-    position: absolute;
-    transform: skewX(20deg);
-    display: inline-block;
-}
-
-.cl-wrap {
-    position: absolute;
-    right: 50%;
-    bottom: 0;
-}
-
-footer > p {
-    /* font-family: "YoonMingukR"; */
-    position: absolute;
-    bottom: 0;
-    left: 18%;
-    padding: 10px;
-    color: #fff;
-}
 
 /*스크롤설정*/
 ::-webkit-scrollbar {
@@ -131,140 +79,23 @@ footer > p {
 }
 
 /*//////////////////////미디어쿼리//////////////////////////*/
-@media screen and (max-width:1420px) {
-
+@media screen and (max-width:1400px) {
     /*    ////헤더////*/
-    section {
-        width: 100%;
-    }
-    .header-wrap{
-        width: 100%;
-    }
+    section {width: 100%;}
+    .header-wrap{width: 100%;}
+    nav ul li{font-size: 15px;}
 
-    /*    /////푸터////*/
-    footer {
-        width: 100%;
-    }
+    footer b {font-size: 5vw;}
+    footer .contact p {font-size: 25px;}
 
-    .contect-wrap {
-        width: 90%;
-        margin-right: 0px;
-    }
 }
 
 /*1420*/
 @media screen and (max-width:1280px) {
-
     /*    ////헤더////*/
-    header {
-        position: relative;
-        margin: auto;
-        width: 100%;
-        height: 80px;
-        box-shadow: 0px 0px 20px #dedede;
-    }
-
-    h1 {
-        width: 80px;
-        height: auto;
-        float: left;
-        left: 5%;
-        margin: 0;
-        padding-top: 13px;
-        position: relative;
-        z-index: 10000000000;
-    }
-    
-
-    nav {
-        display: inline-block;
-        width: 90%;
-        left: 50%;
-        top: 15px;
-        transform: translateX(-50%);
-        position: relative;
-        margin-left: -15%;
-    }
-
-    nav ul li {
-        padding: 15px 0;
-        font-size: 23px;
-        display: inline-block;
-        margin: 10px 10px;
-    }
-
-    nav ul li a {
-        border-bottom: 3px solid transparent;
-        transition: 0.2s;
-    }
-
-    .indicator ul {
-        display: inherit;
-        font-size: 0;
-        position: fixed;
-        right: 1.5%;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .indicator ul li {
-        margin: 20px 0;
-        color: #fff;
-        cursor: pointer;
-        width: 16px;
-        height: 16px;
-        border-radius: 5px;
-        border: 2px solid #8E8E8E;
-    }
-
-    .indicator ul li.one {
-        border: 2px solid #fff;
-        background-color: #fff;
-    }
-
-    /*    ////푸터////*/
-    .contect-wrap {
-        width: 100%;
-    }
-
-    footer > p {
-        left: 2%;
-        width: 40%;
-    }
-
-    .contect-txt {
-        font-size: 70px;
-        height: 300px;
-        width: 60%;
-    }
-
-    .contect-txt p {
-        padding-left: 50px;
-    }
-
-    .contect-logo {
-        font-size: 20px;
-        height: 300px;
-        margin-top: -300px;
-        width: 65%;
-    }
-
-    .contect-logo .img-wrap {
-        width: 30%;
-    }
-
-    .logo-txt {
-        padding-top: 4%;
-    }
-
-    .cl-wrap {
-        right: 170px;
-        width: 50%;
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
+    h1 {width: 80px;}
+    footer h3{font-size: 20px;}
+    ::-webkit-scrollbar {display: none;}
 }
 
 /*1280*/
@@ -277,55 +108,9 @@ footer > p {
         top: 0;
         width: 100%;
         height: 70px;
-        text-align: center;
         left: 0;
-        box-shadow: 0px 10px 20px transparent;
     }
 
-    h1 {
-        display: inline-block;
-        position: relative;
-        z-index: 10000000000;
-    }
-
-    h1 a img {
-        width: 80%;
-    }
-
-    nav {
-        position: relative;
-        top: -300%;
-        width: 100%;
-        display: none;
-        position: relative;
-        margin-left: 0px;
-        z-index: 0;
-        transition: 0.5s;
-    }
-
-    nav ul {
-        background-color: #fff;
-        width: 100%;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.11);
-    }
-
-    nav ul li {
-        padding: 15px 0;
-        font-size: 23px;
-        display: block;
-        margin: 10px 10px;
-        width: 85px;
-        margin: auto;
-        
-    }
-    nav ul li:last-child {
-        display: none;
-    }
-
-    nav ul li a {
-        border-bottom: 3px solid transparent;
-        transition: 0.2s;
-    }
 
     .bar-btn {
         display: inherit;
@@ -340,14 +125,15 @@ footer > p {
     .bar-btn > div {
         width: 35px;
         height: 4px;
-        background-color: #000;
+        background-color: #c9d5ea;
         margin: 4px 0;
         border-radius: 10px;
         transition: 0.2s;
     }
 
+    .bar-btn > div.on {background-color: #fff;}
     .bar-btn > div.on:nth-child(1) {
-        transform: rotate(45deg) translateY(11px);
+        transform: rotate(45deg) translateY(11px); 
     }
 
     .bar-btn > div.on:nth-child(2) {
@@ -357,11 +143,10 @@ footer > p {
     .bar-btn > div.on:nth-child(3) {
         transform: rotate(-45deg) translateY(-12px);
     }
-
-    nav.slide {
-        top: 0px;
-    }
-
+    nav{position: fixed;right: -100%; transition: 0.3s; padding-top: 70px; top: 0;}
+    nav.slide { right: 0;}
+    nav ul{flex-direction: column; padding: 0 10px;}
+    .web_nav{height: 100%;}
     .nav-wrap {
         display: inherit;
         width: 100%;
@@ -372,68 +157,6 @@ footer > p {
         border-bottom: 3px solid rgba(0, 0, 0, 0.11);
     }
 
-    .indicator ul {
-        display: none;
-    }
-
-    /*    ////푸터////*/
-    footer {
-        width: 100%;
-    }
-
-    footer > p {
-        left: 2%;
-        width: 40%;
-        font-size: 10px;
-    }
-
-    .contect-txt {
-        font-size: 30px;
-        height: 200px;
-    }
-
-    .contect-txt p {
-        padding-left: 30px;
-    }
-
-    .contect-logo {
-        font-size: 15px;
-        height: 200px;
-        margin-top: -200px;
-        margin-right: -70px;
-        width: 70%;
-    }
-
-    .contect-logo .img-wrap {
-        width: 30%;
-        display: block;
-        float: right;
-        margin-right: 20px;
-        position: absolute;
-        bottom: 55px;
-        right: 0;
-    }
-
-    .contect-logo img {
-        width: 100%;
-        padding: 0px 5px;
-        padding-top: 5px;
-
-    }
-
-    .logo-txt {
-        padding-top: 0%;
-        display: block;
-        margin-top: 0px;
-        width: 100%;
-
-    }
-
-    .cl-wrap {
-        right: 80px;
-        width: 60%;
-        bottom: 60px;
-    }
 
     ::-webkit-scrollbar {
         display: inherit;
