@@ -53,8 +53,8 @@ section > div {
 
 /* 날짜있음 */
 .profile-txt > .hasI .con{align-items: flex-start; }
-.profile-txt > .hasI .con i{width: 150px; line-height: 30px;}
-.profile-txt > .hasI .con span{width: calc(100% - 150px); padding: 0; line-height: 1.5;}
+.profile-txt > .hasI .con i{width: 160px; line-height: 30px;}
+.profile-txt > .hasI .con span{width: calc(100% - 160px); padding: 0; line-height: 1.5;}
 
 /*resume*/
 .resume{width: 100%;  margin: auto; margin-top: 100px;}
