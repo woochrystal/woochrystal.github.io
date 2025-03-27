@@ -115,8 +115,9 @@ footer > p{width: 100%; padding: 20px; background-color: #212d42; text-align: ce
     .bar-btn {
         display: inherit;
         position: absolute;
-        right: 20px;
-        top: 20px;
+        right: 10px;
+        top: 10px;
+        padding: 10px;
         cursor: pointer;
         z-index: 1000;
 
@@ -158,6 +159,8 @@ footer > p{width: 100%; padding: 20px; background-color: #212d42; text-align: ce
         z-index: 100;
         border-bottom: 3px solid rgba(0, 0, 0, 0.11);
     }
+    
+    footer .contact p {font-size: 4.5vw;}
 
 
     ::-webkit-scrollbar {
