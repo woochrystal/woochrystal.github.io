@@ -58,7 +58,7 @@ section > div {
 .profile-txt > .hasI .con span{width: calc(100% - 160px); padding: 0; line-height: 1.5;}
 
 /*resume*/
-.resume{width: 100%;  margin: auto; margin-top: 100px;}
+.resume{width: 100%;  margin: auto; margin-top: 50px;background-color: #212d42; padding: 20px 30px;}
 .resume p {line-height: normal; word-break: keep-all;}
 .resume .resume_box{padding-bottom: 50px;}
 .resume .resume_tit{ font-size: 30px;font-weight: 500; padding-bottom: 15px;}
@@ -189,7 +189,7 @@ section > div {
     /* 간격 */
     section > div,
     .project_modal .detail {padding: 50px 20px;}
-    .resume{margin-top: 50px;}
+    .resume{margin-top: 0;}
     .resume .resume_box {padding-bottom: 35px;}
     .project_modal .info_con {padding-top: 50px;}
 
@@ -209,7 +209,7 @@ section > div {
     .profile-txt > .hasI .con i,
     .project_modal code {font-size: 12px; }
 
-    .project_modal .modal_list_tit {font-weight: normal;}
+    .project_modal .modal_list_tit span {font-weight: normal;}
     /* 폰트 end */
 
     .top{flex-direction: column;}
@@ -259,19 +259,27 @@ section > div {
     .charactor{position: static;}
     .profile{flex-direction: column;}
 
-    /* .profile_btn{
+    .profile_btn{
         display: inline-block;padding: 15px 20px; color: #c9d5ea; background-color: #212d42;margin-top: 30px;
         transition: 0.3s;cursor: pointer;
-    } */
+    }
+    .profile_btn .info_open{display: inline-block;}
+    .profile_btn .info_close{display: none;}
     .profile_btn span,
     .profile_btn svg{transition: 0.3s;}
     .profile_btn:hover span,
     .profile_btn:hover svg{color: #fff;}
-    .profile-txt {display: none; padding-left: 0; padding-top: 10px;}
+    .profile-txt {overflow: hidden; height: 0; padding-left: 0; width: 100%; background-color: #212d42;}
+    .txt-top-wrap{padding: 20px;padding-bottom: 0;}
+    .txt-bottom{width: 100%; padding: 0 20px;}
+
+    .profile_btn.on .info_close{display: inline-block;}
+    .profile_btn.on .info_open{display: none;}
+    .profile-txt.active{height: auto;}
     .artwork .container{flex-direction: column;}
     .artwork .menu{width: 100%;}
     .artwork .menu ul{display: flex;flex-wrap: wrap;}
-    .artwork .menu ul li{flex-grow: 1; padding: 10px 15px; text-align: center;}
+    .artwork .menu ul li{flex-grow: 1; padding: 8px 10px; text-align: center;}
     .artwork .item-wrap{ margin-left: 0;}
     .artwork .item{margin-bottom: 0; padding: 15px 10px; border-bottom: 1px solid #212d42;}
     .artwork .item li {padding-top: 10px;}
@@ -284,6 +292,7 @@ section > div {
 
     .artwork .menu ul li{border: 2px solid #212d42; border-left: 0;}
     .artwork .menu ul li:first-child{border-left: 2px solid #212d42;}
+    .resume{background-color: transparent; padding: 0; margin-top: 35px;}
     
 
 }

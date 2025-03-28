@@ -109,6 +109,25 @@ document.addEventListener('DOMContentLoaded', function() {//다 로드 된 후 �
     window.addEventListener('load', uav_under);
     uav_under();
 
+    // 상세정보
+    function infoClick(){
+        const proBtn = document.querySelector('.profile_btn');
+        const proTxt = document.querySelector('.profile-txt');
+
+        proBtn.addEventListener('click',function(){
+            if(!proBtn.classList.contains('on')){//on 클래스가 있는지 확인(없을때)
+                proBtn.classList.add('on');
+                proTxt.classList.add('active');
+            }else{
+                proBtn.classList.remove('on');
+                proTxt.classList.remove('active');
+            }
+        })
+
+    }
+
+    infoClick()
+
 
 
 
