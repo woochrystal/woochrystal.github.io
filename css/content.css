@@ -137,7 +137,7 @@ section > div {
 .modal_main_tit h2{font-size: 45px; font-weight: 500; padding-top: 30px;}
 .modal_main_tit span{padding-top: 30px; display: inline-block; font-size: 15px; font-weight: bold;}
 .project_modal .info{line-height: 1.5;font-size: 20px; padding-top: 30px;}
-.project_modal .main_img{max-width: 60vw; height: 50vh; margin: 0 auto 30px; box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.11);}
+.project_modal .main_img{max-width: 60vw; height: 50vh; margin: 0 auto 30px; border: 1px solid #212d42;}
 .project_modal .explan_box{background-color: #212d42; padding: 15px; }
 
 .project_modal .info_con{padding-top: 85px;}
@@ -165,6 +165,24 @@ section > div {
 
 .project_modal code{font-size: 15px; padding: 1px 5px; border: 1px solid #c9d5ea; background: #eee; color: #050d1c;}
 .project_modal b{font-weight: bold; color: #fff;}
+
+.project_modal .modal_img_list li{margin-bottom: 30px;}
+.project_modal .modal_img_list li:last-child{margin-bottom: 0;}
+.project_modal .modal_img_list .img_box{display: flex; flex-wrap: wrap;justify-content: center;}
+.project_modal .modal_img_list .img_box img{max-height: 80vh; width: auto; max-width: 100%;}
+.project_modal .modal_img_list span{display: block;text-align: center; width: 100%; padding: 5px;}
+.project_modal .modal_img_list .has_2 .img_box{justify-content: space-between;}
+
+.project_modal .modal_img_list .has_2 .span_2,
+.project_modal .modal_img_list .has_3 .span_3{display: flex; justify-content: space-between;}
+
+.project_modal .modal_img_list .has_3 .img_box{max-height: 80vh;justify-content: space-between;}
+
+.project_modal .modal_img_list .has_2 .span_2 span,
+.project_modal .modal_img_list .has_2 img{width: calc(100% / 2 - 1vw);object-fit: cover;}
+
+.project_modal .modal_img_list .has_3 .span_3 span,
+.project_modal .modal_img_list .has_3 img{width: calc(100% / 3 - 1vw);object-fit: cover;}
  
 @keyframes click {
     0% {top: 10px;}
