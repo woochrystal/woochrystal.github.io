@@ -169,7 +169,7 @@ section > div {
 .project_modal .modal_img_list li{margin-bottom: 30px;}
 .project_modal .modal_img_list li:last-child{margin-bottom: 0;}
 .project_modal .modal_img_list .img_box{display: flex; flex-wrap: wrap;justify-content: center;}
-.project_modal .modal_img_list .img_box img{max-height: 80vh; width: auto; max-width: 100%;}
+.project_modal .modal_img_list .img_box img{max-height: 80vh; width: auto; max-width: 100%; border: 1px solid #212d42;}
 .project_modal .modal_img_list span{display: block;text-align: center; width: 100%; padding: 5px;}
 .project_modal .modal_img_list .has_2 .img_box{justify-content: space-between;}
 
