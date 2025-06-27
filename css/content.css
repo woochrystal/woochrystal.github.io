@@ -184,6 +184,12 @@ section > div {
 .project_modal .modal_img_list .has_3 .span_3 span,
 .project_modal .modal_img_list .has_3 img{width: calc(100% / 3 - 1vw);object-fit: cover;}
  
+.project_modal .modal_img_list .has_3_ver2 .img_box{height: 60vh; flex-wrap: nowrap;}
+.project_modal .modal_img_list .has_3_ver2 div:first-child{height: 100%; display: flex;flex-wrap: wrap;justify-content: flex-end;align-items: center;}
+.project_modal .modal_img_list .has_3_ver2 div:last-child{height: 100%; width: 50%;}
+.project_modal .modal_img_list .has_3_ver2 div:first-child img{height: 50%;}
+.project_modal .modal_img_list .has_3_ver2 div:last-child img{height: auto;width: 100%;}
+
 @keyframes click {
     0% {top: 10px;}
     100% {top: 0;}
