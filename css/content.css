@@ -188,7 +188,7 @@ section > div {
 .project_modal .modal_img_list .has_3_ver2 div:first-child{height: 100%; display: flex;flex-wrap: wrap;justify-content: flex-end;align-items: center;}
 .project_modal .modal_img_list .has_3_ver2 div:last-child{height: 100%; width: 50%;}
 .project_modal .modal_img_list .has_3_ver2 div:first-child img{height: 50%;}
-.project_modal .modal_img_list .has_3_ver2 div:last-child img{height: auto;width: 100%;}
+.project_modal .modal_img_list .has_3_ver2 div:last-child img{max-height: none; height: 100%; width: auto;}
 
 @keyframes click {
     0% {top: 10px;}
@@ -278,7 +278,11 @@ section > div {
     .top .top-txt .info_txt {font-size: 5vw;}
     .top .top-txt .name_txt, .modal_main_tit h2 {font-size: 5.5vw; line-height: 1.3;}
     .modal_main_tit span {padding-top: 10px;}
-    .project_modal .main_img{height: 30vh;}
+    .project_modal .main_img{height: 35vw;}
+    .project_modal .modal_img_list .has_3_ver2 .img_box{height: auto; flex-wrap: wrap; align-items: center;}
+    .project_modal .modal_img_list .has_3_ver2 div:first-child,
+    .project_modal .modal_img_list .has_3_ver2 div:last-child{height: auto; justify-content: center; align-items: center;}
+    .project_modal .modal_img_list .has_3_ver2 div:first-child img{margin-bottom: 10px;}
     
     .txt-top{width: 100%;}
     .charactor{position: static;}
