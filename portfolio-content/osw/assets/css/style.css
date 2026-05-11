@@ -167,7 +167,7 @@ nav {
   width: 100%;
   padding: 20px;
   display: none;
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 2px 92px 0 rgba(0, 0, 0, 0.18);
 }
 
 .nav-menu {
@@ -194,7 +194,6 @@ nav ul li a {
   font-family: 'Poppins', helvetica;
   font-weight: 500;
   line-height: 16px;
-  text-transform: uppercase;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
@@ -222,12 +221,12 @@ nav ul li a {
 --------------------------------------------------------------*/
 #hero {
   background: url("../img/home-bg.jpg") repeat scroll center center/cover;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
 }
 
 #hero .hero-content {
-  height: 100vh;
+  height: 100dvh;
   text-align: left;
   width: 100%;
   display: flex;
@@ -280,7 +279,7 @@ nav ul li a {
 
 #about .div-img-bg .about-img img {
   width: 100%;
-  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
   margin-top: -60px;
   margin-left: 40px;
   height: 400px;
@@ -448,7 +447,7 @@ nav ul li a {
 }
 
 .journal-block .journal-info .journal-txt {
-  padding: 25px 0px;
+  padding: 25px 0;
   position: relative;
 }
 
@@ -643,8 +642,8 @@ nav ul li a {
     padding: 0;
   }
   #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
+    margin-top: 0;
+    margin-left: calc(0% - 0);
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -713,8 +712,8 @@ nav ul li a {
     padding: 0;
   }
   #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
+    margin-top: 0;
+    margin-left: calc(0% - 0);
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -783,8 +782,8 @@ nav ul li a {
     padding: 0;
   }
   #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
+    margin-top: 0;
+    margin-left: calc(0% - 0);
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -853,8 +852,8 @@ nav ul li a {
     padding: 0;
   }
   #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
+    margin-top: 0;
+    margin-left: calc(0% - 0);
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -922,8 +921,8 @@ nav ul li a {
     padding: 0;
   }
   #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
+    margin-top: 0;
+    margin-left: calc(0% - 0);
   }
   #about .about-descr .p-heading {
     font-size: 20px;

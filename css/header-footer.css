@@ -40,7 +40,7 @@ nav ul li:hover a {border-bottom: 3px solid #fff;}
 .web_nav{display: flex;align-items: center; justify-content: space-between; padding: 0 20px;}
 
 /*/////////////////////////////////////////////////////////////////////////////////푸터/////////////////////////////////////////*/
-footer{display: flex; align-items: center; height: 100vh; justify-content: center; position: relative; word-break: keep-all;}
+footer{display: flex; align-items: center; height: 100dvh; justify-content: center; position: relative; word-break: keep-all;}
 footer .contact{margin: 0 auto; padding: 100px 50px; width: 1400px;}
 footer h3{background-color: #fff; color: #212d42; font-size: 2.8vw;font-weight: 700; display: inline-block; padding: 10px; padding-left: 50px; margin-left: -50px;}
 footer b{display: block; font-size: 2.8vw; line-height: 1.5; font-weight: 700; color: #fff; padding: 15px 0;}

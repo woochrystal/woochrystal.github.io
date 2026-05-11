@@ -3,7 +3,7 @@ section > div {
     padding: 100px 50px; margin: 0 auto;
 }
 .blue{color: #fff;}
-.top { display: flex; align-items: center; justify-content: center; height: 100vh; padding: 0 20px; }
+.top { display: flex; align-items: center; justify-content: center; height: 100dvh; padding: 0 20px; }
 
 /*로고*/
 .top-logo { display: block; text-align: center; margin-top: 0; }
