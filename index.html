@@ -22,9 +22,7 @@
     <script src="plugin/wow.js"></script>
     <link rel="stylesheet" href="plugin/animate.css">
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            new WOW().init();
-        });
+        new WOW().init();
     </script>
 
     <!--프로그레스바-->
@@ -60,10 +58,10 @@
                 </h1>
                 <nav>
                     <ul>
-                        <li><a href="#title01">About</a></li>
-                        <li><a href="#title02">Skill</a></li>
-                        <li><a href="#title03">Work</a></li>
-                        <li><a href="#title04">Study</a></li>
+                        <li><a href="#about" data-title='title01'>About</a></li>
+                        <li><a href="#skill" data-title='title02'>Skill</a></li>
+                        <li><a href="#work" data-title='title04'>Work</a></li>
+                        <li><a href="#study" data-title='title03'>Study</a></li>
                     </ul>
                 </nav>
             </div>
@@ -94,7 +92,7 @@
     </section>
 
     <!-- About Me -->
-    <section>
+    <section id="about">
         <div class="about part">
             <div class="title" id="title01">
                 <div class="title-bg">
@@ -240,7 +238,7 @@
     </section>
 
     <!-- Skill Stack -->
-    <section>
+    <section id="skill">
         <div class="artwork part clearfix">
             <div class="title" id="title02">
                 <div class="title-bg">
@@ -468,10 +466,10 @@
         </div>
     </section>
 
-    <!-- 실무 -->
-    <section>
+    <!-- work -->
+    <section id="work">
         <div class="portfolio work part">
-            <div class="title" id="title03">
+            <div class="title" id="title04">
                 <div class="title-bg">
                     <div class="blue">
                         <p>Work</p>
@@ -480,12 +478,6 @@
                 </div>
             </div>
             <div class="web-content">
-                <div class="content">
-                    <img src="img/f.work/2026_sass.png" alt="펜타웨어">
-                </div>
-                <div class="content">
-                    <img src="img/f.work/2025_hdDesk.png" alt="현대오토에버 데스크웨어">
-                </div>
                 <div class="content">
                     <img src="img/f.work/2023_yongph.png" alt="포항청춘센터">
                 </div>
@@ -515,22 +507,22 @@
                 </div>
             </div>
 
-<!--            <div class="pf-modal">-->
-<!--                <div class="close">-->
-<!--                    <i class="far fa-times-circle"></i>-->
-<!--                </div>-->
-<!--                <div class="modal-content">-->
-<!--                    <img src="img/d.portfolio/comming-soon.jpg" alt="준비중">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="pf-modal">-->
-<!--                <div class="close">-->
-<!--                    <i class="far fa-times-circle"></i>-->
-<!--                </div>-->
-<!--                <div class="modal-content">-->
-<!--                    <img src="img/d.portfolio/comming-soon.jpg" alt="준비중">-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="pf-modal">
+                <div class="close">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="modal-content">
+                    <img src="img/d.portfolio/comming-soon.jpg" alt="준비중">
+                </div>
+            </div>
+            <div class="pf-modal">
+                <div class="close">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="modal-content">
+                    <img src="img/d.portfolio/comming-soon.jpg" alt="준비중">
+                </div>
+            </div>
             
         </div>
 
@@ -540,9 +532,9 @@
     </section>
 
     <!-- 공부용 포폴 -->
-    <section>
+    <section id="study">
         <div class="portfolio Study part">
-            <div class="title" id="title04">
+            <div class="title" id="title03">
                 <div class="title-bg">
                     <div class="blue">
                         <p>Study</p>
