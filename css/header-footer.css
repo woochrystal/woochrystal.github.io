@@ -31,7 +31,7 @@ nav ul li a {border-bottom: 3px solid transparent;transition: 0.2s;}
 /*hover*/
 nav ul li a.one {border-bottom: 3px solid #fff;}
 
-nav ul li:hover a {border-bottom: 3px solid #fff;}
+nav ul li a:hover {border-bottom: 3px solid #fff;}
 
 .nav-wrap {display: none;}
 
