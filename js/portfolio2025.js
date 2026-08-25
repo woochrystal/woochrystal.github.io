@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {//다 로드 된 후 �
     //프로젝트 제목 마우스 띄우기
     var pro_tit = [
         //퍼블리싱 회사 포폴
+        "밈플폰 리뉴얼(2026)",
         "SaaS형 그룹웨어 펜타웨어(2026)",
         "H사 데스크웨어(2025)",
         "포항청춘센터(2023)",
@@ -134,8 +135,40 @@ document.addEventListener('DOMContentLoaded', function() {//다 로드 된 후 �
 
     infoClick()
 
+    const workContents = document.querySelectorAll('.work .web-content .content');
+    const workModals = document.querySelectorAll('.work .pf-modal');
 
+    const studyContents = document.querySelectorAll('.Study .web-content .content');
+    const studyModals = document.querySelectorAll('.Study .pf-modal');
 
+    workContents.forEach((content, index) => {
+        content.addEventListener('click', function () {
+            if (workModals[index]) {
+                workModals[index].style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    studyContents.forEach((content, index) => {
+        content.addEventListener('click', function () {
+            if (studyModals[index]) {
+                studyModals[index].style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    const closeBtns = document.querySelectorAll('.pf-modal .close');
+
+    closeBtns.forEach(closeBtn => {
+        closeBtn.addEventListener('click', function () {
+            const modal = this.closest('.pf-modal');
+
+            modal.style.display = 'none';
+            document.body.style.overflow = 'scroll';
+        });
+    });
 
 
     

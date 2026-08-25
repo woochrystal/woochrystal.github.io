@@ -31,19 +31,6 @@ $("window").ready(function(){//2018 퍼블리셔 버전
         $("nav").toggleClass("slide")
          
     })
-     
-    
-    $(".close").click(function(){
-        $(".pf-modal").fadeOut(300)
-        $('body').css("overflow", "scroll");
-    })
-    $(".Study .hasmodal").click(function(){
-        var t = $(this).index()
-        $(".pf-modal").eq(t).fadeIn(300)
-        $('body').css("overflow", "hidden");
-    })
-    
-    
     
     
 })//js end
