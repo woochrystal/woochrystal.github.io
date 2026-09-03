@@ -75,7 +75,8 @@ section > div {
 .mouse{
    position: absolute; left: 0; top: 0; border: 2px solid #212d42; 
     z-index: 1000000; background-color: #050d1c; padding: 10px; text-align: center; 
-    line-height: 30px; font-family: "YoonMinguk"; font-weight: bold; color: #fff; display: none; width: auto;
+    line-height: 30px;
+    font-family: "YoonMinguk", serif; font-weight: bold; color: #fff; display: none; width: auto;
 }
 .web-content{font-size: 0;}
 .portfolio .content{
@@ -99,8 +100,8 @@ section > div {
     background-color: rgba(159, 161, 178, 0.87); z-index: 10000000000000; text-align: center;
 }
 .pf-modal i{font-size: 50px; color: #ffffff; cursor: pointer; position: relative; top: 30px;}
-.modal-content{margin-top: 20px; max-width: 1400px; width: 75%; max-height: 85%; background-color: transparent;
-    position: relative; left: calc(50% + 6px); top: 50%; transform: translate(-50%, -50%); overflow: auto;
+.modal-content{margin-top: 20px; width: 75%; max-height: 85%; background-color: transparent;
+    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%); overflow: auto;
 }
 .pf-modal .modal-content img{width: 100%;height: 100%;display: block; object-fit: cover; object-position: top;}
 .pf-modal .modal-content::-webkit-scrollbar{display: inherit;}
@@ -183,7 +184,7 @@ section > div {
 
 .project_modal .modal_img_list .has_3 .span_3 span,
 .project_modal .modal_img_list .has_3 img{width: calc(100% / 3 - 1vw);object-fit: cover;}
- 
+
 .project_modal .modal_img_list .has_3_ver2 .img_box{height: 60vh; flex-wrap: nowrap;}
 .project_modal .modal_img_list .has_3_ver2 div:first-child{height: 100%; display: flex;flex-wrap: wrap;justify-content: flex-end;align-items: center;}
 .project_modal .modal_img_list .has_3_ver2 div:last-child{height: 100%; width: 50%;}
@@ -205,7 +206,7 @@ section > div {
 @media screen and (max-width:1400px){
     .top .top-txt .info_txt { font-size: 2vw;}
     .top .top-txt .name_txt {font-size: 3.5vw;}
-    
+
 }
 
 @media screen and (max-width:1280px){
@@ -221,7 +222,7 @@ section > div {
     /* 일반크기 */
     .txt-top .con, .about p, .about span,
     .artwork .menu ul li, .project_modal .info {font-size: 16px;}
-    
+
     /* 타이틀 폰트크기 */
     .title p,
     .resume .resume_tit,
@@ -260,7 +261,8 @@ section > div {
 }
 @media screen and (max-width:640px){
     .title p, .resume .resume_tit, .project_modal .pro_modal_tit {font-size: 17px;}
-    section > div, .project_modal .detail {padding: 0 17px 150px;}
+    section > div{padding: 0 17px 150px;}
+    .project_modal .detail {padding: 30px 10px;}
     .mouse{display: none !important;}
     .title {margin-bottom: 20px;}
     .artwork .item span{font-size: 16px;}
