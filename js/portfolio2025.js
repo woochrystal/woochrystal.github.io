@@ -138,37 +138,60 @@ document.addEventListener('DOMContentLoaded', function() {//다 로드 된 후 �
 
     infoClick()
 
+    // Work / Study 모달 설정
     const workContents = document.querySelectorAll('.work .web-content .content');
     const workModals = document.querySelectorAll('.work .pf-modal');
 
     const studyContents = document.querySelectorAll('.Study .web-content .content');
     const studyModals = document.querySelectorAll('.Study .pf-modal');
 
+    // work 모달
     workContents.forEach((content, index) => {
         content.addEventListener('click', function () {
+            // 클릭한 프로젝트와 같은 순서의 모달이 존재하는 경우
             if (workModals[index]) {
+                //모달 멸기
                 workModals[index].style.display = 'block';
+
+                //모달 스크롤 리셋
+                const modalContent = workModals[index].querySelector('.modal-content.project_modal');
+                modalContent.scrollTop = 0;
+
+                // 모달이 열려 있는 동안 배경 페이지 스크롤 막기
                 document.body.style.overflow = 'hidden';
             }
         });
     });
 
+    //study 모달
     studyContents.forEach((content, index) => {
         content.addEventListener('click', function () {
+            // 클릭한 프로젝트와 같은 순서의 모달이 존재하는 경우
             if (studyModals[index]) {
+                //멸기
                 studyModals[index].style.display = 'block';
+
+                // 모달 스크롤 리셋
+                const modalContent = studyModals[index].querySelector('.modal-content.project_modal');
+                modalContent.scrollTop = 0;
+
+                // 모달이 열려 있는 동안 배경 페이지 스크롤 막기
                 document.body.style.overflow = 'hidden';
             }
         });
     });
 
+    //모달 닫기버튼
     const closeBtns = document.querySelectorAll('.pf-modal .close');
 
     closeBtns.forEach(closeBtn => {
         closeBtn.addEventListener('click', function () {
+            // 클릭한 닫기 버튼이 들어있는 모달을 찾음
             const modal = this.closest('.pf-modal');
 
+            // 현재 모달만 닫기
             modal.style.display = 'none';
+            // 모달이 닫히면 다시 페이지 스크롤 가능하게 설정
             document.body.style.overflow = 'scroll';
         });
     });
