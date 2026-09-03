@@ -261,7 +261,7 @@ section > div {
 }
 @media screen and (max-width:640px){
     .title p, .resume .resume_tit, .project_modal .pro_modal_tit {font-size: 17px;}
-    section > div{padding: 0 17px 150px;}
+    section > div{padding: 50px 17px 100px;}
     .project_modal .detail {padding: 30px 10px;}
     .mouse{display: none !important;}
     .title {margin-bottom: 20px;}
