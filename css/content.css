@@ -100,8 +100,9 @@ section > div {
     background-color: rgba(159, 161, 178, 0.87); z-index: 10000000000000; text-align: center;
 }
 .pf-modal i{font-size: 50px; color: #ffffff; cursor: pointer; position: relative; top: 30px;}
-.modal-content{margin-top: 20px; width: 75%; max-height: 85%; background-color: transparent;
-    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%); overflow: auto;
+
+.modal-content{margin-top: 20px; max-width: 1400px; width: 85%; max-height: 85%; background-color: transparent;
+    position: relative; left: calc(50% + 6px); top: 50%; transform: translate(-50%, -50%); overflow: auto;
 }
 .pf-modal .modal-content img{width: 100%;height: 100%;display: block; object-fit: cover; object-position: top;}
 .pf-modal .modal-content::-webkit-scrollbar{display: inherit;}
@@ -139,7 +140,7 @@ section > div {
 .modal_main_tit h3{font-size: 45px; font-weight: 500; padding-top: 30px;}
 .modal_main_tit span{padding-top: 30px; display: inline-block; font-size: 15px; font-weight: bold;}
 .project_modal .info{line-height: 1.5;font-size: 20px; padding-top: 30px;}
-.project_modal .main_img{max-width: 60vw; height: 50vh; margin: 0 auto 30px; border: 1px solid #212d42;}
+.project_modal .main_img{max-width: 45vw; height: 50vh; margin: 0 auto 30px; border: 1px solid #212d42;}
 .project_modal .explan_box{background-color: #212d42; padding: 15px; }
 
 .project_modal .info_con{padding-top: 85px;}
@@ -170,12 +171,13 @@ section > div {
 
 .project_modal .modal_img_list li{margin-bottom: 50px;}
 .project_modal .modal_img_list li:last-child{margin-bottom: 0;}
-.project_modal .modal_img_list .img_box{display: flex; flex-wrap: wrap;justify-content: flex-start; width: 100%;}
+.project_modal .modal_img_list .img_box{display: flex; flex-wrap: wrap;justify-content: flex-start; width: 100%;height: 100%; object-fit: contain; object-position: top;}
+.project_modal .modal_img_list .img_box.btm img{object-position: bottom;}
 .project_modal .modal_img_list .img_box img{max-height: 80vh; width: auto; max-width: 100%; border: 1px solid #212d42;}
 .project_modal .modal_img_list span{display: inline-block; text-align: left; width: auto; padding: 5px 10px; border: 2px solid #fff; margin-bottom: 5px;}
 
-.project_modal .modal_img_list .has_2 {display: flex; justify-content: space-between;gap: 2vw;}
-.project_modal .modal_img_list .has_3 {display: flex; justify-content: space-between;gap: 2vw;}
+.project_modal .modal_img_list .has_2 {display: flex; justify-content: space-between;gap: 2vw;max-height: 80vh; overflow: hidden;}
+.project_modal .modal_img_list .has_3 {display: flex; justify-content: space-between;gap: 2vw;max-height: 70vh; overflow: hidden;}
 
 .project_modal .modal_img_list .has_3 .img_box{max-height: 80vh;justify-content: space-between;}
 
