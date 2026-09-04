@@ -4,8 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Woo Sujeong</title>
-    
+    <title>우수정 | 웹 퍼블리셔 포트폴리오</title>
+    <meta name="description" content="웹 접근성과 웹 표준을 중요하게 생각하는 웹 퍼블리셔 우수정의 포트폴리오입니다.">
+
+    <!-- 링크 공유 미리보기 이미지-->
+    <meta property="og:title" content="우수정 | 웹 퍼블리셔 포트폴리오">
+    <meta property="og:description" content="웹 퍼블리셔 우수정의 포트폴리오입니다.">
+    <meta property="og:image" content="https://woochrystal25.com/...">
+    <meta property="og:url" content="https://woochrystal25.com/">
+    <meta property="og:type" content="website">
+
     <!--js-->
     <script src="js/jquery-3.5.0.min.js"></script>
     
@@ -53,7 +61,7 @@
             <div class="web_nav">
                 <h1>
                     <a href="index.html">
-                        <img src="img/a.header-footer/logo.png" alt="사이트 로고">
+                        <img src="img/a.header-footer/logo.png" alt="우수정 포트폴리오">
                     </a>
                 </h1>
                 <nav>
@@ -94,27 +102,27 @@
     <!-- About Me -->
     <section id="about">
         <div class="about part">
-            <div class="title" id="title01">
-                <div class="title-bg">
-                    <div class="blue">
-                        <p>About</p>
-                    </div>
-                    <p>Me</p>
-                </div>
-            </div>
+            <h2 class="title" id="title01">
+                <span class="title-bg">
+                    <span class="blue">
+                        <b>About</b>
+                    </span>
+                    <b>Me</b>
+                </span>
+            </h2>
             <div class="profile">
                 <div class="charactor">
                     <img src="img/c.about/wsj_pic.jpg" alt=" 우수정 캐릭터">
                 </div>
                 <div class="profile_btn">
-                    <p class="info_open">
+                    <button type="button" aria-expanded="false" aria-controls="project-info" class="info_open">
                         <span>상세정보 보기</span>
-                        <i class="fa-solid fa-magnifying-glass-plus"></i>
-                    </p>
-                    <p class="info_close">
+                        <i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="info_close">
                         <span>상세정보 닫기</span>
-                        <i class="fa-solid fa-magnifying-glass-minus"></i>
-                    </p>
+                        <i class="fa-solid fa-magnifying-glass-minus" aria-hidden="true"></i>
+                    </button>
                 </div>
                 <div class="profile-txt">
                     <div class="txt-top-wrap">
@@ -239,23 +247,33 @@
     <!-- Skill Stack -->
     <section id="skill">
         <div class="artwork part clearfix">
-            <div class="title" id="title02">
-                <div class="title-bg">
-                    <div class="blue">
-                        <p>Skill</p>
-                    </div>
-                    <p>Stack</p>
-                </div>
-            </div>
+            <h2 class="title" id="title02">
+                <span class="title-bg">
+                    <span class="blue">
+                        <b>Skill</b>
+                    </span>
+                    <b>Stack</b>
+                </span>
+            </h2>
             <div class="container">
                 <div class="menu">
                     <ul>
                         <!-- <li data-filter=".all">ALL</li> -->
-                        <li data-filter=".Front" class="filter c">FrontEnd</li>
-                        <li data-filter=".Back">BackEnd</li>  
-                        <li data-filter=".db">Database</li> 
-                        <li data-filter=".SCM">SCM</li> 
-                        <li data-filter=".Design">Design</li> 
+                        <li>
+                            <button type="button" data-filter=".Front" class="filter c">FrontEnd</button>
+                        </li>
+                        <li>
+                            <button type="button" data-filter=".Back">BackEnd</button>
+                        </li>
+                        <li>
+                            <button type="button" data-filter=".db">Database</button>
+                        </li>
+                        <li>
+                            <button type="button" data-filter=".SCM">SCM</button>
+                        </li>
+                        <li>
+                            <button type="button" data-filter=".Design">Design</button>
+                        </li>
                     </ul>
                 </div>
                 <div class="item-wrap">
@@ -469,14 +487,14 @@
     <!-- work -->
     <section id="work">
         <div class="portfolio work part">
-            <div class="title" id="title04">
-                <div class="title-bg">
-                    <div class="blue">
-                        <p>Work</p>
-                    </div>
-                    <p>Projects</p>
-                </div>
-            </div>
+            <h2 class="title" id="title04">
+                <span class="title-bg">
+                    <span class="blue">
+                        <b>Work</b>
+                    </span>
+                    <b>Projects</b>
+                </span>
+            </h2>
             <div class="web-content">
                 <div class="content">
                     <img src="img/f.work/2026_mpphone.png" alt="밈플폰">
@@ -491,7 +509,7 @@
                     <img src="img/f.work/2023_yongph.png" alt="포항청춘센터">
                 </div>
                 <div class="content">
-                    <img src="img/f.work/2023_ynceo01.webp" alt="영남ceo아카데미">
+                    <img src="img/f.work/2023_ynceo01.webp" alt="영남 ceo 아카데미">
                 </div>
                 <div class="content">
                     <img src="img/f.work/2022_aladdin.png" alt="알라딘기계">
@@ -525,7 +543,7 @@
                 </div>
             </div>
 
-<!--            <div class="pf-modal">-->
+<!--            <div class="pf-modal" role="dialog" aria-modal="true" aria-labelledby="">-->
 <!--                <div class="close">-->
 <!--                    <i class="far fa-times-circle"></i>-->
 <!--                </div>-->
@@ -533,7 +551,7 @@
 <!--                    <img src="img/d.portfolio/comming-soon.jpg" alt="준비중">-->
 <!--                </div>-->
 <!--            </div>-->
-<!--            <div class="pf-modal">-->
+<!--            <div class="pf-modal" role="dialog" aria-modal="true" aria-labelledby="">-->
 <!--                <div class="close">-->
 <!--                    <i class="far fa-times-circle"></i>-->
 <!--                </div>-->
@@ -552,58 +570,59 @@
     <!-- 공부용 포폴 -->
     <section id="study">
         <div class="portfolio Study part">
-            <div class="title" id="title03">
-                <div class="title-bg">
-                    <div class="blue">
-                        <p>Study</p>
-                    </div>
-                    <p>Projects</p>
-                </div>
-            </div>
+            <h2 class="title" id="title03">
+                <span class="title-bg">
+                    <span class="blue">
+                        <b>Study</b>
+                    </span>
+                    <b>Projects</b>
+                </span>
+            </h2>
             <div class="web-content">
                 <!-- <a class="content"  href="sub/iloke.html" target="_blank"> -->
-                <div class="content hasmodal">
+                <button type="button" class="content hasmodal">
                     <img src="img/d.portfolio/iloke1.jpg" alt="이로케 로고" class="first">
                     <img src="img/d.portfolio/iloke2.jpg" alt="이로케 가구 사이트" class="second">
-                </div>
-                <div class="content hasmodal">
+                </button>
+                <button type="button" class="content hasmodal">
                     <img src="img/d.portfolio/shilla1.jpg" alt="신라호텔 서울 로고" class="first">
                     <img src="img/d.portfolio/shilla2.jpg" alt="신라호텔 서울 사이트" class="second">
 
-                </div>
-                <div class="content hasmodal">
+                </button>
+                <button type="button" class="content hasmodal">
                     <img src="img/d.portfolio/jomalone1.jpg" alt="조말론 로고" class="first">
                     <img src="img/d.portfolio/jomalone2.jpg" alt="조말론 앱" class="second">
 
-                </div>
-                <div class="content hasmodal">
+                </button>
+                <button type="button" class="content hasmodal">
                     <img src="img/d.portfolio/pp2025.jpg" alt="우수정 포폴 2025" class="first">
                     <img src="img/d.portfolio/pp2025_2.jpg" alt="우수정 포폴 2025" class="second">
 
-                </div>
-                <div class="content hasmodal gray">
+                </button>
+                <button type="button" class="content hasmodal gray">
                     <img src="img/d.portfolio/pp.jpg" alt="우수정 캐릭터 로고" class="first">
                     <img src="img/d.portfolio/pp2.jpg" alt="포트폴리오 사이트 2025 ver" class="second">
-                </div>
-                <div class="content hasmodal gray">
+                </button>
+                <button type="button" class="content hasmodal gray">
                     <img src="img/d.portfolio/gta1.jpg" alt="gta5 로고" class="first">
                     <img src="img/d.portfolio/gta2.jpg" alt="gta5 사이트" class="second">
 
-                </div>
-                <div class="content hasmodal gray">
+                </button>
+                <button type="button" class="content hasmodal gray">
                     <img src="img/d.portfolio/adidas1.jpg" alt="아디다스 로고" class="first">
                     <img src="img/d.portfolio/adidas2.jpg" alt="아디다스 이지부스트 사이트" class="second">
 
-                </div>
+                </button>
             </div>
 
 
 
             <!-- 모달시작 -->
-            <div class="pf-modal">
-                <div class="close">
-                    <i class="fa-regular fa-circle-xmark"></i>
-                </div>
+            <div class="pf-modal" role="dialog" aria-modal="true" aria-labelledby="ilokeTit">
+                <button type="button" class="close">
+                    <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+                    <span class="sr-only">닫기</span>
+                </button>
 
                 <div class="modal-content project_modal">
                     <div class="detail">
@@ -617,7 +636,7 @@
                                     <li>프론트엔드</li>
                                 </ul>
                             </div>
-                            <h2>이로케 쇼핑몰 개발 프로젝트</h2>
+                            <h3 id="ilokeTit">이로케 쇼핑몰 개발 프로젝트</h3>
                             <span>4인 &#183; 24.11.13~24.12.13(1개월)</span>
                         </div>
 
@@ -673,15 +692,17 @@
                                         </a>
                                     </li> -->
                                     <li>
-                                        <a href="file/iloke.pdf" target="_blank">
+                                        <a href="file/iloke.pdf" target="_blank" rel="noopener noreferrer">
                                             <span>이로케 최종 PPT</span>
                                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            <span class="sr-only">(새 창에서 열림)</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/woochrystal/iloke" target="_blank">
+                                        <a href="https://github.com/woochrystal/iloke" target="_blank" rel="noopener noreferrer">
                                             <span>이로케 GitHub</span>
                                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            <span class="sr-only">(새 창에서 열림)</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -797,7 +818,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!-- 작업화면end -->
+                            <!-- 작업화면 end -->
 
                         </div>
                         <!-- info end  -->
@@ -809,10 +830,11 @@
                 <!-- project_modal end  -->
 
             </div>
-            <div class="pf-modal">
-                <div class="close">
-                    <i class="fa-regular fa-circle-xmark"></i>
-                </div>
+            <div class="pf-modal" role="dialog" aria-modal="true" aria-labelledby="shillaTit">
+                <button type="button" class="close">
+                    <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+                    <span class="sr-only">닫기</span>
+                </button>
 
                 <div class="modal-content project_modal">
                     <div class="detail">
@@ -827,7 +849,7 @@
                                     <li>프론트엔드</li>
                                 </ul>
                             </div>
-                            <h2>API 연동 신라호텔 서울 사이트 리뉴얼 프로젝트</h2>
+                            <h3 id="shillaTit">API 연동 신라호텔 서울 사이트 리뉴얼 프로젝트</h3>
                             <span>4인 &#183; 25.01.03~25.01.14</span>
                         </div>
 
@@ -872,15 +894,17 @@
                                 </p>
                                 <ul>
                                     <li>
-                                        <a href="file/shilla.pdf" target="_blank">
+                                        <a href="file/shilla.pdf" target="_blank" rel="noopener noreferrer">
                                             <span>신라호텔 API 연동 PPT</span>
                                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            <span class="sr-only">(새 창에서 열림)</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/suyn04/shilla3?tab=readme-ov-file" target="_blank">
+                                        <a href="https://github.com/suyn04/shilla3?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">
                                             <span>GitHub</span>
                                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            <span class="sr-only">(새 창에서 열림)</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -967,10 +991,11 @@
                 <!-- project_modal end  -->
 
             </div>
-            <div class="pf-modal">
-                <div class="close">
-                    <i class="fa-regular fa-circle-xmark"></i>
-                </div>
+            <div class="pf-modal" role="dialog" aria-modal="true" aria-labelledby="jomaloneTit">
+                <button type="button" class="close">
+                    <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+                    <span class="sr-only">닫기</span>
+                </button>
 
                 <div class="modal-content project_modal">
                     <div class="detail">
@@ -984,7 +1009,7 @@
                                     <li>프론트엔드</li>
                                 </ul>
                             </div>
-                            <h2>조말론 런던 안드로이드 앱 개발 프로젝트</h2>
+                            <h3 id="jomaloneTit">조말론 런던 안드로이드 앱 개발 프로젝트</h3>
                             <span>4인 &#183; 25.01~25.02(7일)</span>
                         </div>
 
@@ -1028,9 +1053,10 @@
                                 </p>
                                 <ul>
                                     <li>
-                                        <a href="file/jomalone.pdf" target="_blank">
+                                        <a href="file/jomalone.pdf" target="_blank" rel="noopener noreferrer">
                                             <span>조말론 런던 ppt</span>
                                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            <span class="sr-only">(새 창에서 열림)</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -1157,10 +1183,11 @@
                 <!-- project_modal end  -->
 
             </div>
-            <div class="pf-modal">
-                <div class="close">
-                    <i class="fa-regular fa-circle-xmark"></i>
-                </div>
+            <div class="pf-modal" role="dialog" aria-modal="true" aria-labelledby="wsj2025Tit">
+                <button type="button" class="close">
+                    <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+                    <span class="sr-only">닫기</span>
+                </button>
 
                 <div class="modal-content project_modal">
                     <div class="detail">
@@ -1174,7 +1201,7 @@
                                     <li>퍼블리싱</li>
                                 </ul>
                             </div>
-                            <h2>2025 우수정 포트폴리오 사이트 리뉴얼</h2>
+                            <h3 id="wsj2025Tit">2025 우수정 포트폴리오 사이트 리뉴얼</h3>
                             <span>1인 &#183; 25.03 ~(진행중)</span>
                         </div>
 
@@ -1219,9 +1246,10 @@
                                 </p>
                                 <ul>
                                     <li>
-                                        <a href="https://github.com/woochrystal/woochrystal.github.io" target="_blank">
+                                        <a href="https://github.com/woochrystal/woochrystal.github.io" target="_blank" rel="noopener noreferrer">
                                             <span>깃허브</span>
                                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            <span class="sr-only">(새 창에서 열림)</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -1305,10 +1333,11 @@
 
             </div>
 
-            <div class="pf-modal">
-                <div class="close">
-                    <i class="fa-regular fa-circle-xmark"></i>
-                </div>
+            <div class="pf-modal" role="dialog" aria-modal="true" aria-labelledby="wsj2021Tit">
+                <button type="button" class="close">
+                    <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+                    <span class="sr-only">닫기</span>
+                </button>
 
                 <div class="modal-content project_modal">
                     <div class="detail">
@@ -1322,7 +1351,7 @@
                                     <li>퍼블리싱</li>
                                 </ul>
                             </div>
-                            <h2>2021 우수정 포트폴리오 프로젝트</h2>
+                            <h3 id="wsj2021Tit">2021 우수정 포트폴리오 프로젝트</h3>
                             <span>1인 &#183; 2021</span>
                         </div>
 
@@ -1358,10 +1387,11 @@
 
             </div>
 
-            <div class="pf-modal">
-                <div class="close">
-                    <i class="fa-regular fa-circle-xmark"></i>
-                </div>
+            <div class="pf-modal" role="dialog" aria-modal="true" aria-labelledby="GTA5Tit">
+                <button type="button" class="close">
+                    <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+                    <span class="sr-only">닫기</span>
+                </button>
 
                 <div class="modal-content project_modal">
                     <div class="detail">
@@ -1374,7 +1404,7 @@
                                     <li>퍼블리싱</li>
                                 </ul>
                             </div>
-                            <h2>GTA5 게임 홍보 사이트</h2>
+                            <h3 id="GTA5Tit">GTA5 게임 홍보 사이트</h3>
                             <span>1인 &#183; 2021</span>
                         </div>
 
@@ -1405,9 +1435,10 @@
                                 </p>
                                 <ul>
                                     <li>
-                                        <a href="portfolio-content/gta5/gta-main.html" target="_blank">
+                                        <a href="portfolio-content/gta5/gta-main.html" target="_blank" rel="noopener noreferrer">
                                             <span>사이트 바로가기</span>
                                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            <span class="sr-only">(새 창에서 열림)</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -1425,10 +1456,11 @@
                 <!-- project_modal end  -->
             </div>
 
-            <div class="pf-modal">
-                <div class="close">
-                    <i class="fa-regular fa-circle-xmark"></i>
-                </div>
+            <div class="pf-modal" role="dialog" aria-modal="true" aria-labelledby="adidasTit">
+                <button type="button" class="close">
+                    <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+                    <span class="sr-only">닫기</span>
+                </button>
 
                 <div class="modal-content project_modal">
                     <div class="detail">
@@ -1441,7 +1473,7 @@
                                     <li>퍼블리싱</li>
                                 </ul>
                             </div>
-                            <h2>아디다스 이지부스트 리뉴얼 퍼블리싱</h2>
+                            <h3 id="adidasTit">아디다스 이지부스트 리뉴얼 퍼블리싱</h3>
                             <span>1인 &#183; 2021</span>
                         </div>
 
@@ -1470,9 +1502,10 @@
                                 </p>
                                 <ul>
                                     <li>
-                                        <a href="portfolio-content/adidas/adidas-main.html" target="_blank">
+                                        <a href="portfolio-content/adidas/adidas-main.html" target="_blank" rel="noopener noreferrer">
                                             <span>사이트 바로가기</span>
                                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            <span class="sr-only">(새 창에서 열림)</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -1495,7 +1528,7 @@
 
     <footer class="part" id="title05">
         <div class="contact wow fadeIn">
-            <h3>Contact</h3>
+            <h2>Contact</h2>
             <div class="ft-txt">
                 <b>woochryfront@gmail.com</b>
                 <p>궁금한 점이나 제안이 있으시면 편하게 메일 주세요. 언제든지 환영합니다!</p>

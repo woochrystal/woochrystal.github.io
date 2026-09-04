@@ -23,7 +23,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 	color: #c9d5ea;
@@ -39,7 +38,12 @@ body {
 }
 button{
 	border: none;
-	background-color: transparent;
+	font: inherit;
+	border: 0;
+	padding: 0;
+	background: none;
+	cursor: pointer;
+	color: inherit;
 }
 .clearfix::after{
 	content: '';
@@ -54,10 +58,29 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
 	content: none;
 }
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/*접근성 추가*/
+a:focus-visible,
+button:focus-visible {
+	outline: 2px solid #fff;
+	outline-offset: 4px;
+}
+
+/*새 창 열기*/
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
 }

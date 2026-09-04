@@ -128,9 +128,15 @@ document.addEventListener('DOMContentLoaded', function() {//다 로드 된 후 �
             if(!proBtn.classList.contains('on')){//on 클래스가 있는지 확인(없을때)
                 proBtn.classList.add('on');
                 proTxt.classList.add('active');
+
+                //상세정보 버튼 접근성 추가
+                proBtn.setAttribute('aria-expanded', 'true');
             }else{
                 proBtn.classList.remove('on');
                 proTxt.classList.remove('active');
+
+                //상세정보 버튼 접근성 추가
+                proBtn.setAttribute('aria-expanded', 'false');
             }
         })
 
@@ -145,56 +151,78 @@ document.addEventListener('DOMContentLoaded', function() {//다 로드 된 후 �
     const studyContents = document.querySelectorAll('.Study .web-content .content');
     const studyModals = document.querySelectorAll('.Study .pf-modal');
 
+    // 모달 열기 함수
+    function openModal(content, modal){
+        if (!modal) return;
+
+        modal.style.display = 'block';
+
+        //스크롤 리셋
+        const modalContent = modal.querySelector('.modal-content.project_modal');
+        if(modalContent){
+            modalContent.scrollTop = 0;
+        }
+
+        // 모달이 열려 있는 동안 배경 페이지 스크롤 막기
+        document.body.style.overflow = 'hidden';
+
+        modal.previousFocus = content;
+
+        //모달 내부 닫기 버튼으로 포커스 이동
+        const closeBtn = modal.querySelector('.close');
+        if(closeBtn){
+           closeBtn.focus();
+        }
+    }
+
     // work 모달
     workContents.forEach((content, index) => {
         content.addEventListener('click', function () {
-            // 클릭한 프로젝트와 같은 순서의 모달이 존재하는 경우
-            if (workModals[index]) {
-                //모달 멸기
-                workModals[index].style.display = 'block';
-
-                //모달 스크롤 리셋
-                const modalContent = workModals[index].querySelector('.modal-content.project_modal');
-                modalContent.scrollTop = 0;
-
-                // 모달이 열려 있는 동안 배경 페이지 스크롤 막기
-                document.body.style.overflow = 'hidden';
-            }
+            openModal(content, workModals[index]);
         });
     });
 
     //study 모달
     studyContents.forEach((content, index) => {
         content.addEventListener('click', function () {
-            // 클릭한 프로젝트와 같은 순서의 모달이 존재하는 경우
-            if (studyModals[index]) {
-                //멸기
-                studyModals[index].style.display = 'block';
-
-                // 모달 스크롤 리셋
-                const modalContent = studyModals[index].querySelector('.modal-content.project_modal');
-                modalContent.scrollTop = 0;
-
-                // 모달이 열려 있는 동안 배경 페이지 스크롤 막기
-                document.body.style.overflow = 'hidden';
-            }
+            openModal(content, studyModals[index]);
         });
     });
+
+    //모달 닫기 함수
+    function closeModal(modal){
+        // 현재 모달만 닫기
+        modal.style.display = 'none';
+
+        // 모달이 닫히면 다시 페이지 스크롤 가능하게 설정
+        document.body.style.overflow = '';
+
+        // 모달 열었던 프로젝트로 포커스 돌리기
+        if(modal.previousFocus){
+            modal.previousFocus.focus();
+        }
+
+    }
 
     //모달 닫기버튼
     const closeBtns = document.querySelectorAll('.pf-modal .close');
 
     closeBtns.forEach(closeBtn => {
         closeBtn.addEventListener('click', function () {
-            // 클릭한 닫기 버튼이 들어있는 모달을 찾음
             const modal = this.closest('.pf-modal');
-
-            // 현재 모달만 닫기
-            modal.style.display = 'none';
-            // 모달이 닫히면 다시 페이지 스크롤 가능하게 설정
-            document.body.style.overflow = 'scroll';
+            closeModal(modal);
         });
     });
+
+    document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape'){
+            const openModal = document.querySelector('.pf-modal[style*="display: block"]');
+
+            if(openModal){
+                closeModal(openModal);
+            }
+        }
+    })
 
 
     

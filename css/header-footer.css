@@ -42,7 +42,7 @@ nav ul li a:hover {border-bottom: 3px solid #fff;}
 /*/////////////////////////////////////////////////////////////////////////////////푸터/////////////////////////////////////////*/
 footer{display: flex; align-items: center; height: 100dvh; justify-content: center; position: relative; word-break: keep-all;}
 footer .contact{margin: 0 auto; padding: 100px 50px; width: 1400px;}
-footer h3{background-color: #fff; color: #212d42; font-size: 2.8vw;font-weight: 700; display: inline-block; padding: 10px; padding-left: 50px; margin-left: -50px;}
+footer h2{background-color: #fff; color: #212d42; font-size: 2.8vw;font-weight: 700; display: inline-block; padding: 10px; padding-left: 50px; margin-left: -50px;}
 footer b{display: block; font-size: 2.8vw; line-height: 1.5; font-weight: 700; color: #fff; padding: 15px 0;}
 footer .contact p{font-size: 30px; line-height: 1.2;}
 footer .contact a{padding: 15px 20px;color: #c9d5ea; background-color: #212d42; display: inline-block; margin-top: 30px; transition: 0.3s;}
@@ -95,8 +95,8 @@ footer > p{width: 100%; padding: 20px; background-color: #212d42; text-align: ce
 @media screen and (max-width:1280px) {
     /*    ////헤더////*/
     h1 {width: 80px;}
-    footer h3{display: inline-block; font-size: 20px; background-color: #fff; text-align: right; width: 150px; margin-left: -30px; border-radius: 0; padding: 10px;}
-    footer h3{display: none;}
+    footer h2{display: inline-block; font-size: 20px; background-color: #fff; text-align: right; width: 150px; margin-left: -30px; border-radius: 0; padding: 10px;}
+    footer h2{display: none;}
     footer .contact{padding: 50px 20px;}
     footer .ft-txt{text-align: center;}
     ::-webkit-scrollbar {display: none;}
@@ -165,7 +165,7 @@ footer > p{width: 100%; padding: 20px; background-color: #212d42; text-align: ce
     }
     
     footer .contact p {font-size: 4.5vw;}
-    footer h3{font-size: 17px;}
+    footer h2{font-size: 17px;}
 
 
     ::-webkit-scrollbar {

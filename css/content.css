@@ -22,12 +22,12 @@ section > div {
 
 /*title*/
 .title{margin-bottom: 50px;} 
-.title p{font-size: 25px; display: inline-block; font-weight: bold;} 
+.title b{font-size: 25px; display: inline-block; font-weight: bold;} 
 .title .blue{
     display: inline-block; background-color: #fff; 
     text-align: right; width: 150px; margin-left: -50px; border-radius: 0; padding: 10px;
 }
-.title .blue p{ color: #212d42;}
+.title .blue b{ color: #212d42;}
 
 /*profile*/
 .profile{margin: auto; display: flex; align-items: flex-start; justify-content: center; width: 100%;flex-direction: row-reverse;}
@@ -111,9 +111,9 @@ section > div {
 .pf-modal:nth-child(8) .btn{top: 9.6%;}/*아디다스 */
 
 .artwork .container{display: flex; justify-content: flex-start; align-items: flex-start;}
-.artwork .menu ul{color: #fff; font-size: 0; }
-.artwork .menu ul li{
-    padding: 15px 20px; cursor: pointer; font-size: 18px; transition: 0.2s;
+.artwork .menu ul{font-size: 0; }
+.artwork .menu button{
+    color: #c9d5ea; padding: 15px 20px; font-size: 18px; transition: 0.2s; width: 100%; text-align: left;
 }
 .artwork .item-wrap{width: 100%; margin-left: 25px;  overflow: hidden;}
 .artwork .item{width: 100%; display: flex; justify-content: flex-start; align-items: flex-start; margin-bottom: 40px;}
@@ -122,10 +122,11 @@ section > div {
 .artwork .item li{padding-top: 20px;list-style: square; margin-left: 25px;line-height: 1.2; word-break: keep-all;}
 /* .artwork .item:hover span{opacity: .99;} */
 .artwork .item img{width: 100px; height: 100px; padding: 10px; background-color: #fff;}
-.artwork .menu ul li:hover{  color: #fff;}
-.menu ul li.c{ color: #fff;background-color: #212d42;}
+.artwork .menu button:hover{ color: #fff;}
+.menu button.c{ color: #fff;background-color: #212d42;}
 
-.close{width: 100%; height: 100%; background-color: rgba(38, 38, 77, 0.58); position: absolute; top: 0; left: 0;}
+.close{width: 100%; height: 100%; background-color: rgba(38, 38, 77, 0.58); position: absolute; top: 0; left: 0; cursor: default;}
+.close:focus-visible svg {outline: 2px solid #fff; outline-offset: 4px;}
 .close svg{font-size: 40px; color: #fff; position: absolute; left: 50%; transform: translateX(-50%); top: 20px; cursor: pointer;}
 
 
@@ -135,7 +136,7 @@ section > div {
 .modal_main_tit{text-align: center;}
 .modal_main_tit ul{display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
 .modal_main_tit ul li{margin: 3px 5px;padding: 5px 10px; border: 2px solid #c9d5ea;}
-.modal_main_tit h2{font-size: 45px; font-weight: 500; padding-top: 30px;}
+.modal_main_tit h3{font-size: 45px; font-weight: 500; padding-top: 30px;}
 .modal_main_tit span{padding-top: 30px; display: inline-block; font-size: 15px; font-weight: bold;}
 .project_modal .info{line-height: 1.5;font-size: 20px; padding-top: 30px;}
 .project_modal .main_img{max-width: 60vw; height: 50vh; margin: 0 auto 30px; border: 1px solid #212d42;}
@@ -222,15 +223,15 @@ section > div {
     /* 폰트 */
     /* 일반크기 */
     .txt-top .con, .about p, .about span,
-    .artwork .menu ul li, .project_modal .info {font-size: 16px;}
+    .artwork .menu button, .project_modal .info {font-size: 16px;}
 
     /* 타이틀 폰트크기 */
-    .title p,
+    .title b,
     .resume .resume_tit,
     .project_modal .pro_modal_tit {font-size: 20px;}
     .top .top-txt .info_txt {font-size: 3vw;}
     .top .top-txt .name_txt,
-    .modal_main_tit h2 {font-size: 4.5vw;}
+    .modal_main_tit h3 {font-size: 4.5vw;}
     .profile-txt i,
     .profile-txt > .hasI .con i,
     .project_modal code {font-size: 12px; }
@@ -261,32 +262,32 @@ section > div {
 
 }
 @media screen and (max-width:640px){
-    .title p, .resume .resume_tit, .project_modal .pro_modal_tit {font-size: 17px;}
+    .title b, .resume .resume_tit, .project_modal .pro_modal_tit {font-size: 17px;}
     section > div{padding: 50px 17px 100px;}
     .project_modal .detail {padding: 30px 10px;}
     .mouse{display: none !important;}
     .title {margin-bottom: 20px;}
     .artwork .item span{font-size: 16px;}
 
-    .txt-top .con, 
-    .about p, 
-    .about span, 
-    .artwork .menu ul li, 
-    .project_modal .info, 
+    .txt-top .con,
+    .about p,
+    .about span,
+    .artwork .menu button,
+    .project_modal .info,
     .project_modal .skill_box ul li,
     .project_modal .modal_list_tit span{font-size: 15px;}
 
     .project_modal .info_con {padding-top: 30px;}
 
     .top .top-txt .info_txt {font-size: 5vw;}
-    .top .top-txt .name_txt, .modal_main_tit h2 {font-size: 5.5vw; line-height: 1.3;}
+    .top .top-txt .name_txt, .modal_main_tit h3 {font-size: 5.5vw; line-height: 1.3;}
     .modal_main_tit span {padding-top: 10px;}
     .project_modal .main_img{height: 35vw;}
     /*.project_modal .modal_img_list .has_3_ver2 .img_box{height: auto; flex-wrap: wrap; align-items: center;}*/
     .project_modal .modal_img_list .has_3_ver2 div:first-child,
     .project_modal .modal_img_list .has_3_ver2 div:last-child{height: auto; justify-content: center; align-items: center;}
     .project_modal .modal_img_list .has_3_ver2 div:first-child img{margin-bottom: 10px;}
-    
+
     .txt-top{width: 100%;}
     .charactor{position: static;}
     .profile{flex-direction: column;}
@@ -311,19 +312,19 @@ section > div {
     .artwork .container{flex-direction: column;}
     .artwork .menu{width: 100%;}
     .artwork .menu ul{display: flex;flex-wrap: wrap;}
-    .artwork .menu ul li{flex-grow: 1; padding: 8px 10px; text-align: center;}
+    .artwork .menu button{flex-grow: 1; padding: 8px 10px; text-align: center;}
     .artwork .item-wrap{ margin-left: 0;}
     .artwork .item{margin-bottom: 0; padding: 15px 10px; border-bottom: 1px solid #212d42;}
     .artwork .item li {padding-top: 10px;}
-    .artwork .item > div{padding: 0; padding-right: 0;}
+    .artwork .item > div{padding: 0;}
     .artwork .item img {display: none;}
-    
+
 
     .portfolio .content {width: calc(100% / 2 - 6px);}
     .work .content {height: 150px;}
 
-    .artwork .menu ul li{border: 2px solid #212d42; border-left: 0;}
-    .artwork .menu ul li:first-child{border-left: 2px solid #212d42;}
+    .artwork .menu button{border: 2px solid #212d42; border-left: 0;}
+    .artwork .menu button:first-child{border-left: 2px solid #212d42;}
     .resume{background-color: transparent; padding: 0; margin-top: 35px;}
     
 
