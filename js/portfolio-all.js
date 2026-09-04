@@ -33,7 +33,7 @@ $("window").ready(function(){//2018 퍼블리셔 버전
     
  
     $(".bar-btn").click(function(){
-        $(".bar-btn>div").toggleClass("on");
+        $(".bar-btn > span").toggleClass("on");
         $("nav").toggleClass("slide")
          
     })
