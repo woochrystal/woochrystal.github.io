@@ -127,7 +127,7 @@ section > div {
 .menu button.c{ color: #fff;background-color: #212d42;}
 
 .close{width: 100%; height: 100%; background-color: rgba(38, 38, 77, 0.58); position: absolute; top: 0; left: 0; cursor: default;}
-.close:focus-visible svg {outline: 2px solid #fff; outline-offset: 4px;}
+.close:focus-visible svg {outline: 2px solid #fff; outline-offset: -1px; border-radius: 100%;}
 .close svg{font-size: 40px; color: #fff; position: absolute; left: 50%; transform: translateX(-50%); top: 20px; cursor: pointer;}
 
 
@@ -196,12 +196,25 @@ section > div {
 .project_modal .modal_img_list .has_3_ver2 div:last-child img:last-child {width: 40%;}
 
 /*이력모달*/
-.work_modal .explan_box{padding: 50px 100px;}
-.work_modal .main_img {border: none; max-width: none;}
-.work_modal .main_img img {object-fit: contain;}
-.work_modal .modal_img_list .has_3.web .img_box {max-height: 70vh;}
-.work_modal .modal_img_list .has_3.mobile .img_box {max-height: 60vh;}
-.work_modal .modal_img_list .has_2 img { width: 100%; height: 100%; object-fit: contain;}
+.work_modal .explan_box{padding: 50px;}
+.work_modal .main_img {border: none; max-width: none; height: auto;}
+.work_modal .main_img img {height: auto;width: 80%; margin: 0 auto;}
+.work_modal .main_img.mobile img {width: auto; }
+
+.work_modal .modal_img_list .img_box {flex-direction: column; align-items: flex-start;}
+.work_modal .modal_img_list .img_box img {max-height: none;}
+
+.work_modal .modal_img_list .has_2 {max-height: none;}
+.work_modal .modal_img_list .has_2 img {width:100%;height:100%;object-fit:contain;}
+.work_modal .modal_img_list .has_2 img {width:100%; height:100%; object-fit:contain;}
+
+.work_modal .modal_img_list .has_3 {display:flex; align-items:flex-start; justify-content:flex-start; gap:24px; width:100%; margin:0; padding:0; max-height:none;}
+.work_modal .modal_img_list .has_3 .img_box {width: auto; min-width:0; height:100%; margin:0; padding:0; max-height:none;}
+.work_modal .modal_img_list .has_3 .img_box img {display:block; width:100%; height:100%; max-height:none; object-fit:contain;}
+
+.work_modal .modal_img_list .has_3.mobile {justify-content:flex-start; width: 100%; }
+.work_modal .modal_img_list .has_3.mobile .img_box {flex-grow: 1;  max-height:600px;}
+.work_modal .modal_img_list .has_3.mobile .img_box img {width:100%; height:auto; max-height:none;}
 
 
 @keyframes click {
